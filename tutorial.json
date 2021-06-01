@@ -11,7 +11,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "9db4b1db4504134d3615cd08c25b1b5ba9daca2f"
+        "cf82f97556cc457d05fdcb331ddebc1aa49df944"
       ]
     },
     "testRunner": {
@@ -46,7 +46,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bb16fcca3fcb11be35c1afe2fe532d431a9a1409"
+              "aee797c73a4cc59170efbf438e0f31d148e665fc"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello bash` into the terminal and press enter.",
