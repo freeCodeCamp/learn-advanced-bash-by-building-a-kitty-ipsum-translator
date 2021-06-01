@@ -25,11 +25,6 @@
       "uri": "https://github.com/moT01/.learn-intermediate-bash-by-building",
       "branch": "v0.0.1"
     },
-    "reset": {
-      "commands": [
-        "./.freeCodeCamp/reset.sh"
-      ]
-    },
     "dependencies": [
       {
         "name": "node",
