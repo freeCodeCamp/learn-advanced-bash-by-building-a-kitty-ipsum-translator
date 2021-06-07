@@ -1,8 +1,8 @@
 {
   "version": "0.0.1",
   "summary": {
-    "title": "Learn Intermediate Bash by Building",
-    "description": "> Welcome to the Intermediate Bash lessons!"
+    "title": "Learn Advanced Bash by Building",
+    "description": "> Welcome to the Advanced Bash lessons!"
   },
   "config": {
     "setup": {
@@ -22,7 +22,7 @@
       "directory": ".freeCodeCamp"
     },
     "repo": {
-      "uri": "https://github.com/moT01/.learn-intermediate-bash-by-building",
+      "uri": "https://github.com/moT01/.learn-advanced-bash-by-building",
       "branch": "v0.0.1"
     },
     "dependencies": [
