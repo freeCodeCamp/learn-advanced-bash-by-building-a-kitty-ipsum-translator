@@ -1,6 +1,6 @@
-# Learn Intermediate Bash by Building
+# Learn Advanced Bash by Building
 
-> Welcome to the Intermediate Bash lessons!
+> Welcome to the Advanced Bash lessons!
 
 ## 10. Start the Terminal
 
