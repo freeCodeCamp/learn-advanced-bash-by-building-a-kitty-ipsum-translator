@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('tests', () => {
@@ -7,4 +7,4 @@ describe('tests', () => {
 
     assert(lastCommand[0] === 'cat' && lastCommand[1] === 'kitty_ipsum_1.txt' && lastCommand[2].op === '|' && lastCommand[3] === 'wc');
   });
-});
+});*/
