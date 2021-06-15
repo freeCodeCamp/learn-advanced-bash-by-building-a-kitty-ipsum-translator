@@ -5,3 +5,5 @@ Number of lines:
 
 Number of words:
 332
+
+Number of characters:
