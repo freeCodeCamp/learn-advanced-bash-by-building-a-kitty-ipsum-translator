@@ -56,6 +56,1225 @@
           ]
         }
       ]
+    },
+    {
+      "id": "20",
+      "title": "echo hello bash > stdout.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "20.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "03765175646a9f4103b1c5e577a96283e13dc2ac"
+            ]
+          },
+          "content": "echo hello bash > stdout.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "echo hello bash >> stdout.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "30.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "930d2d8842751e16e04a4fc08e756acd6c1595ba"
+            ]
+          },
+          "content": "echo hello bash >> stdout.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "40",
+      "title": "echo hello bash > stdout.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "40.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b9101fa226d5e44dc1e3c0c4374fa0feaf34d633"
+            ]
+          },
+          "content": "echo hello bash > stdout.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "50",
+      "title": "> stdout.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "50.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "63000a4993a002db026ca2c254beba835bb4ed62"
+            ]
+          },
+          "content": "`> stdout.txt`",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "60",
+      "title": "bad_command",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "60.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fd43b383a1771f47b149f8cdbe278c82e4bf8f59"
+            ]
+          },
+          "content": "bad_command",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "70",
+      "title": "bad_command > stderr.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "70.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d38b149a1ca472ba188083f21a46d0d55f9312a5"
+            ]
+          },
+          "content": "bad_command > stderr.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "80",
+      "title": "bad_command 2> stderr.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "80.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cded75e1bfc66de7870c5b414e7d676da5f54304"
+            ]
+          },
+          "content": "bad_command 2> stderr.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "90",
+      "title": "echo hello bash 1> stdout.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "90.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4ccdf964b289ac3644c0d5866fb2b0e4ef7271fd"
+            ]
+          },
+          "content": "echo hello bash 1> stdout.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "title": "read NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "100.1",
+          "setup": {
+            "watchers": [
+              "./.freeCodeCamp/test/.next_command"
+            ],
+            "commits": [
+              "8ed384112e01115f246d7b33153545f78137e0b4"
+            ]
+          },
+          "content": "read NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "110",
+      "title": "Enter your name",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "110.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1328c493eb375090fc0a8acee61e0036c03ae965"
+            ]
+          },
+          "content": "Enter your name",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "echo $NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "120.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "7f2b6d8f6f847dd40d23ea2d644d7b6a604a2d23"
+            ]
+          },
+          "content": "echo $NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "130",
+      "title": "touch name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "130.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d5a31dbe0f23c9e2aa853a645b1e88e72146083b"
+            ]
+          },
+          "content": "touch name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "140",
+      "title": "echo freecodecamp > name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "140.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3a59926731b109194156b56020bcace0fda6db52"
+            ]
+          },
+          "content": "echo freecodecamp > name.txt || maybe just change the file manually",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "150",
+      "title": "read NAME < name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "150.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a7d11c989c5553a54196d4bbeadca10a971293dd"
+            ]
+          },
+          "content": "read NAME < name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "160",
+      "title": "echo $NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "160.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "10dbb394aea914c6d3b31779af30b79f4f0202d5"
+            ]
+          },
+          "content": "echo $NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "170",
+      "title": "echo your_name | read NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "170.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fbedaa9854bc397d57b97ec7167d32336f11fffc"
+            ]
+          },
+          "content": "echo <your_name> | read NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "180",
+      "title": "cat",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "180.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f2b314b6393ab467a563f71ec621e62afdc62417"
+            ]
+          },
+          "content": "cat",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "190",
+      "title": "cat < name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "190.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "84a43e8ae13694318df61ee53591bfd44934db23"
+            ]
+          },
+          "content": "cat < name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "200",
+      "title": "echo your_name | cat",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "200.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "667a7e1b2782c05b955bf655d4aa1b4142320d7b"
+            ]
+          },
+          "content": "echo <your_name> | cat",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "210",
+      "title": "touch script.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "210.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "997e5220507f694b3ce0fe6efd62d691baf0a08c"
+            ]
+          },
+          "content": "touch script.sh",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "220",
+      "title": "chmod +x script.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "220.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d7888d0d4295939fbc0a3e6e0550cd2d648d6732"
+            ]
+          },
+          "content": "chmod +x script.sh",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "230",
+      "title": "Add shebang",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "230.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cbd3ebe4d2eea6d1ee3b1b51453fbd8bb4daab7c"
+            ]
+          },
+          "content": "Add shebang",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "240",
+      "title": "Add read NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "240.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "17cae0ba5d62fe58f2870e7e8644d1c394d8764f"
+            ]
+          },
+          "content": "Add read NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "250",
+      "title": "Add echo Hello $NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "250.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "74606feea27ee3bd0832bf80ff03a61096e2d3dc"
+            ]
+          },
+          "content": "Add echo Hello $NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "260",
+      "title": "Add bad_command",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "260.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1886381ad5f8be0ca408eb33315fa3ed57cfc095"
+            ]
+          },
+          "content": "Add bad_command",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "270",
+      "title": "echo your_name | ./script",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "270.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e57ceea6384b1e53e19a0804d40d698719177cbe"
+            ]
+          },
+          "content": "echo <your_name> | ./script",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "280",
+      "title": "echo your_name | ./script 2> stderr",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "280.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fa0334787eb19ac0db4acabd2fcf7fee3c5b40ed"
+            ]
+          },
+          "content": "echo your_name | ./script 2> stderr",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "290",
+      "title": "echo your_name | ./script 2> stderr 1> stdout",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "290.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "074ca96f24d112ab815c6d1c2f6b69512285c5c8"
+            ]
+          },
+          "content": "echo your_name | ./script 2> stderr 1> stdout",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "300",
+      "title": "./script < name",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "300.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "19a8e7ad15c5c6977624b6136aaae1ec824848f1"
+            ]
+          },
+          "content": "./script < name",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "310",
+      "title": "./script < name 2> stderr",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "310.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "621c37b3a11faff6c4ab60fddb30748651121f4b"
+            ]
+          },
+          "content": "./script < name 2> stderr",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "320",
+      "title": "./script < name 2> stdout 1> stdin",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "320.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fe36ea73d11996ead581addcefb02083a33db7c2"
+            ]
+          },
+          "content": "./script < name 2> stdout 1> stdin",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "330",
+      "title": "wc kitty_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "330.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2e3217362ba2e98c6ba9a192a6ad1780cd5a8a83"
+            ]
+          },
+          "content": "wc kitty_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "340",
+      "title": "man wc",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "340.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "056b52c975682a47ab3dc1ab7991b5eb426f1d9e"
+            ]
+          },
+          "content": "man wc",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "350",
+      "title": "wc -l kitt_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "350.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4ebccc2955bb2c1da4df20869531cfa44a78668b"
+            ]
+          },
+          "content": "wc -l kitt_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "360",
+      "title": "wc -w kitt_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "360.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e52b3a20d5f9b54e50351889e6a2deb79239716d"
+            ]
+          },
+          "content": "wc -w kitt_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "370",
+      "title": "wc -m kitt_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "370.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "dce6d87bd9b7b9135bab6f82c62ebfcc9b587401"
+            ]
+          },
+          "content": "wc -m kitt_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "380",
+      "title": "wc kitt_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "380.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "76fbb64315ae4d7c15b514bbf6c67af2a81fd5ba"
+            ]
+          },
+          "content": "wc kitt_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "390",
+      "title": "cat kitt_ipsum | wc",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "390.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d3135eb3aa3a7c5c88d2904f31559901fe3e819a"
+            ]
+          },
+          "content": "cat kitt_ipsum | wc",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "400",
+      "title": "wc < kitt_ipsum",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "400.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "56c376d68596eb42f1b0518cc9b5bcfc9ab2327c"
+            ]
+          },
+          "content": "wc < kitt_ipsum",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "410",
+      "title": "touch kitty_ipsum_info.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "410.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e44db517fd5e25ec07c5efa4822e6ce407414e21"
+            ]
+          },
+          "content": "touch kitty_ipsum_info.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "420",
+      "title": "add echo ~~ kitty_ispsum_1.txt info ~~” > kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "420.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c6c0ca1bc94f9ba5fbcf1dffb03ca943f0c6ae67"
+            ]
+          },
+          "content": "add echo \"~~ kitty_ispsum_1.txt info ~~\" > kitty_ipsum_info.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "430",
+      "title": "echo Number of lines >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "430.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "eb754f0c21d8bdd9c096e3bef8275a7b5b6550f5"
+            ]
+          },
+          "content": "echo hello bash > stdout.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "440",
+      "title": "cat kitty_ipsum_1 | wc -l >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "440.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e273a5597ce9f25ea8a588b70404b5d9e7186f26"
+            ]
+          },
+          "content": "cat kitty_ipsum_1.txt | wc -l >> kitty_ipsum_info.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "450",
+      "title": "echo -e Number of words: >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "450.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4c5dcb80b7b37e67b7208fb76b954749d5d21061"
+            ]
+          },
+          "content": "echo -e \"\\nNumber of words:\" >> kitty_ipsum_info.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "460",
+      "title": "wc -w < kitty_ipsum_1 >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "460.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c026527f90406efdd5f77677f487cbfb90ede435"
+            ]
+          },
+          "content": "wc -w < kitty_ipsum_1 >> kitty_ipsum_info",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "470",
+      "title": "echo -e Number of characters: >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "470.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "4e5d6b394c81020150a9b15094adf0d56b190266"
+            ]
+          },
+          "content": "echo -e Number of characters: >> kitty_ipsum_info",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "480",
+      "title": "cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "480.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "fb193b8021c446f21854c3e0cd8af61838364416"
+            ]
+          },
+          "content": "cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "490",
+      "title": "grep cat kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "490.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "10b601ee1755041d88dcf5c8f0bf2e4351d93a58"
+            ]
+          },
+          "content": "grep cat kitty_ipsum_1.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "500",
+      "title": "man grep",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "500.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "59932c5db149812e53c9a7a5c29d71c9d8e3736d"
+            ]
+          },
+          "content": "man grep",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "510",
+      "title": "grep --color cat kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "510.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "9cb5e2606b402bebeefb20fbc42ac279ad80216a"
+            ]
+          },
+          "content": "grep --color cat kitty_ipsum_1.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "520",
+      "title": "grep --color -n cat kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "520.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "2f50a142a86e991b7613641d4b89f759834d8f07"
+            ]
+          },
+          "content": "grep --color -n cat kitty_ipsum_1.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "530",
+      "title": "grep --color -n cat[a-zA-Z] kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "530.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "a0bfbee4384b92ff392a93b6e2d1beb672f62271"
+            ]
+          },
+          "content": "grep --color -n cat[a-zA-Z] kitty_ipsum_1.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "540",
+      "title": "grep --color -n cat[^ ] kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "540.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "055beeef27cc38638c94dfb22a7426ba47744df1"
+            ]
+          },
+          "content": "grep --color -n cat[^ ] kitty_ipsum_1.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
     }
   ]
 }
