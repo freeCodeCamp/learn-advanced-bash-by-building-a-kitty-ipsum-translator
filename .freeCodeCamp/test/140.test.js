@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand, getFileContents } = require('./utils');
 
 describe('You', () => {
@@ -13,4 +13,4 @@ describe('You', () => {
     const correctCommand = lastCommand[0] === 'echo' && lastCommand[1] === 'freeCodeCamp' && (lastCommand[2].op === '>' || lastCommand[2].op === '>>' ) && /name\.txt$/.test(lastCommand[3]);
     assert(correctCommand && /^freeCodeCamp\s*$/g.test(fileContents))
   });
-});
+});*/
