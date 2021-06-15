@@ -1,1 +1,3 @@
 ~~ kitty_ipsum_1.txt info ~~
+
+Number of lines:
