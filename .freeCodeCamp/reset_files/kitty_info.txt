@@ -2,3 +2,5 @@
 
 Number of lines:
 27
+
+Number of words:
