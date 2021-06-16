@@ -88,12 +88,6 @@ levels:
         setup:
           watchers:
             - ../.bash_history
-  - id: '130'
-    steps:
-      - id: '130.1'
-        setup:
-          watchers:
-            - ../.bash_history
   - id: '140'
     steps:
       - id: '140.1'
@@ -153,25 +147,25 @@ levels:
       - id: '230.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./script.sh
   - id: '240'
     steps:
       - id: '240.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./script.sh
   - id: '250'
     steps:
       - id: '250.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./script.sh
   - id: '260'
     steps:
       - id: '260.1'
         setup:
           watchers:
-            - ../.bash_history
+            - ./script.sh
   - id: '270'
     steps:
       - id: '270.1'

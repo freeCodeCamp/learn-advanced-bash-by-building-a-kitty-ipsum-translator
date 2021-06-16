@@ -17,6 +17,8 @@
 
 ### 20.1
 
+The command you just entered printed to the terminal. You can `redirect` that output to a file using `>`. Here’s an example: `<command> > <filename>`. Enter the same command but redirect the output into `stdout.txt`.
+
 echo hello bash > stdout.txt
 
 #### HINTS
@@ -26,6 +28,8 @@ echo hello bash > stdout.txt
 ## 30. echo hello bash >> stdout.txt
 
 ### 30.1
+
+That took the output of the command and put it into `stdout.txt`. You should take a look at the file. Nothing was printed to the terminal. It’s output was `redirected`. A single `>` will create or overwrite the file. Use the same command with `>>` to append to the file.
 
 echo hello bash >> stdout.txt
 
@@ -37,6 +41,8 @@ echo hello bash >> stdout.txt
 
 ### 40.1
 
+Take a look at the file, now it has the same thing in it twice. Use the command with one `>` again to overwrite the file.
+
 echo hello bash > stdout.txt
 
 #### HINTS
@@ -46,6 +52,8 @@ echo hello bash > stdout.txt
 ## 50. > stdout.txt
 
 ### 50.1
+
+Take a look at the file. As expected, it was overwritten. Enter `> stout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.
 
 `> stdout.txt`
 
@@ -57,6 +65,8 @@ echo hello bash > stdout.txt
 
 ### 60.1
 
+Next, enter `bad_command` in the terminal. You will get an error.
+
 bad_command
 
 #### HINTS
@@ -66,6 +76,8 @@ bad_command
 ## 70. bad_command > stderr.txt
 
 ### 70.1
+
+Enter the same command, but try to redirect the output to `stderr.txt` using `>`.
 
 bad_command > stderr.txt
 
@@ -77,6 +89,8 @@ bad_command > stderr.txt
 
 ### 80.1
 
+There’s two types of output, `stdout` (standard out) for when a command is successful, and `stderr` (standard error) for when it’s not. Both of these will print to the terminal by default. `bad_command` was not a valid command, so it printed to `stderr`. You can redirect `stderr` with `2>`. Enter the same command but redirect the error to `stderr.txt`
+
 bad_command 2> stderr.txt
 
 #### HINTS
@@ -86,6 +100,8 @@ bad_command 2> stderr.txt
 ## 90. echo hello bash 1> stdout.txt
 
 ### 90.1
+
+Now the error was redirected to the file and nothing printed in the terminal. You used `2>` to redirect `stderr`. Similarily, you can use `1>` to redirect `stdout`. Enter `echo hello bash` again and use it to redirect `stdout` to the `stdout.txt` file.
 
 echo hello bash 1> stdout.txt
 
@@ -97,6 +113,8 @@ echo hello bash 1> stdout.txt
 
 ### 100.1
 
+`stdout` and `stderr` are for output. `stdin` (standard in) is the third thing created when you run a command and is for input. The default is the keyboard. Enter `read NAME` in the terminal to see a command that uses `stdin`.
+
 read NAME
 
 #### HINTS
@@ -106,6 +124,8 @@ read NAME
 ## 110. Enter your name
 
 ### 110.1
+
+The `read` command is waiting for input from the keyboard. Type your name and press enter. 
 
 Enter your name
 
@@ -117,17 +137,9 @@ Enter your name
 
 ### 120.1
 
+Use echo to print the `NAME` variable you just created and redirect the `stdout` to `stdout.txt`.
+
 echo $NAME
-
-#### HINTS
-
-- Hint
-
-## 130. touch name.txt
-
-### 130.1
-
-touch name.txt
 
 #### HINTS
 
@@ -136,6 +148,8 @@ touch name.txt
 ## 140. echo freecodecamp > name.txt
 
 ### 140.1
+
+add `freecodecamp` and an empty line to the file
 
 echo freecodecamp > name.txt || maybe just change the file manually
 
@@ -477,6 +491,8 @@ echo -e Number of characters: >> kitty_ipsum_info
 
 ### 480.1
 
+use the method of your choice
+
 cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info
 
 #### HINTS
@@ -496,6 +512,8 @@ grep cat kitty_ipsum_1.txt
 ## 500. man grep
 
 ### 500.1
+
+It showed you all the lines that contain `cat` somewhere in them - but it’s a little messy. View the manual of `grep`
 
 man grep
 
@@ -517,6 +535,8 @@ grep --color cat kitty_ipsum_1.txt
 
 ### 520.1
 
+That’s better. Add the flag to show all the line numbers with the command.
+
 grep --color -n cat kitty_ipsum_1.txt
 
 #### HINTS
@@ -526,6 +546,8 @@ grep --color -n cat kitty_ipsum_1.txt
 ## 530. grep --color -n cat[a-zA-Z] kitty_ipsum_1
 
 ### 530.1
+
+grep can use regular expressions, too.
 
 grep --color -n cat[a-zA-Z] kitty_ipsum_1.txt
 
