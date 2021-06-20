@@ -187,11 +187,31 @@ echo <your_name> | read NAME
 
 - Hint
 
+## 175. echo $NAME
+
+### 175.1
+
+echo $NAME
+
+#### HINTS
+
+- Hint
+
+## 178. cat
+
+### 178.1
+
+cat
+
+#### HINTS
+
+- Hint
+
 ## 180. cat
 
 ### 180.1
 
-cat
+end cat
 
 #### HINTS
 
