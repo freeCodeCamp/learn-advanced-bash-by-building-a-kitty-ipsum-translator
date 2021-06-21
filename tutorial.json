@@ -8,6 +8,7 @@
     "setup": {
       "commands": [
         "sudo cp ~/project/.freeCodeCamp/.bashrc ~",
+        "./.freeCodeCamp/reset.sh",
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
