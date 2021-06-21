@@ -347,21 +347,21 @@ echo your_name | ./script 2> stderr 1> stdout
 
 - Hint
 
-## 320. ./script < name 2> stdout 1> stdin
+## 320. ./script < name 2> stderr 1> stdout
 
 ### 320.1
 
-./script < name 2> stdout 1> stdin
+./script < name 2> stderr 1> stdout
 
 #### HINTS
 
 - Hint
 
-## 330. wc kitty_ipsum
+## 330. wc kitty_ipsum_1
 
 ### 330.1
 
-wc kitty_ipsum
+wc kitty_ipsum_1
 
 #### HINTS
 
@@ -377,81 +377,71 @@ man wc
 
 - Hint
 
-## 350. wc -l kitt_ipsum
+## 350. wc -l kitty_ipsum_1
 
 ### 350.1
 
-wc -l kitt_ipsum
+wc -l kitt_ipsum_1
 
 #### HINTS
 
 - Hint
 
-## 360. wc -w kitt_ipsum
+## 360. wc -w kitty_ipsum_1
 
 ### 360.1
 
-wc -w kitt_ipsum
+wc -w kitty_ipsum_1
 
 #### HINTS
 
 - Hint
 
-## 370. wc -m kitt_ipsum
+## 370. wc -m kitty_ipsum_1
 
 ### 370.1
 
-wc -m kitt_ipsum
+wc -m kitty_ipsum_1
 
 #### HINTS
 
 - Hint
 
-## 380. wc kitt_ipsum
+## 380. wc kitty_ipsum_1
 
 ### 380.1
 
-wc kitt_ipsum
+wc kitty_ipsum_1
 
 #### HINTS
 
 - Hint
 
-## 390. cat kitt_ipsum | wc
+## 390. cat kitty_ipsum_1 | wc
 
 ### 390.1
 
-cat kitt_ipsum | wc
+cat kitty_ipsum_1 | wc
 
 #### HINTS
 
 - Hint
 
-## 400. wc < kitt_ipsum
+## 400. wc < kitty_ipsum_1
 
 ### 400.1
 
-wc < kitt_ipsum
+wc < kitty_ipsum_1
 
 #### HINTS
 
 - Hint
 
-## 410. touch kitty_ipsum_info.txt
-
-### 410.1
-
-touch kitty_ipsum_info.txt
-
-#### HINTS
-
-- Hint
-
-## 420. add echo ~~ kitty_ispsum_1.txt info ~~” > kitty_ipsum_info
+## 420. echo ~~ kitty_ispsum_1.txt info ~~ > kitty_ipsum_info
 
 ### 420.1
 
-add echo "~~ kitty_ispsum_1.txt info ~~" > kitty_ipsum_info.txt
+echo "~~ kitty_ispsum_1.txt info ~~" > kitty_ipsum_info.txt
 
 #### HINTS
 
@@ -461,7 +451,7 @@ add echo "~~ kitty_ispsum_1.txt info ~~" > kitty_ipsum_info.txt
 
 ### 430.1
 
-echo hello bash > stdout.txt
+echo -e "\nNumber of lines:" >> kitty_ipsum_info.txt
 
 #### HINTS
 
@@ -519,11 +509,11 @@ cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info
 
 - Hint
 
-## 490. grep cat kitty_ipsum_1
+## 490. grep meow kitty_ipsum_1
 
 ### 490.1
 
-grep cat kitty_ipsum_1.txt
+grep meow kitty_ipsum_1.txt
 
 #### HINTS
 
@@ -533,7 +523,7 @@ grep cat kitty_ipsum_1.txt
 
 ### 500.1
 
-It showed you all the lines that contain `cat` somewhere in them - but it’s a little messy. View the manual of `grep`
+It showed you all the lines that contain `meow` somewhere in them - but it’s a little messy. View the manual of `grep`
 
 man grep
 
@@ -541,11 +531,11 @@ man grep
 
 - Hint
 
-## 510. grep --color cat kitty_ipsum_1
+## 510. grep --color meow kitty_ipsum_1
 
 ### 510.1
 
-grep --color cat kitty_ipsum_1.txt
+grep --color meow kitty_ipsum_1.txt
 
 #### HINTS
 
@@ -557,19 +547,19 @@ grep --color cat kitty_ipsum_1.txt
 
 That’s better. Add the flag to show all the line numbers with the command.
 
-grep --color -n cat kitty_ipsum_1.txt
+grep --color -n meow kitty_ipsum_1.txt
 
 #### HINTS
 
 - Hint
 
-## 530. grep --color -n cat[a-zA-Z] kitty_ipsum_1
+## 530. grep --color -n meow[a-zA-Z] kitty_ipsum_1
 
 ### 530.1
 
 grep can use regular expressions, too.
 
-grep --color -n cat[a-zA-Z] kitty_ipsum_1.txt
+grep --color -n meow[a-zA-Z]* kitty_ipsum_1.txt
 
 #### HINTS
 
