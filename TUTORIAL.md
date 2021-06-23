@@ -437,73 +437,73 @@ wc < kitty_ipsum_1
 
 - Hint
 
-## 420. echo ~~ kitty_ispsum_1.txt info ~~ > kitty_ipsum_info
+## 420. echo ~~ kitty_ispsum_1.txt info ~~ > kitty_info
 
 ### 420.1
 
-echo "~~ kitty_ispsum_1.txt info ~~" > kitty_ipsum_info.txt
+echo "~~ kitty_ispsum_1.txt info ~~" > kitty_info.txt
 
 #### HINTS
 
 - Hint
 
-## 430. echo Number of lines >> kitty_ipsum_info
+## 430. echo Number of lines >> kitty_info
 
 ### 430.1
 
-echo -e "\nNumber of lines:" >> kitty_ipsum_info.txt
+echo -e "\nNumber of lines:" >> kitty_info.txt
 
 #### HINTS
 
 - Hint
 
-## 440. cat kitty_ipsum_1 | wc -l >> kitty_ipsum_info
+## 440. cat kitty_ipsum_1 | wc -l >> kitty_info
 
 ### 440.1
 
-cat kitty_ipsum_1.txt | wc -l >> kitty_ipsum_info.txt
+cat kitty_ipsum_1.txt | wc -l >> kitty_info.txt
 
 #### HINTS
 
 - Hint
 
-## 450. echo -e Number of words: >> kitty_ipsum_info
+## 450. echo -e Number of words: >> kitty_info
 
 ### 450.1
 
-echo -e "\nNumber of words:" >> kitty_ipsum_info.txt
+echo -e "\nNumber of words:" >> kitty_info.txt
 
 #### HINTS
 
 - Hint
 
-## 460. wc -w < kitty_ipsum_1 >> kitty_ipsum_info
+## 460. wc -w < kitty_ipsum_1 >> kitty_info
 
 ### 460.1
 
-wc -w < kitty_ipsum_1 >> kitty_ipsum_info
+wc -w < kitty_ipsum_1 >> kitty_info
 
 #### HINTS
 
 - Hint
 
-## 470. echo -e Number of characters: >> kitty_ipsum_info
+## 470. echo -e Number of characters: >> kitty_info
 
 ### 470.1
 
-echo -e Number of characters: >> kitty_ipsum_info
+echo -e Number of characters: >> kitty_info
 
 #### HINTS
 
 - Hint
 
-## 480. cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info
+## 480. cat kitty_ipsum_1 | wc -m >> kitty_info
 
 ### 480.1
 
 use the method of your choice
 
-cat kitty_ipsum_1 | wc -m >> kitty_ipsum_info
+cat kitty_ipsum_1 | wc -m >> kitty_info
 
 #### HINTS
 
