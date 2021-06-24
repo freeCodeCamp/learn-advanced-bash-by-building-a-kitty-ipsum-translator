@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('tests', () => {
@@ -9,4 +9,4 @@ describe('tests', () => {
 
     assert(correctFlags && filteredCommand[0] === 'grep' && filteredCommand[1].pattern === 'meow[a-z]*' && filteredCommand[2] === 'kitty_ipsum_1.txt' && filteredCommand[3].op === '|' && filteredCommand[4] === 'sed' && filteredCommand[5] === 's/[0-9]+/1/');
   });
-});
+});*/
