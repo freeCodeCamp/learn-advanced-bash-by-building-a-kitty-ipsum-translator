@@ -1419,6 +1419,351 @@
           ]
         }
       ]
+    },
+    {
+      "id": "610",
+      "title": "echo -e \\nLines that they appear on: >> kitty_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "610.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "96bc1c3ae84046eeb3ea581994c46abd2fd34820"
+            ]
+          },
+          "content": "echo \\nLines that they appear on: >> kitty_info",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "620",
+      "title": "grep -n meow[a-z] kitty_ipsum_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "620.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f44853de0ed587fcd7011b1507e024aec619e15d"
+            ]
+          },
+          "content": "grep -n meow[a-z] kitty_ipsum_1",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "630",
+      "title": "man grep",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "630.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "34512d2e9f67e56ea845d35f1ef1a517e59c4627"
+            ]
+          },
+          "content": "man grep",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "640",
+      "title": "sed s/r/2/ name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "640.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "ec70ffca0ae21f09ac4be1b0609d6afcdc9e6d35"
+            ]
+          },
+          "content": "sed s/r/2/ name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "650",
+      "title": "sed s/free/f233/ name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "650.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "1d4832fe0463e3de9d99ca7a136eca9d78f45c54"
+            ]
+          },
+          "content": "sed s/free/f233/ name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "660",
+      "title": "sed s/freecodecamp/f233C0d3C@mp/ name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "660.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "60157f30a371f1383e97208b5950daf12012f935"
+            ]
+          },
+          "content": "sed s/freecodecamp/f233C0d3C@mp/ name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "670",
+      "title": "sed s/freecodecamp/f233C0d3C@mp/i name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "670.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "bbc5aeabf23f85e23fbbb216fc48d9055aa5a294"
+            ]
+          },
+          "content": "sed s/freecodecamp/f233C0d3C@mp/i name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "680",
+      "title": "echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "680.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "506b17fe598fbd63d66b88a5e46d0aec29b85338"
+            ]
+          },
+          "content": "echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "690",
+      "title": "grep -n meow[a-z] kitty_1",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "690.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "61d073cb7395c15b09070b020924841388720e62"
+            ]
+          },
+          "content": "grep -n meow[a-z] kitty_1",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "700",
+      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]/1/",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "700.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "0a4d2d4d36a564bb536ba962504ac6febe635a6b"
+            ]
+          },
+          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "710",
+      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "710.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "c22524cfb5bf79bf89246d621d2ed09a22fa5c72"
+            ]
+          },
+          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "720",
+      "title": "man sed",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "720.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "e0501d52ec8296cd6d96f1f861ffd14472818931"
+            ]
+          },
+          "content": "man sed",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "730",
+      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "730.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3219e7eda26b7b012a6548110ecc7f993b17cec1"
+            ]
+          },
+          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "740",
+      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\\1/",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "740.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d88caf15654caf353294887b8b38a161517d3b8c"
+            ]
+          },
+          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\\1/",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "750",
+      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "750.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "b0515e234ddbc6f58f8507c8c8e5162cfcb0807d"
+            ]
+          },
+          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
     }
   ]
 }
