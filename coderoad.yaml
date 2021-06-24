@@ -344,3 +344,39 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '550'
+    steps:
+      - id: '550.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '560'
+    steps:
+      - id: '560.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '570'
+    steps:
+      - id: '570.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '580'
+    steps:
+      - id: '580.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '590'
+    steps:
+      - id: '590.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '600'
+    steps:
+      - id: '600.1'
+        setup:
+          watchers:
+            - ../.bash_history

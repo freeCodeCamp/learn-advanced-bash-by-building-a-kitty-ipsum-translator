@@ -563,11 +563,71 @@ grep --color -n meow[a-zA-Z]* kitty_ipsum_1.txt
 
 - Hint
 
-## 540. grep --color -n cat[^ ] kitty_ipsum_1
+## 540. echo -e \nNumber of times meow or meowzer appears: >> kitty_info
 
 ### 540.1
 
-grep --color -n cat[^ ] kitty_ipsum_1.txt
+echo -e \nNumber of times meow or meowzer appears: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 550. grep --color meow[a-z] kitty_ipsum_1
+
+### 550.1
+
+grep --color meow[a-z] kitty_ipsum_1
+
+#### HINTS
+
+- Hint
+
+## 560. grep -c meow[a-z] kittpy_ipsum_1
+
+### 560.1
+
+grep -c meow[a-z] kittpy_ipsum_1
+
+#### HINTS
+
+- Hint
+
+## 570. man grep
+
+### 570.1
+
+man grep
+
+#### HINTS
+
+- Hint
+
+## 580. grep -o meow[a-z] kitty_1
+
+### 580.1
+
+grep -o meow[a-z] kitty_1
+
+#### HINTS
+
+- Hint
+
+## 590. grep -o meow[a-z] kitty_1 | wc -l
+
+### 590.1
+
+grep -o meow[a-z] kitty_1 | wc -l
+
+#### HINTS
+
+- Hint
+
+## 600. grep -o meow[a-z] kitty_1 | wc -l >> kitty_info
+
+### 600.1
+
+grep -o meow[a-z] kitty_1 | wc -l >> kitty_info
 
 #### HINTS
 
