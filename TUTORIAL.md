@@ -732,3 +732,53 @@ grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'
 #### HINTS
 
 - Hint
+
+## 710. grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/
+
+### 710.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/
+
+#### HINTS
+
+- Hint
+
+## 720. man sed
+
+### 720.1
+
+man sed
+
+#### HINTS
+
+- Hint
+
+## 730. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/
+
+### 730.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/
+
+#### HINTS
+
+- Hint
+
+## 740. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\1/
+
+### 740.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\1/
+
+#### HINTS
+
+- Hint
+
+## 750. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+
+### 750.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+
+#### HINTS
+
+- Hint
