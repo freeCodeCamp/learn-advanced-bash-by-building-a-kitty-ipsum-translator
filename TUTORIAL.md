@@ -632,3 +632,103 @@ grep -o meow[a-z] kitty_1 | wc -l >> kitty_info
 #### HINTS
 
 - Hint
+
+## 610. echo -e \nLines that they appear on: >> kitty_info
+
+### 610.1
+
+echo \nLines that they appear on: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 620. grep -n meow[a-z] kitty_ipsum_1
+
+### 620.1
+
+grep -n meow[a-z] kitty_ipsum_1
+
+#### HINTS
+
+- Hint
+
+## 630. man grep
+
+### 630.1
+
+man grep
+
+#### HINTS
+
+- Hint
+
+## 640. sed s/r/2/ name.txt
+
+### 640.1
+
+sed s/r/2/ name.txt
+
+#### HINTS
+
+- Hint
+
+## 650. sed s/free/f233/ name.txt
+
+### 650.1
+
+sed s/free/f233/ name.txt
+
+#### HINTS
+
+- Hint
+
+## 660. sed s/freecodecamp/f233C0d3C@mp/ name.txt
+
+### 660.1
+
+sed s/freecodecamp/f233C0d3C@mp/ name.txt
+
+#### HINTS
+
+- Hint
+
+## 670. sed s/freecodecamp/f233C0d3C@mp/i name.txt
+
+### 670.1
+
+sed s/freecodecamp/f233C0d3C@mp/i name.txt
+
+#### HINTS
+
+- Hint
+
+## 680. echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i
+
+### 680.1
+
+echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i
+
+#### HINTS
+
+- Hint
+
+## 690. grep -n meow[a-z] kitty_1
+
+### 690.1
+
+grep -n meow[a-z] kitty_1
+
+#### HINTS
+
+- Hint
+
+## 700. grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]/1/
+
+### 700.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'
+
+#### HINTS
+
+- Hint
