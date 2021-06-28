@@ -23,3 +23,10 @@ Number of times cat, cats, or catnip appears:
 7
 
 Lines that they appear on:
+1
+3
+7
+17
+21
+22
+26
