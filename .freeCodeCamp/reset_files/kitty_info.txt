@@ -18,3 +18,5 @@ Lines that they appear on:
 10
 22
 23
+
+Number of times cat, cats, or catnip appears:
