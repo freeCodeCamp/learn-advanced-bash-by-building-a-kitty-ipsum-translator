@@ -782,3 +782,235 @@ grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
 #### HINTS
 
 - Hint
+
+## 760. previous with >> kitty_info
+
+### 760.1
+
+grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/ 
+previous with >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 770. grep cat[a-z]* kitty_1 —-color
+
+### 770.1
+
+grep cat[a-z]* kitty_1 -—color
+
+#### HINTS
+
+- Hint
+
+## 780. echo Number of times cat, cats, or catnip appears: >> kitty_info
+
+### 780.1
+
+Echo “\nNumber of times cat, cats, or catnip appears:” >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 790. grep cat[a-z]* kitty_1 -o
+
+### 790.1
+
+grep cat[a-z]* kitty_1 -o
+
+#### HINTS
+
+- Hint
+
+## 800. grep cat[a-z]* kitty_1 -o | wc -l
+
+### 800.1
+
+grep cat[a-z]* kitty_1 -o | wc -l
+
+#### HINTS
+
+- Hint
+
+## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
+
+### 810.1
+
+grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
+
+#### HINTS
+
+- Hint
+
+## 820. echo -e Lines that they appear on: >> kitty_info
+
+### 820.1
+
+echo -e \nLines that they appear on: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 830. grep cat[a-z]* kitty_1 -n
+
+### 830.1
+
+grep cat[a-z]* kitty_1 -n
+
+#### HINTS
+
+- Hint
+
+## 840. grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+
+### 840.1
+
+grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+
+#### HINTS
+
+- Hint
+
+## 850. previous with >> kitty_info
+
+### 850.1
+
+grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+previous with >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
+
+### 860.1
+
+echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
+
+#### HINTS
+
+- Hint
+
+## 870. echo -e \nNumber of lines: >> kitty_info
+
+### 870.1
+
+echo \nNumber of lines: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 880. wc kitty_2 -l >> kitty_info
+
+### 880.1
+
+wc kitty_ipsum_2.txt -l >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 890. echo -e \nNumber of words: >> kitty_info
+
+### 890.1
+
+echo -e \nNumber of words: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 900. wc kitty_ipsum_2.txt -w >> kitty_info
+
+### 900.1
+
+wc kitty_ipsum_2.txt -w >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 910. echo -e \nNumber of characters: >> kitty_info
+
+### 910.1
+
+echo -e \nNumber of characters: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 920. wc kitty_ipsum_2.txt -c >> kitty_info
+
+### 920.1
+
+wc kitty_ipsum_2.txt -c >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 930. echo -e \nNumber of times meow or meowzer appears: >> kitty_info
+
+### 930.1
+
+echo -e \nNumber of times meow or meowzer appears: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 940. do it
+
+### 940.1
+
+do it
+
+#### HINTS
+
+- Hint
+
+## 950. echo -e \nLines that they appear on: >> kitty_info
+
+### 950.1
+
+Echo -e \nLines that they appear on: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 960. do it
+
+### 960.1
+
+do it
+
+#### HINTS
+
+- Hint
+
+## 970. echo -e \nNumber of times cat, cats, or catnip appears: >> kitty_info
+
+### 970.1
+
+echo -e \nNumber of times cat, cats, or catnip appears: >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 980. do it
+
+### 980.1
+
+do it 
+
+#### HINTS
+
+- Hint
