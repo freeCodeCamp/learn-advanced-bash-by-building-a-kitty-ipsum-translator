@@ -1,4 +1,4 @@
-version: '0.0.1'
+version: '0.0.2'
 config:
   setup:
     commands:
@@ -12,7 +12,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-advanced-bash-by-building
-    branch: v0.0.1
+    branch: v0.0.2
   reset:
     commands:
       - './.freeCodeCamp/reset.sh'
@@ -641,6 +641,18 @@ levels:
   - id: '980'
     steps:
       - id: '980.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '990'
+    steps:
+      - id: '990.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1000'
+    steps:
+      - id: '1000.1'
         setup:
           watchers:
             - ../.bash_history

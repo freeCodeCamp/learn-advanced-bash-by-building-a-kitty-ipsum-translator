@@ -967,11 +967,11 @@ echo "\nNumber of lines:" >> kitty_info
 
 - Hint
 
-## 880. wc kitty_2 -l >> kitty_info
+## 880. cat kitty_2 | wc -l >> kitty_info
 
 ### 880.1
 
-wc kitty_ipsum_2.txt -l >> kitty_info
+cat kitty_ipsum_2.txt | wc -l >> kitty_info
 
 #### HINTS
 
@@ -987,11 +987,11 @@ echo -e "\nNumber of words:" >> kitty_info
 
 - Hint
 
-## 900. wc kitty_ipsum_2.txt -w >> kitty_info
+## 900. cat kitty_ipsum_2.txt | wc -w >> kitty_info
 
 ### 900.1
 
-wc kitty_ipsum_2.txt -w >> kitty_info
+cat kitty_ipsum_2.txt | wc -w >> kitty_info
 
 #### HINTS
 
@@ -1007,11 +1007,11 @@ echo -e "\nNumber of characters:" >> kitty_info
 
 - Hint
 
-## 920. wc kitty_ipsum_2.txt -c >> kitty_info
+## 920. wc -m < kitty_ipsum_2.txt >> kitty_info
 
 ### 920.1
 
-wc kitty_ipsum_2.txt -c >> kitty_info
+wc -m < kitty_ipsum_2.txt >> kitty_info
 
 #### HINTS
 
@@ -1072,6 +1072,26 @@ echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info
 ### 980.1
 
 do it 
+
+#### HINTS
+
+- Hint
+
+## 990. echo -e \nLines that they appear on: >> kitty_info
+
+### 990.1
+
+Echo -e "\nLines that they appear on:" >> kitty_info
+
+#### HINTS
+
+- Hint
+
+## 1000. do it
+
+### 1000.1
+
+do it
 
 #### HINTS
 
