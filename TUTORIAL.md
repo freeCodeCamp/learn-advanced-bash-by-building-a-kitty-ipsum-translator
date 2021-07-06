@@ -133,13 +133,23 @@ Enter your name
 
 - Hint
 
-## 120. echo $NAME
+## 115. echo $NAME
+
+### 115.1
+
+echo $NAME
+
+#### HINTS
+
+- Hint
+
+## 120. echo $NAME > stdout.txt
 
 ### 120.1
 
 Use echo to print the `NAME` variable you just created and redirect the `stdout` to `stdout.txt`.
 
-echo $NAME
+echo $NAME > stdout.txt
 
 #### HINTS
 
@@ -207,11 +217,21 @@ cat
 
 - Hint
 
-## 180. cat
+## 180. end cat
 
 ### 180.1
 
 end cat
+
+#### HINTS
+
+- Hint
+
+## 185. cat name.txt
+
+### 185.1
+
+cat name.txt
 
 #### HINTS
 
@@ -292,6 +312,28 @@ Add echo Hello $NAME
 ### 260.1
 
 Add bad_command
+
+#### HINTS
+
+- Hint
+
+## 264. ./script.sh
+
+### 264.1
+
+./script.sh
+
+#### HINTS
+
+- Hint
+
+## 266. end ./script.sh
+
+### 266.1
+
+it's waiting for input
+
+enter your name to finish the script.
 
 #### HINTS
 
@@ -457,11 +499,11 @@ echo -e "\nNumber of lines:" >> kitty_info.txt
 
 - Hint
 
-## 440. wc kitty_ipsum_1 -l >> kitty_info
+## 440. cat kitty_ipsum_1 | wc -l >> kitty_info
 
 ### 440.1
 
-wc kitty_ipsum_1.txt -l >> kitty_info
+cat kitty_ipsum_1.txt | wc -l >> kitty_info
 
 #### HINTS
 
@@ -491,7 +533,7 @@ cat kitty_ipsum_1.txt | wc -w >> kitty_info
 
 ### 470.1
 
-echo -e Number of characters: >> kitty_info
+echo -e "\nNumber of characters:" >> kitty_info
 
 #### HINTS
 
@@ -511,7 +553,7 @@ wc -m < kitty_ipsum_1 >> kitty_info
 
 ### 490.1
 
-grep meow kitty_ipsum_1.txt
+grep 'meow' kitty_ipsum_1.txt
 
 #### HINTS
 
@@ -533,7 +575,7 @@ man grep
 
 ### 510.1
 
-grep --color meow kitty_ipsum_1.txt
+grep --color 'meow' kitty_ipsum_1.txt
 
 #### HINTS
 
@@ -545,19 +587,19 @@ grep --color meow kitty_ipsum_1.txt
 
 That’s better. Add the flag to show all the line numbers with the command.
 
-grep --color -n meow kitty_ipsum_1.txt
+grep --color -n 'meow' kitty_ipsum_1.txt
 
 #### HINTS
 
 - Hint
 
-## 530. grep --color -n meow[a-zA-Z] kitty_ipsum_1
+## 530. grep --color -n meow[a-z] kitty_ipsum_1
 
 ### 530.1
 
 grep can use regular expressions, too.
 
-grep --color -n meow[a-zA-Z]* kitty_ipsum_1.txt
+grep --color -n 'meow[a-z]*' kitty_ipsum_1.txt
 
 #### HINTS
 
@@ -567,7 +609,7 @@ grep --color -n meow[a-zA-Z]* kitty_ipsum_1.txt
 
 ### 540.1
 
-echo -e \nNumber of times meow or meowzer appears: >> kitty_info
+echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info
 
 #### HINTS
 
@@ -577,7 +619,7 @@ echo -e \nNumber of times meow or meowzer appears: >> kitty_info
 
 ### 550.1
 
-grep --color meow[a-z] kitty_ipsum_1
+grep --color 'meow[a-z]*' kitty_ipsum_1
 
 #### HINTS
 
@@ -587,7 +629,7 @@ grep --color meow[a-z] kitty_ipsum_1
 
 ### 560.1
 
-grep -c meow[a-z] kittpy_ipsum_1
+grep -c 'meow[a-z]*' kittpy_ipsum_1
 
 #### HINTS
 
@@ -607,7 +649,7 @@ man grep
 
 ### 580.1
 
-grep -o meow[a-z] kitty_1
+grep -o 'meow[a-z]*' kitty_1
 
 #### HINTS
 
@@ -617,7 +659,7 @@ grep -o meow[a-z] kitty_1
 
 ### 590.1
 
-grep -o meow[a-z] kitty_1 | wc -l
+grep -o 'meow[a-z]*' kitty_1 | wc -l
 
 #### HINTS
 
@@ -627,7 +669,7 @@ grep -o meow[a-z] kitty_1 | wc -l
 
 ### 600.1
 
-grep -o meow[a-z] kitty_1 | wc -l >> kitty_info
+grep -o 'meow[a-z]* kitty_1' | wc -l >> kitty_info
 
 #### HINTS
 
@@ -647,7 +689,7 @@ echo \nLines that they appear on: >> kitty_info
 
 ### 620.1
 
-grep -n meow[a-z] kitty_ipsum_1
+grep -n 'meow[a-z]*' kitty_ipsum_1
 
 #### HINTS
 
@@ -663,11 +705,21 @@ man grep
 
 - Hint
 
+## 635. cat name.txt
+
+### 635.1
+
+cat name.txt
+
+#### HINTS
+
+- Hint
+
 ## 640. sed s/r/2/ name.txt
 
 ### 640.1
 
-sed s/r/2/ name.txt
+sed 's/r/2/' name.txt
 
 #### HINTS
 
@@ -677,7 +729,7 @@ sed s/r/2/ name.txt
 
 ### 650.1
 
-sed s/free/f233/ name.txt
+sed 's/free/f233/' name.txt
 
 #### HINTS
 
@@ -687,7 +739,7 @@ sed s/free/f233/ name.txt
 
 ### 660.1
 
-sed s/freecodecamp/f233C0d3C@mp/ name.txt
+sed 's/freecodecamp/f233C0d3C@mp/' name.txt
 
 #### HINTS
 
@@ -697,17 +749,27 @@ sed s/freecodecamp/f233C0d3C@mp/ name.txt
 
 ### 670.1
 
-sed s/freecodecamp/f233C0d3C@mp/i name.txt
+sed 's/freecodecamp/f233C0d3C@mp/i' name.txt
 
 #### HINTS
 
 - Hint
 
-## 680. echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i
+## 675. sed s/freecodecamp/f233C0d3C@mp/i < name.txt
+
+### 675.1
+
+sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt
+
+#### HINTS
+
+- Hint
+
+## 680. cat name.txt | sed s/freecodecamp/f233C0d3C@mp/i
 
 ### 680.1
 
-echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i
+cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'
 
 #### HINTS
 
@@ -717,7 +779,7 @@ echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i
 
 ### 690.1
 
-grep -n meow[a-z] kitty_1
+grep -n 'meow[a-z]' kitty_1
 
 #### HINTS
 
@@ -727,7 +789,7 @@ grep -n meow[a-z] kitty_1
 
 ### 700.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'
+grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]/1/'
 
 #### HINTS
 
@@ -737,7 +799,7 @@ grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'
 
 ### 710.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/
+grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]+/1/'
 
 #### HINTS
 
@@ -753,31 +815,31 @@ man sed
 
 - Hint
 
-## 730. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/
+## 730. grep meow[a-z]* kitty_1 -n | sed -E s/[0-9]+/1/
 
 ### 730.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/
+grep 'meow[a-z]*' kitty_1 -n | sed -E 's/[0-9]+/1/'
 
 #### HINTS
 
 - Hint
 
-## 740. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\1/
+## 740. grep meow[a-z]* kitty_1 -n | sed -E s/([0-9]+)/\1/
 
 ### 740.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\1/
+grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+)/\1/'
 
 #### HINTS
 
 - Hint
 
-## 750. grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+## 750. grep meow[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
 
 ### 750.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+grep -n 'meow[a-z]*' kitty_1 | sed -E 's/([0-9]+).*/\1/'
 
 #### HINTS
 
@@ -787,7 +849,7 @@ grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
 
 ### 760.1
 
-grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/ 
+grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt
 previous with >> kitty_info
 
 #### HINTS
@@ -798,7 +860,7 @@ previous with >> kitty_info
 
 ### 770.1
 
-grep cat[a-z]* kitty_1 -—color
+grep 'cat[a-z]*' kitty_1 -—color
 
 #### HINTS
 
@@ -808,7 +870,7 @@ grep cat[a-z]* kitty_1 -—color
 
 ### 780.1
 
-Echo “\nNumber of times cat, cats, or catnip appears:” >> kitty_info
+Echo "\nNumber of times cat, cats, or catnip appears:" >> kitty_info
 
 #### HINTS
 
@@ -818,7 +880,7 @@ Echo “\nNumber of times cat, cats, or catnip appears:” >> kitty_info
 
 ### 790.1
 
-grep cat[a-z]* kitty_1 -o
+grep 'cat[a-z]*' kitty_1 -o
 
 #### HINTS
 
@@ -828,7 +890,7 @@ grep cat[a-z]* kitty_1 -o
 
 ### 800.1
 
-grep cat[a-z]* kitty_1 -o | wc -l
+grep 'cat[a-z]*' kitty_1 -o | wc -l
 
 #### HINTS
 
@@ -838,7 +900,7 @@ grep cat[a-z]* kitty_1 -o | wc -l
 
 ### 810.1
 
-grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
+grep 'cat[a-z]*' kitty_1 -o | wc -l >> kitty_info 
 
 #### HINTS
 
@@ -848,7 +910,7 @@ grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info
 
 ### 820.1
 
-echo -e \nLines that they appear on: >> kitty_info
+echo -e "\nLines that they appear on:" >> kitty_info
 
 #### HINTS
 
@@ -858,7 +920,7 @@ echo -e \nLines that they appear on: >> kitty_info
 
 ### 830.1
 
-grep cat[a-z]* kitty_1 -n
+grep 'cat[a-z]*' kitty_1 -n
 
 #### HINTS
 
@@ -868,7 +930,7 @@ grep cat[a-z]* kitty_1 -n
 
 ### 840.1
 
-grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\1/'
 
 #### HINTS
 
@@ -878,7 +940,7 @@ grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
 
 ### 850.1
 
-grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
+grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\1/'
 previous with >> kitty_info
 
 #### HINTS
@@ -889,7 +951,7 @@ previous with >> kitty_info
 
 ### 860.1
 
-echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
+echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" > kitty_info
 
 #### HINTS
 
@@ -899,7 +961,7 @@ echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
 
 ### 870.1
 
-echo \nNumber of lines: >> kitty_info
+echo "\nNumber of lines:" >> kitty_info
 
 #### HINTS
 
@@ -919,7 +981,7 @@ wc kitty_ipsum_2.txt -l >> kitty_info
 
 ### 890.1
 
-echo -e \nNumber of words: >> kitty_info
+echo -e "\nNumber of words:" >> kitty_info
 
 #### HINTS
 
@@ -939,7 +1001,7 @@ wc kitty_ipsum_2.txt -w >> kitty_info
 
 ### 910.1
 
-echo -e \nNumber of characters: >> kitty_info
+echo -e "\nNumber of characters:" >> kitty_info
 
 #### HINTS
 
@@ -959,7 +1021,7 @@ wc kitty_ipsum_2.txt -c >> kitty_info
 
 ### 930.1
 
-echo -e \nNumber of times meow or meowzer appears: >> kitty_info
+echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info
 
 #### HINTS
 
@@ -979,7 +1041,7 @@ do it
 
 ### 950.1
 
-Echo -e \nLines that they appear on: >> kitty_info
+Echo -e "\nLines that they appear on:" >> kitty_info
 
 #### HINTS
 
@@ -999,7 +1061,7 @@ do it
 
 ### 970.1
 
-echo -e \nNumber of times cat, cats, or catnip appears: >> kitty_info
+echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info
 
 #### HINTS
 

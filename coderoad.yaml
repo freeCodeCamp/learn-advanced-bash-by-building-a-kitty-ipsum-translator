@@ -86,6 +86,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '115'
+    steps:
+      - id: '115.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '120'
     steps:
       - id: '120.1'
@@ -131,6 +137,12 @@ levels:
   - id: '180'
     steps:
       - id: '180.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '185'
+    steps:
+      - id: '185.1'
         setup:
           watchers:
             - ../.bash_history
@@ -182,6 +194,18 @@ levels:
         setup:
           watchers:
             - ./script.sh
+  - id: '264'
+    steps:
+      - id: '264.1'
+        setup:
+          watchers:
+            - ./.freeCodeCamp/test/.next_command
+  - id: '266'
+    steps:
+      - id: '266.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '270'
     steps:
       - id: '270.1'
@@ -398,6 +422,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '635'
+    steps:
+      - id: '635.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '640'
     steps:
       - id: '640.1'
@@ -419,6 +449,12 @@ levels:
   - id: '670'
     steps:
       - id: '670.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '675'
+    steps:
+      - id: '675.1'
         setup:
           watchers:
             - ../.bash_history
