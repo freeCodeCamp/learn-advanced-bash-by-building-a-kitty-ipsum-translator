@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": {
     "title": "Learn Advanced Bash by Building",
     "description": "> Welcome to the Advanced Bash lessons!"
@@ -12,7 +12,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "707374fc9587662aecbe1bf5951b6ca30a59bd4e"
+        "a158a72355395c180947bff54a28bf2a3e96005c"
       ]
     },
     "testRunner": {
@@ -24,7 +24,7 @@
     },
     "repo": {
       "uri": "https://github.com/moT01/.learn-advanced-bash-by-building",
-      "branch": "v0.0.1"
+      "branch": "v0.0.2"
     },
     "reset": {
       "commands": [
@@ -52,7 +52,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "45fd20d89efc13ed63a16af514ae61e315b52b81"
+              "ad5d125b9061fcad8cf908ee509f58b0dc569794"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello bash` into the terminal and press enter.",
@@ -76,7 +76,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "673dfaba75a9cc99294397a28129d5d743a68db6"
+              "b11b1d1d701beea83c75784fb9ea1885902a7479"
             ]
           },
           "content": "The command you just entered printed to the terminal. You can `redirect` that output to a file using `>`. Here’s an example: `<command> > <filename>`. Enter the same command but redirect the output into `stdout.txt`.\n\necho hello bash > stdout.txt",
@@ -99,7 +99,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "90d323bedcf994ffe13d3f48812b4df01119f770"
+              "7a511a3466d111f7028b790176dd8b8ba1136a49"
             ]
           },
           "content": "That took the output of the command and put it into `stdout.txt`. You should take a look at the file. Nothing was printed to the terminal. It’s output was `redirected`. A single `>` will create or overwrite the file. Use the same command with `>>` to append to the file.\n\necho hello bash >> stdout.txt",
@@ -122,7 +122,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6e3ba934b8ea1db796e1979dcb0ac4538a350fb3"
+              "6690d59c9479393d5c4a133e78a8592fd8bd0be4"
             ]
           },
           "content": "Take a look at the file, now it has the same thing in it twice. Use the command with one `>` again to overwrite the file.\n\necho hello bash > stdout.txt",
@@ -145,7 +145,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "be78a0661706bb0c4f0b10e48ad4d912b0eef8e0"
+              "aec9520f807784f27f6198c709e6bc8a4d2e4afa"
             ]
           },
           "content": "Take a look at the file. As expected, it was overwritten. Enter `> stout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.\n\n`> stdout.txt`",
@@ -168,7 +168,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2a2ca89f327ade4b40954dcc404464bf7f51afd4"
+              "e64b267b311f1ce13ec594db99a49fcfdd394587"
             ]
           },
           "content": "Next, enter `bad_command` in the terminal. You will get an error.\n\nbad_command",
@@ -191,7 +191,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "21f834143e3b449bbf9de5042956f2c1873386b3"
+              "e945876a0e6253f2e4a60b0da80a2bc70331ece8"
             ]
           },
           "content": "Enter the same command, but try to redirect the output to `stderr.txt` using `>`.\n\nbad_command > stderr.txt",
@@ -214,7 +214,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f71389a1590eac353e6add28e03586550fbe8a0b"
+              "dcd25d5bf59eacebf013921c1b95a6f55fbd6206"
             ]
           },
           "content": "There’s two types of output, `stdout` (standard out) for when a command is successful, and `stderr` (standard error) for when it’s not. Both of these will print to the terminal by default. `bad_command` was not a valid command, so it printed to `stderr`. You can redirect `stderr` with `2>`. Enter the same command but redirect the error to `stderr.txt`\n\nbad_command 2> stderr.txt",
@@ -237,7 +237,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "01e02e79ae712e8836fb5b993d8418ad9382f1ad"
+              "a50ed32967a0e6b4d947853409b71ed6ff2fe2e0"
             ]
           },
           "content": "Now the error was redirected to the file and nothing printed in the terminal. You used `2>` to redirect `stderr`. Similarily, you can use `1>` to redirect `stdout`. Enter `echo hello bash` again and use it to redirect `stdout` to the `stdout.txt` file.\n\necho hello bash 1> stdout.txt",
@@ -260,7 +260,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "6d0037bd839abef2006fa90d14cb6222f96c09f9"
+              "b1e2d84a8f98492f256b9f79fa3dc1eb81efca84"
             ]
           },
           "content": "`stdout` and `stderr` are for output. `stdin` (standard in) is the third thing created when you run a command and is for input. The default is the keyboard. Enter `read NAME` in the terminal to see a command that uses `stdin`.\n\nread NAME",
@@ -283,7 +283,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fe57f01f0f56149aa917955998f28b6dd8d8a480"
+              "eecc069fc72a7f64b4c42dc565ee2059afe75870"
             ]
           },
           "content": "The `read` command is waiting for input from the keyboard. Type your name and press enter. \n\nEnter your name",
@@ -294,8 +294,31 @@
       ]
     },
     {
-      "id": "120",
+      "id": "115",
       "title": "echo $NAME",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "115.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "f1007be37bcb6bbbdbb7275f51f5596f07d088c7"
+            ]
+          },
+          "content": "echo $NAME",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "120",
+      "title": "echo $NAME > stdout.txt",
       "summary": "",
       "content": "",
       "steps": [
@@ -306,10 +329,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f475f61eec5c6a8afb90ffaef2fca275239aea5b"
+              "6370a0351e4735feb2056b1753b33467a722bbde"
             ]
           },
-          "content": "Use echo to print the `NAME` variable you just created and redirect the `stdout` to `stdout.txt`.\n\necho $NAME",
+          "content": "Use echo to print the `NAME` variable you just created and redirect the `stdout` to `stdout.txt`.\n\necho $NAME > stdout.txt",
           "hints": [
             "Hint"
           ]
@@ -329,7 +352,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "abd21c63935cb0d9f9e9a358c430431dac311829"
+              "eb5ae11809fc57e4f22af3e65fe10b6b03f01213"
             ]
           },
           "content": "add `freecodecamp` and an empty line to the file\n\necho freecodecamp > name.txt || maybe just change the file manually",
@@ -352,7 +375,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bf4586dacbd10d6038e3d82418bb6509797befae"
+              "10f606b32f82c568837909f9625875a6e1146a1d"
             ]
           },
           "content": "read NAME < name.txt",
@@ -375,7 +398,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "70bbcad61fbd3780223e4e2dc2c721610ff72d2d"
+              "0c8c7f9be1b28c39345501d1da85d6cf3be4f789"
             ]
           },
           "content": "echo $NAME",
@@ -398,7 +421,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1c355a6799f4548ab12f5af69c0dfe8e0253d550"
+              "111fd8a40f4f1d3fb159202558703ba34964456d"
             ]
           },
           "content": "echo <your_name> | read NAME",
@@ -421,7 +444,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "836dc5e73ff1d8327fe7566a59ca693f513fdc89"
+              "56466a826bac4ca65521a4833c2daaac5fdc22d8"
             ]
           },
           "content": "echo $NAME",
@@ -444,7 +467,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "eeaa32df3a61c4c4c9ae10dfc37aec5b0beb8a36"
+              "1e0d08f89196bab53cbce4262cb6edb3f6987b8e"
             ]
           },
           "content": "cat",
@@ -456,7 +479,7 @@
     },
     {
       "id": "180",
-      "title": "cat",
+      "title": "end cat",
       "summary": "",
       "content": "",
       "steps": [
@@ -467,10 +490,33 @@
               "../.bash_history"
             ],
             "commits": [
-              "3b543095f236f86b7d54156d0da1843c06438936"
+              "4a1b8769dfc5feae636794152f7bdee9f83034f3"
             ]
           },
           "content": "end cat",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "185",
+      "title": "cat name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "185.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "004033d85dc960680ff8872d748c117d8657dc02"
+            ]
+          },
+          "content": "cat name.txt",
           "hints": [
             "Hint"
           ]
@@ -490,7 +536,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "912e39ce02e569b52628da3340b24bf38904304b"
+              "af8fafd4fcd0218172cc60e9f7ac7916be904cba"
             ]
           },
           "content": "cat < name.txt",
@@ -513,7 +559,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e39cd6ca20e41c12522b53fbea3a51750dba719"
+              "7194812a418c95c1bc811670cc79220d770a4575"
             ]
           },
           "content": "echo <your_name> | cat",
@@ -536,7 +582,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8135f5886a9892ff6fb6cee4c96f41944ed02356"
+              "9b6ff889b6dd6b0d0ddb7db7f652d4fbb8b6eec9"
             ]
           },
           "content": "touch script.sh",
@@ -559,7 +605,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "04b29716e6e98e91fdff5f8834f0df91afe8ae1e"
+              "8e9ab130908fdb785c1df73c5d75b1d0b3ab7440"
             ]
           },
           "content": "chmod +x script.sh",
@@ -582,7 +628,7 @@
               "./script.sh"
             ],
             "commits": [
-              "d3a5925c5887a866471c0c2d6d8b24d910bbbbde"
+              "f98ad39f33bb8c66eafc16d3d34ce2c8da8e3014"
             ]
           },
           "content": "Add shebang",
@@ -605,7 +651,7 @@
               "./script.sh"
             ],
             "commits": [
-              "cd9610983de5b95727fd8b5bf4a2c8e25d8dcd08"
+              "aa700b956d7b384b3ede8a34b51859c335bcbd4f"
             ]
           },
           "content": "Add read NAME",
@@ -628,7 +674,7 @@
               "./script.sh"
             ],
             "commits": [
-              "c2af8a8015b32ab3658442d6810e2bf86f9ea9b9"
+              "50313cc0a84c046208fb61f4909790c3c5b3f28e"
             ]
           },
           "content": "Add echo Hello $NAME",
@@ -651,10 +697,56 @@
               "./script.sh"
             ],
             "commits": [
-              "06e0f410f4d74d65f20ac53b9099ef99cb6748dd"
+              "471832d10b8f0e1b3f917e9d360f08d49893b720"
             ]
           },
           "content": "Add bad_command",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "264",
+      "title": "./script.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "264.1",
+          "setup": {
+            "watchers": [
+              "./.freeCodeCamp/test/.next_command"
+            ],
+            "commits": [
+              "13709518eec65e94f97486855a28cddf6f9345f0"
+            ]
+          },
+          "content": "./script.sh",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "266",
+      "title": "end ./script.sh",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "266.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "328c378a68d6569952e5e683d81924584bb42942"
+            ]
+          },
+          "content": "it's waiting for input\n\nenter your name to finish the script.",
           "hints": [
             "Hint"
           ]
@@ -674,7 +766,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "50ea159fdabecb02d76d37793f465f1b652b1e54"
+              "14e6612bf313f1f0555128dac9d2297814afb8df"
             ]
           },
           "content": "echo <your_name> | ./script",
@@ -697,7 +789,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6b28af8e75942be434eda7c62cd22cdb8da6bb62"
+              "77210716da9f7ae57ba6dff033353fba3f64ad67"
             ]
           },
           "content": "echo your_name | ./script 2> stderr",
@@ -720,7 +812,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e1067dd839cf40954f80978b86fe6a2a66487365"
+              "c9b695b325128d7a5c5fa9945e68211a86108f5f"
             ]
           },
           "content": "echo your_name | ./script 2> stderr 1> stdout",
@@ -743,7 +835,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9a6333bfdd1f434698a0c3fbc54d832d18db859d"
+              "9842f1d42df6a1821935b27804a7665c00a4b581"
             ]
           },
           "content": "./script < name",
@@ -766,7 +858,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "707cef83a0e6c178d3c58239a3a3872716a14f61"
+              "ec06570656b42e9efaf918e7becc303a65aaf380"
             ]
           },
           "content": "./script < name 2> stderr",
@@ -789,7 +881,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f6d0a6c99c5302b022028a7af96a88e3318b7911"
+              "94a3b825cff9b92f3e4dd4ba393125e34c45943f"
             ]
           },
           "content": "./script < name 2> stderr 1> stdout",
@@ -812,7 +904,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "96adf84c0a3cf2d82ec6aa860f20d6613ebec9a7"
+              "e9abf03dac9ed345ed4dda0eca5f9f094bbc7ccc"
             ]
           },
           "content": "wc kitty_ipsum_1",
@@ -835,7 +927,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e75a24d62881fee5e065033869a9646a1f657c34"
+              "fdd3b7ff8c4cb80428b0776f75331158098c9a34"
             ]
           },
           "content": "man wc",
@@ -858,7 +950,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c27efece21b18394e2b2427ea8527df704c38314"
+              "98d1782bbe7821627d80d3b31ed8da0e60390d29"
             ]
           },
           "content": "wc -l kitt_ipsum_1",
@@ -881,7 +973,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5497a57d88db6ed84592368ee5058d5d40114912"
+              "b5dc5ce5b99e3865c763f48c86d231c19bdfb521"
             ]
           },
           "content": "wc -w kitty_ipsum_1",
@@ -904,7 +996,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9922d1bf42072893851ca3b0142729b5c240f58a"
+              "2b2fe593e972e0e1179c76f3a7d82175f241fa7d"
             ]
           },
           "content": "wc -m kitty_ipsum_1",
@@ -927,7 +1019,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "14a187567fb5276c7d599f31c2403631d2936518"
+              "0ca3dbd957c4f741941fe004fe0e579135725d2e"
             ]
           },
           "content": "wc kitty_ipsum_1",
@@ -950,7 +1042,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a00caea99a5e48f0b1b6a621d8dc0f8712820d26"
+              "edb79a089fd65e9d47ce4bac47febe5c43d29652"
             ]
           },
           "content": "cat kitty_ipsum_1 | wc",
@@ -973,7 +1065,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3d0ddfc5ee19285622908b5cb05b84517163a064"
+              "34bd6251a7076e9a63a87caab0be662d02661505"
             ]
           },
           "content": "wc < kitty_ipsum_1",
@@ -996,7 +1088,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1fe2034c28a93958528fe45acc0df9f2e92a55d0"
+              "8657b7ea1cb295bca06f6d2408bc2ea987c73e07"
             ]
           },
           "content": "echo \"~~ kitty_ispsum_1.txt info ~~\" > kitty_info.txt",
@@ -1019,7 +1111,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "52aa574649254eeb30fa4ee7544fb641551c7444"
+              "4e42317eec62f346b3ee928d76e43cd851deecf0"
             ]
           },
           "content": "echo -e \"\\nNumber of lines:\" >> kitty_info.txt",
@@ -1031,7 +1123,7 @@
     },
     {
       "id": "440",
-      "title": "wc kitty_ipsum_1 -l >> kitty_info",
+      "title": "cat kitty_ipsum_1 | wc -l >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -1042,10 +1134,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "47359219caf0c17582e7ae545712ec683ab1a0c0"
+              "8490cb51da0cefec474a48b2b370a614093f7a2c"
             ]
           },
-          "content": "wc kitty_ipsum_1.txt -l >> kitty_info",
+          "content": "cat kitty_ipsum_1.txt | wc -l >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1065,7 +1157,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "34dce6bd1eb60e24fa577fd220ff6703e26abf28"
+              "56c7c15d5db5ce058e8b4d7c91514a3fe116e4d0"
             ]
           },
           "content": "echo -e \"\\nNumber of words:\" >> kitty_info.txt",
@@ -1088,7 +1180,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f0a336f30691d81d958264af9f33779e6ed14291"
+              "83ee0f68f8455d038a7aa48c25f02f413914a28d"
             ]
           },
           "content": "cat kitty_ipsum_1.txt | wc -w >> kitty_info",
@@ -1111,10 +1203,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "0c55495e2219a8793e891cc37d2955a4d47075ab"
+              "2575bc7c515dbc3109abc7941567d432f8155902"
             ]
           },
-          "content": "echo -e Number of characters: >> kitty_info",
+          "content": "echo -e \"\\nNumber of characters:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1134,7 +1226,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e855e95f7d3496f204a7f16fd5d96c0834330b84"
+              "29e1f7f3ceaf144e5c28c9120538fe95035d3228"
             ]
           },
           "content": "wc -m < kitty_ipsum_1 >> kitty_info",
@@ -1157,10 +1249,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "54025fd63adba57069d9914070e87c2ff4bae261"
+              "e1b4a0823a7c3c8eaea081607789d1a60780cec9"
             ]
           },
-          "content": "grep meow kitty_ipsum_1.txt",
+          "content": "grep 'meow' kitty_ipsum_1.txt",
           "hints": [
             "Hint"
           ]
@@ -1180,7 +1272,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b2ec07e3bd2ca50d7671dee831fac2f8b039abc1"
+              "ebaf72fbffd753575514f3cd28a6b43abd45c16f"
             ]
           },
           "content": "It showed you all the lines that contain `meow` somewhere in them - but it’s a little messy. View the manual of `grep`\n\nman grep",
@@ -1203,10 +1295,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "5b29e99cb23fecbb55a978712ac763e2b65710e8"
+              "d3fb8407058d886dcdcfea2bbc62b589b8c4a877"
             ]
           },
-          "content": "grep --color meow kitty_ipsum_1.txt",
+          "content": "grep --color 'meow' kitty_ipsum_1.txt",
           "hints": [
             "Hint"
           ]
@@ -1226,10 +1318,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "e1c2755fc5ce7687d4db1ff4e5682396d87a52f9"
+              "230cb2c52ecc8e7eecbd0e567a3e5ce2918d6c3b"
             ]
           },
-          "content": "That’s better. Add the flag to show all the line numbers with the command.\n\ngrep --color -n meow kitty_ipsum_1.txt",
+          "content": "That’s better. Add the flag to show all the line numbers with the command.\n\ngrep --color -n 'meow' kitty_ipsum_1.txt",
           "hints": [
             "Hint"
           ]
@@ -1238,7 +1330,7 @@
     },
     {
       "id": "530",
-      "title": "grep --color -n meow[a-zA-Z] kitty_ipsum_1",
+      "title": "grep --color -n meow[a-z] kitty_ipsum_1",
       "summary": "",
       "content": "",
       "steps": [
@@ -1249,10 +1341,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "a016a3c3d99547f72810198404a1c55cff89bb56"
+              "5478f15276ad3b56f90871f26b88ea499ab4d2ee"
             ]
           },
-          "content": "grep can use regular expressions, too.\n\ngrep --color -n meow[a-zA-Z]* kitty_ipsum_1.txt",
+          "content": "grep can use regular expressions, too.\n\ngrep --color -n 'meow[a-z]*' kitty_ipsum_1.txt",
           "hints": [
             "Hint"
           ]
@@ -1272,10 +1364,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "bf4bc2a27ab0b0e23c0abf33b658b7f2d425336a"
+              "3ad7fbad3177575a802af0abc4012ff5162e4559"
             ]
           },
-          "content": "echo -e \\nNumber of times meow or meowzer appears: >> kitty_info",
+          "content": "echo -e \"\\nNumber of times meow or meowzer appears:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1295,10 +1387,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "3bf800e66f8152693723dbfd09b1ab2e455a5004"
+              "1f077e15c9b8d60e076724fd80710176fde24cf5"
             ]
           },
-          "content": "grep --color meow[a-z] kitty_ipsum_1",
+          "content": "grep --color 'meow[a-z]*' kitty_ipsum_1",
           "hints": [
             "Hint"
           ]
@@ -1318,10 +1410,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "43802146b92e362572f79bf9fb94b3c7e4bba568"
+              "2e8bf550e0a8405361bfb167b99af4b387a36a86"
             ]
           },
-          "content": "grep -c meow[a-z] kittpy_ipsum_1",
+          "content": "grep -c 'meow[a-z]*' kittpy_ipsum_1",
           "hints": [
             "Hint"
           ]
@@ -1341,7 +1433,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7e88b21c1fff824a7791baecb70c9b78351445df"
+              "68adf804945465b4147818f39bfb4aeeed1ffe13"
             ]
           },
           "content": "man grep",
@@ -1364,10 +1456,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "e43285013bab70f965de3a6ef33db7c65fcf7670"
+              "54798c6b53daaff05dad05dfd2f0059ecbad05e7"
             ]
           },
-          "content": "grep -o meow[a-z] kitty_1",
+          "content": "grep -o 'meow[a-z]*' kitty_1",
           "hints": [
             "Hint"
           ]
@@ -1387,10 +1479,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "9d9239fbcee6636d1f6d05e5e60198aab4ac2bf8"
+              "3e4c821515229cc76dcb3971ad9c7bd8e031da46"
             ]
           },
-          "content": "grep -o meow[a-z] kitty_1 | wc -l",
+          "content": "grep -o 'meow[a-z]*' kitty_1 | wc -l",
           "hints": [
             "Hint"
           ]
@@ -1410,10 +1502,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "40cf851c219523ca2f3b2a794db256c1557ed731"
+              "bbb6de5cf684622bcbeefd7d4080a3bf8691ef73"
             ]
           },
-          "content": "grep -o meow[a-z] kitty_1 | wc -l >> kitty_info",
+          "content": "grep -o 'meow[a-z]* kitty_1' | wc -l >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1433,7 +1525,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fb6b6ac341fc7e0ed3a74355fc0d48e8b9ea3cb4"
+              "a91d7c71b958730c6f118c078879cf1b2afa6d95"
             ]
           },
           "content": "echo \\nLines that they appear on: >> kitty_info",
@@ -1456,10 +1548,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f01e4c5056c3416345b6a2f643fb03f3904a6498"
+              "5338817300f42e6ac7a4e1b482cb9df0aa492d13"
             ]
           },
-          "content": "grep -n meow[a-z] kitty_ipsum_1",
+          "content": "grep -n 'meow[a-z]*' kitty_ipsum_1",
           "hints": [
             "Hint"
           ]
@@ -1479,10 +1571,33 @@
               "../.bash_history"
             ],
             "commits": [
-              "4a0be0aaf95b9d661d65a24613d98d80b8f3585f"
+              "e55f1cb3168dcd9064366c06a452ef08508d8f05"
             ]
           },
           "content": "man grep",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "635",
+      "title": "cat name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "635.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "d98ebad5e9b3624bae7d32b2bd0409d796f5614d"
+            ]
+          },
+          "content": "cat name.txt",
           "hints": [
             "Hint"
           ]
@@ -1502,10 +1617,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "bc2406c7eff6c4790aecd2aca7249bf99bf70fbb"
+              "d6a1469ef2f5a86404ebf977886c2557f6a1df45"
             ]
           },
-          "content": "sed s/r/2/ name.txt",
+          "content": "sed 's/r/2/' name.txt",
           "hints": [
             "Hint"
           ]
@@ -1525,10 +1640,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "42ff8535b354c75f63988368e35c7cd23b912b5e"
+              "fcd6320c0e77afb0020496f6a38b586c042e84e4"
             ]
           },
-          "content": "sed s/free/f233/ name.txt",
+          "content": "sed 's/free/f233/' name.txt",
           "hints": [
             "Hint"
           ]
@@ -1548,10 +1663,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "d6e4ae5c99d07a5f199d90d6cfb3c9defc01e934"
+              "2c4c88eee987609ab3d17952f43d803a84a22f23"
             ]
           },
-          "content": "sed s/freecodecamp/f233C0d3C@mp/ name.txt",
+          "content": "sed 's/freecodecamp/f233C0d3C@mp/' name.txt",
           "hints": [
             "Hint"
           ]
@@ -1571,10 +1686,33 @@
               "../.bash_history"
             ],
             "commits": [
-              "ff0be18b65bde38635f3110b6502fd949c8e5346"
+              "4a8e985c84f802b54087e5ced14e008e50c2284e"
             ]
           },
-          "content": "sed s/freecodecamp/f233C0d3C@mp/i name.txt",
+          "content": "sed 's/freecodecamp/f233C0d3C@mp/i' name.txt",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "675",
+      "title": "sed s/freecodecamp/f233C0d3C@mp/i < name.txt",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "675.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "cb8877a902366091cce0d07ea9e10454c6232d61"
+            ]
+          },
+          "content": "sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt",
           "hints": [
             "Hint"
           ]
@@ -1583,7 +1721,7 @@
     },
     {
       "id": "680",
-      "title": "echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i",
+      "title": "cat name.txt | sed s/freecodecamp/f233C0d3C@mp/i",
       "summary": "",
       "content": "",
       "steps": [
@@ -1594,10 +1732,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "c196804ec930b7458697d6dc1c25806a67edeb30"
+              "8abd96eb3d59e59491fdfdc87b655019663a6a18"
             ]
           },
-          "content": "echo freeCodeCamp | sed s/freecodecamp/f233C0d3C@mp/i",
+          "content": "cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'",
           "hints": [
             "Hint"
           ]
@@ -1617,10 +1755,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "ac6f8b1452547d5ab790b8fb99bf4b4f3b232c72"
+              "1d1488fa9490d56a33cd78837f09bcd824a76863"
             ]
           },
-          "content": "grep -n meow[a-z] kitty_1",
+          "content": "grep -n 'meow[a-z]' kitty_1",
           "hints": [
             "Hint"
           ]
@@ -1640,10 +1778,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f00d8f9c3d5dbf9771279010391458afe2ecd5f6"
+              "f30ea161d3c47275dc342800794e6d9615e81c2e"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed 's/[0-9]/1/'",
+          "content": "grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]/1/'",
           "hints": [
             "Hint"
           ]
@@ -1663,10 +1801,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "54273027c363eda815630766297867b9ec926b1b"
+              "1dde7bd20ac897ee62eb0be406d1e77308d5be7d"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/",
+          "content": "grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]+/1/'",
           "hints": [
             "Hint"
           ]
@@ -1686,7 +1824,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5651d43175002e011c529919c070322186a026c9"
+              "824075f17e46ab285781fbe3056b22bb5bb8d9aa"
             ]
           },
           "content": "man sed",
@@ -1698,7 +1836,7 @@
     },
     {
       "id": "730",
-      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/",
+      "title": "grep meow[a-z]* kitty_1 -n | sed -E s/[0-9]+/1/",
       "summary": "",
       "content": "",
       "steps": [
@@ -1709,10 +1847,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "9da5a4cb9e8be9d23e6e5f4fe0b8804f96097084"
+              "33573fb61351075c4a457a6ab6a497f37e391c18"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/[0-9]+/1/",
+          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/[0-9]+/1/'",
           "hints": [
             "Hint"
           ]
@@ -1721,7 +1859,7 @@
     },
     {
       "id": "740",
-      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\\1/",
+      "title": "grep meow[a-z]* kitty_1 -n | sed -E s/([0-9]+)/\\1/",
       "summary": "",
       "content": "",
       "steps": [
@@ -1732,10 +1870,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "15cad6fb96ec94aed59c54915704206e59dbd76d"
+              "350f4116d5d743aa825ebc926917b5deedb04af1"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+)/\\1/",
+          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+)/\\1/'",
           "hints": [
             "Hint"
           ]
@@ -1744,7 +1882,7 @@
     },
     {
       "id": "750",
-      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
+      "title": "grep meow[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
       "summary": "",
       "content": "",
       "steps": [
@@ -1755,10 +1893,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f02769f7573ba497fb8e0d9d6e10d7bf919b0eee"
+              "65c81cf25055719135648e2ea370b311224520ea"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
+          "content": "grep -n 'meow[a-z]*' kitty_1 | sed -E 's/([0-9]+).*/\\1/'",
           "hints": [
             "Hint"
           ]
@@ -1778,10 +1916,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "c40edfbde47c2dd8496af603a722c194066a193c"
+              "c585387110f3f6b25611dcac7f5135cf29700cbd"
             ]
           },
-          "content": "grep meow[a-zA-Z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/ \nprevious with >> kitty_info",
+          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\\1/' >> kitty_info.txt\nprevious with >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1801,10 +1939,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "802108eea89465ed48daf1b25f8c15c7730168ee"
+              "2380e1655045d4928f0fa8afdcde4dce11a3f2ba"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -—color",
+          "content": "grep 'cat[a-z]*' kitty_1 -—color",
           "hints": [
             "Hint"
           ]
@@ -1824,10 +1962,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "daf42092bf00a5528c75962435707d329f88f805"
+              "13e2b8cc51af658e5340e1c8839497c0d508eaaa"
             ]
           },
-          "content": "Echo “\\nNumber of times cat, cats, or catnip appears:” >> kitty_info",
+          "content": "Echo \"\\nNumber of times cat, cats, or catnip appears:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1847,10 +1985,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "c2aa702761cc01f1c125bf4084e395985fdbcfb6"
+              "db7dc7f52073799a07470153161ba9870ff103d5"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -o",
+          "content": "grep 'cat[a-z]*' kitty_1 -o",
           "hints": [
             "Hint"
           ]
@@ -1870,10 +2008,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "a279aa7f45be790deea89760f77d6b6756f1c1a9"
+              "348e7cf69a5b6ac5c4cf8b62b5723b3b83dead6a"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -o | wc -l",
+          "content": "grep 'cat[a-z]*' kitty_1 -o | wc -l",
           "hints": [
             "Hint"
           ]
@@ -1893,10 +2031,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "757e3e16da526516bd824f5c51d4790777b996f7"
+              "ea0f34b03728bab86005be4862bccb5301ec784a"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info",
+          "content": "grep 'cat[a-z]*' kitty_1 -o | wc -l >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1916,10 +2054,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "65e8a4c6231e9d00318881864b22eebceb4db979"
+              "a6010fa60936ff30fc2d842c53d2795ee692ab39"
             ]
           },
-          "content": "echo -e \\nLines that they appear on: >> kitty_info",
+          "content": "echo -e \"\\nLines that they appear on:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -1939,10 +2077,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "c5a4dedf9be64fcab61949679b128334e7acfce4"
+              "7a532409401adac28b21c4a97131d4e666540aac"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -n",
+          "content": "grep 'cat[a-z]*' kitty_1 -n",
           "hints": [
             "Hint"
           ]
@@ -1962,10 +2100,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "9f0caba1e428fe10ebbbf8caae1c4e671a2bb1c5"
+              "9f159708fb17c1ea1d483543bedf490507c7ca8e"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/",
+          "content": "grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\\1/'",
           "hints": [
             "Hint"
           ]
@@ -1985,10 +2123,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f59d0ce5a23a8fbd298a86dbe6d15ca2676de49a"
+              "565aba55c5eb753aac2fee6e96aa9445efb6cff1"
             ]
           },
-          "content": "grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\\1/\nprevious with >> kitty_info",
+          "content": "grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\\1/'\nprevious with >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2008,10 +2146,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "9ede564513f7f37844ecf2ee5199e5f173be143a"
+              "de867886ce563d8700582f6e7734b5d1ecfae8a0"
             ]
           },
-          "content": "echo -e \\n\\n~~ kitty_ispsum_2.txt info ~~ > kitty_info",
+          "content": "echo -e \"\\n\\n~~ kitty_ispsum_2.txt info ~~\" > kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2031,10 +2169,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "3d78a3b5d9341f7874ad97f664c4dd946c8df512"
+              "33f9e8d03fd8e2d602e0b9ad46db241b4440262e"
             ]
           },
-          "content": "echo \\nNumber of lines: >> kitty_info",
+          "content": "echo \"\\nNumber of lines:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2043,7 +2181,7 @@
     },
     {
       "id": "880",
-      "title": "wc kitty_2 -l >> kitty_info",
+      "title": "cat kitty_2 | wc -l >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -2054,10 +2192,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "511b61161d2cc7d161751aae3f8ca6eb90a05322"
+              "b3d3da5ba5ecbe15ac62bc031705989d22fd376b"
             ]
           },
-          "content": "wc kitty_ipsum_2.txt -l >> kitty_info",
+          "content": "cat kitty_ipsum_2.txt | wc -l >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2077,10 +2215,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "13a4db8888b807d0a5f3876057194caa8c87dc7c"
+              "e6f6c4428b9216b9f9a0884026f8456002880d0b"
             ]
           },
-          "content": "echo -e \\nNumber of words: >> kitty_info",
+          "content": "echo -e \"\\nNumber of words:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2089,7 +2227,7 @@
     },
     {
       "id": "900",
-      "title": "wc kitty_ipsum_2.txt -w >> kitty_info",
+      "title": "cat kitty_ipsum_2.txt | wc -w >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -2100,10 +2238,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "c04119a23bf4e0c3a6c03f048fd1848eec54dcd1"
+              "1a21e24de0f9dfc306b23deaa63f6f3dfab60c85"
             ]
           },
-          "content": "wc kitty_ipsum_2.txt -w >> kitty_info",
+          "content": "cat kitty_ipsum_2.txt | wc -w >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2123,10 +2261,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "da8581fe0d725d6491f7654f1c1f3f3fa648f5da"
+              "1855b94205c3de08cd4261185f1f5e38a382eaf8"
             ]
           },
-          "content": "echo -e \\nNumber of characters: >> kitty_info",
+          "content": "echo -e \"\\nNumber of characters:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2135,7 +2273,7 @@
     },
     {
       "id": "920",
-      "title": "wc kitty_ipsum_2.txt -c >> kitty_info",
+      "title": "wc -m < kitty_ipsum_2.txt >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -2146,10 +2284,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "80ece661a8cefa169bacc77b0b1f7f9cf7721215"
+              "2e82a9f9aae2a835c5b24a8651d622ec3a4df431"
             ]
           },
-          "content": "wc kitty_ipsum_2.txt -c >> kitty_info",
+          "content": "wc -m < kitty_ipsum_2.txt >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2169,10 +2307,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "f095b6a2f44e55d357562a54b1a697ffa56b4042"
+              "3676cea81408c3a806a441c16a5ac8293a8c051d"
             ]
           },
-          "content": "echo -e \\nNumber of times meow or meowzer appears: >> kitty_info",
+          "content": "echo -e \"\\nNumber of times meow or meowzer appears:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2192,7 +2330,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "63e1ac07f65c3a64d96243c462b615e7ad479e69"
+              "2672d73d5d3286b341b4af52f473b054cee005d2"
             ]
           },
           "content": "do it",
@@ -2215,10 +2353,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "34d74d9649c58812f981be3d7c952b19e87d50dc"
+              "1867d8207109172ad61248f7146ba785227d21ec"
             ]
           },
-          "content": "Echo -e \\nLines that they appear on: >> kitty_info",
+          "content": "Echo -e \"\\nLines that they appear on:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2238,7 +2376,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "80bfb8b3a36987d0ac9260495a58b2b6faa6a879"
+              "9ff8233a611d8401fa3c4c193ae4b44746e209d4"
             ]
           },
           "content": "do it",
@@ -2261,10 +2399,10 @@
               "../.bash_history"
             ],
             "commits": [
-              "61e28f1142c42e413229a0311c25b9b58a901f9f"
+              "caf546335b64b65b82dfdb8eb9467847d9243920"
             ]
           },
-          "content": "echo -e \\nNumber of times cat, cats, or catnip appears: >> kitty_info",
+          "content": "echo -e \"\\nNumber of times cat, cats, or catnip appears:\" >> kitty_info",
           "hints": [
             "Hint"
           ]
@@ -2284,7 +2422,53 @@
               "../.bash_history"
             ],
             "commits": [
-              "02a0e420c840084806349933cd238aa2875df87b"
+              "2f6bc53762777cf4a3d6f331bf409536897e46c7"
+            ]
+          },
+          "content": "do it",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "990",
+      "title": "echo -e \\nLines that they appear on: >> kitty_info",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "990.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "aaaeee7527c602187be1c2cfbbd741bc7e35b021"
+            ]
+          },
+          "content": "Echo -e \"\\nLines that they appear on:\" >> kitty_info",
+          "hints": [
+            "Hint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1000",
+      "title": "do it",
+      "summary": "",
+      "content": "",
+      "steps": [
+        {
+          "id": "1000.1",
+          "setup": {
+            "watchers": [
+              "../.bash_history"
+            ],
+            "commits": [
+              "3af789fa36145cbcb1afada93ba64d6827029607"
             ]
           },
           "content": "do it",
