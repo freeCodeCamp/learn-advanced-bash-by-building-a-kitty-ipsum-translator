@@ -1024,9 +1024,10 @@
               "98d1782bbe7821627d80d3b31ed8da0e60390d29"
             ]
           },
-          "content": "wc -l kitt_ipsum_1",
+          "content": "`wc` stands for `word count`. It showed you how many lines were in the file, how many words, and how many bytes. Use the `-l` flag to only output how many lines are in the file. Don't do any redirecting of input or output.",
           "hints": [
-            "Hint"
+            "Here's an example `<command> <flag> <filename>`",
+            "Enter `wc -l kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1047,9 +1048,12 @@
               "b5dc5ce5b99e3865c763f48c86d231c19bdfb521"
             ]
           },
-          "content": "wc -w kitty_ipsum_1",
+          "content": "Check how many words are in the file.",
           "hints": [
-            "Hint"
+            "Don't use any redirection",
+            "Check the manual with `man wc` to find the flag you need",
+            "It's the `-w` flag",
+            "Enter `wc -w kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1070,9 +1074,12 @@
               "2b2fe593e972e0e1179c76f3a7d82175f241fa7d"
             ]
           },
-          "content": "wc -m kitty_ipsum_1",
+          "content": "Lastly, check how many characters are in the file.",
           "hints": [
-            "Hint"
+            "Don't use any redirection",
+            "Check the manual with `man wc` to find the flag you need",
+            "It's the `-m` flag",
+            "Enter `wc -w kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1093,9 +1100,10 @@
               "0ca3dbd957c4f741941fe004fe0e579135725d2e"
             ]
           },
-          "content": "wc kitty_ipsum_1",
+          "content": "Use the command without any flags.",
           "hints": [
-            "Hint"
+            "Don't use any redirection",
+            "Enter `wc kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1116,9 +1124,12 @@
               "edb79a089fd65e9d47ce4bac47febe5c43d29652"
             ]
           },
-          "content": "cat kitty_ipsum_1 | wc",
+          "content": "That outputs the all the info. Although, it's showing the byte count and not the character count. Some characters must be more than one byte. Use `cat` to pipe the content of the file as the input of the `wc` command.\nTry using `cat` the print the file and pipe the output into the `wc` command.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command_1> | <command_2>`",
+            "The first command should be `cat kitty_ipsum_1.txt`",
+            "The second is `wc`",
+            "Enter `cat kitty_ipsum_1.txt | wc` in the terminal"
           ]
         }
       ]
@@ -1139,9 +1150,11 @@
               "34bd6251a7076e9a63a87caab0be662d02661505"
             ]
           },
-          "content": "wc < kitty_ipsum_1",
+          "content": "It looks like the way you give input to a command may affect the output. It only printed the numbers that time and not the filename. Try using redirection to see what the same file outputs with that command.",
           "hints": [
-            "Hint"
+            "You can redirect input with `<`",
+            "Here's an example: `<command> < <filename>`",
+            "Enter `wc < kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1162,9 +1175,13 @@
               "8657b7ea1cb295bca06f6d2408bc2ea987c73e07"
             ]
           },
-          "content": "echo \"~~ kitty_ispsum_1.txt info ~~\" > kitty_info.txt",
+          "content": "You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.",
           "hints": [
-            "Hint"
+            "Remember that redirecting output will create the file if it doesn't exist",
+            "You can redirect output with `>`",
+            "Here's an example: `<command> > <filename>`",
+            "Enter `echo \"~~ kitty_ipsum_1.txt info ~~\" > kitty_info.txt` in the terminal",
+            "Make sure to use quotes around the text"
           ]
         }
       ]
@@ -1185,9 +1202,11 @@
               "4e42317eec62f346b3ee928d76e43cd851deecf0"
             ]
           },
-          "content": "echo -e \"\\nNumber of lines:\" >> kitty_info.txt",
+          "content": "Use `echo` and the `-e` flag with the new line character (`\\n`) to **append** `Number of lines:` to the `kitty_info.txt` file. Add the new line character at the beginning of the text so there's an empty line. Remember that you can append output to a file with `>>`.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command> >> <filename>`",
+            "The command you want is `echo -e \"\\nNumber of lines:\"`",
+            "Enter `echo -e \"\\nNumber of lines:\" >> kitty_info.txt`"
           ]
         }
       ]
@@ -1208,9 +1227,12 @@
               "8490cb51da0cefec474a48b2b370a614093f7a2c"
             ]
           },
-          "content": "cat kitty_ipsum_1.txt | wc -l >> kitty_info",
+          "content": "You should be able to find out how many lines are in the `kitty_ipsum_1.txt` file and add that number to the `kitty_info.txt` file. Use the `cat` command to pipe the content of `kitty_ipsum_1.txt` as input for the `wc` command. Use the flag for getting the number of lines from that input and **append** the number to the `kitty_info.txt` file.",
           "hints": [
-            "Hint"
+            "Here's an example: `cat <filename> | wc <flag> >> <filename>`",
+            "The flag you want is `-l`",
+            "You previously used `cat kitty_ipsum_1.txt | wc`",
+            "Enter `cat kitty_ipsum_1.txt | wc -l >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1231,9 +1253,12 @@
               "56c7c15d5db5ce058e8b4d7c91514a3fe116e4d0"
             ]
           },
-          "content": "echo -e \"\\nNumber of words:\" >> kitty_info.txt",
+          "content": "Next, you want to put a word count of the file in the info. Use `echo` again to append `Number of words:` to `kitty_info.txt`. Put a new line in front of the text like you did for the first one.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command> >> <filename>`",
+            "You want the `echo` command with the `-e` flag and the new line character (`\\n`)",
+            "You previously entered `echo -e \"\\nNumber of lines:\" >> kitty_info.txt`",
+            "Enter `echo -e \"\\nNumber of words:\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1254,9 +1279,12 @@
               "83ee0f68f8455d038a7aa48c25f02f413914a28d"
             ]
           },
-          "content": "cat kitty_ipsum_1.txt | wc -w >> kitty_info",
+          "content": "Use `cat` and the pipe method again to append the number of words in `kitty_ipsum_1.txt` to `kitty_info.txt`.\ncat kitty_ipsum_1.txt | wc -w >> kitty_info",
           "hints": [
-            "Hint"
+            "Here's an example: `cat <filename> | wc <flag> >> <filename>`",
+            "The flag you want is `-w`",
+            "You previously used `cat kitty_ipsum_1.txt | wc -l >> kitty_info.txt`",
+            "Enter `cat kitty_ipsum_1.txt | wc -w >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1277,9 +1305,12 @@
               "2575bc7c515dbc3109abc7941567d432f8155902"
             ]
           },
-          "content": "echo -e \"\\nNumber of characters:\" >> kitty_info",
+          "content": "Next, you want to add the number of characters. Use the `echo` command with redirection to append `Number of characters:`, with a new line in front of it, to `kitty_info.txt` like you did with the other sentences.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command> >> <filename>`",
+            "You want the `echo` command with the `-e` flag and the new line character (`\\n`)",
+            "You previously entered `echo -e \"\\nNumber of words:\" >> kitty_info.txt`",
+            "Enter `echo -e \"\\nNumber of characters:\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1300,9 +1331,13 @@
               "29e1f7f3ceaf144e5c28c9120538fe95035d3228"
             ]
           },
-          "content": "wc -m < kitty_ipsum_1 >> kitty_info",
+          "content": "Append the number of characters in `kitty_ipsum_1.txt` to `kitty_info.txt`. Use the redirection method as the input for the `wc` command this time instead of the piping method.",
           "hints": [
-            "Hint"
+            "You can redirect input with `<`",
+            "Here's an example: `<command> < <input_filename> >> <output_filename>`",
+            "Use the `-m` flag with the `wc` command to find the number of characters in a file",
+            "You previously used `wc < kitty_ipsum_1.txt`",
+            "Enter `wc -m < kitty_ipsum_1.txt >> kitty_info.txt`"
           ]
         }
       ]
@@ -1323,9 +1358,9 @@
               "e1b4a0823a7c3c8eaea081607789d1a60780cec9"
             ]
           },
-          "content": "grep 'meow' kitty_ipsum_1.txt",
+          "content": "`grep` is a command for searching for patterns in text. You can use it like this: `grep '<pattern>' <filename>`. Use it to search for the pattern `meow` in the `kitty_ipsum_1.txt` file.",
           "hints": [
-            "Hint"
+            "Enter `grep 'meow' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1346,9 +1381,10 @@
               "ebaf72fbffd753575514f3cd28a6b43abd45c16f"
             ]
           },
-          "content": "It showed you all the lines that contain `meow` somewhere in them - but it’s a little messy. View the manual of `grep`\n\nman grep",
+          "content": "It showed you all the lines that contain `meow` somewhere in them, but it’s a little messy. View the manual of `grep` to see if you can find anything to help.",
           "hints": [
-            "Hint"
+            "View a man with `man <command>`",
+            "Enter `man grep` in the terminal"
           ]
         }
       ]
@@ -1369,9 +1405,11 @@
               "d3fb8407058d886dcdcfea2bbc62b589b8c4a877"
             ]
           },
-          "content": "grep --color 'meow' kitty_ipsum_1.txt",
+          "content": "Use `grep` to search for the `meow` pattern in the same file, but add the `--color` flag to see if it's a little more helpful.",
           "hints": [
-            "Hint"
+            "Here's an example: `grep <flag> '<pattern>' <filename>`",
+            "You previously entered `grep 'meow' kitty_ipsum_1.txt`",
+            "Enter `grep --color 'meow' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1392,9 +1430,12 @@
               "230cb2c52ecc8e7eecbd0e567a3e5ce2918d6c3b"
             ]
           },
-          "content": "That’s better. Add the flag to show all the line numbers with the command.\n\ngrep --color -n 'meow' kitty_ipsum_1.txt",
+          "content": "That’s better. Add the flag to show all the line numbers with the command.",
           "hints": [
-            "Hint"
+            "View the manual `man grep` to find the flag you need",
+            "It's the `-n` flag",
+            "The last command was `grep --color 'meow' kitty_ipsum_1.txt`",
+            "Enter `grep --color -n 'meow' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1415,9 +1456,10 @@
               "5478f15276ad3b56f90871f26b88ea499ab4d2ee"
             ]
           },
-          "content": "grep can use regular expressions, too.\n\ngrep --color -n 'meow[a-z]*' kitty_ipsum_1.txt",
+          "content": "Cool. `grep` can use regular expressions, too. Enter the previous command, but change the pattern to `meow[a-z]*` to see all words that start with `meow`.",
           "hints": [
-            "Hint"
+            "The last command was `grep --color -n 'meow' kitty_ipsum_1.txt`",
+            "Enter `grep --color -n 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1438,9 +1480,12 @@
               "3ad7fbad3177575a802af0abc4012ff5162e4559"
             ]
           },
-          "content": "echo -e \"\\nNumber of times meow or meowzer appears:\" >> kitty_info",
+          "content": "The file contains `meow` and `meowzer`. Use the `echo` command and redirection to append the text `Number of times meow or meowzer appears:`, with a new line in front of it, to the `kitty_info.txt` file.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command> >> <filename>`",
+            "You want the `echo` command with the `-e` flag and the new line character (`\\n`)",
+            "You previously entered `echo -e \"\\nNumber of characters:\" >> kitty_info.txt`",
+            "Enter `echo -e \"\\nNumber of times meow or meowzer appears:\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1461,9 +1506,9 @@
               "1f077e15c9b8d60e076724fd80710176fde24cf5"
             ]
           },
-          "content": "grep --color 'meow[a-z]*' kitty_ipsum_1",
+          "content": "So how can you find how many times those two words appear. Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.",
           "hints": [
-            "Hint"
+            "Enter `grep --color 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1484,9 +1529,9 @@
               "2e8bf550e0a8405361bfb167b99af4b387a36a86"
             ]
           },
-          "content": "grep -c 'meow[a-z]*' kittpy_ipsum_1",
+          "content": "It looks like seven, but how can you get a count from the command line to append to the info file? `grep` has a `-c` flag to give you a count. Enter the last command but use that instead of the `--color` flag.",
           "hints": [
-            "Hint"
+            "Enter `grep -c 'meow[a-z]*' kittpy_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1507,9 +1552,10 @@
               "68adf804945465b4147818f39bfb4aeeed1ffe13"
             ]
           },
-          "content": "man grep",
+          "content": "That gave you a count of the number lines that the pattern occurred on. Check the manual of grep to see if there's a way to find a count of all the words matched.",
           "hints": [
-            "Hint"
+            "View a man with `man <command>`",
+            "Enter `man grep` in the terminal"
           ]
         }
       ]
@@ -1530,9 +1576,10 @@
               "54798c6b53daaff05dad05dfd2f0059ecbad05e7"
             ]
           },
-          "content": "grep -o 'meow[a-z]*' kitty_1",
+          "content": "It doesn't look like that's an option. But there is a `-o` flag that will says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.",
           "hints": [
-            "Hint"
+            "The command was `grep -c `",
+            "Enter `grep -o 'meow[a-z]*' kitty_ipsum_1.txt`"
           ]
         }
       ]
@@ -1553,9 +1600,11 @@
               "3e4c821515229cc76dcb3971ad9c7bd8e031da46"
             ]
           },
-          "content": "grep -o 'meow[a-z]*' kitty_1 | wc -l",
+          "content": "That gave you each match on it's own line. You can use the `wc` command again to get a count of the lines to find out how many matches there are. Pipe the output of the last command into the `wc` command and use the `-l` to get a count of the lines.",
           "hints": [
-            "Hint"
+            "The last command was `grep -o 'meow[a-z]*' kitty_ipsum_1.txt`",
+            "Here's an example: `<command_1> | <command_2>`",
+            "Enter `grep -o 'meow[a-z]*' kitty_ipsum_1.txt | wc -l` in the terminal"
           ]
         }
       ]
@@ -1576,9 +1625,11 @@
               "bbb6de5cf684622bcbeefd7d4080a3bf8691ef73"
             ]
           },
-          "content": "grep -o 'meow[a-z]* kitty_1' | wc -l >> kitty_info",
+          "content": "Awesome. There's your count of how many times those words appear. Enter the same command but append the number to the `kitty_info.txt` file.",
           "hints": [
-            "Hint"
+            "The last command was `grep -o 'meow[a-z]* kitty_1' | wc -l`",
+            "Append output to a file with `>> <filename>`",
+            "Enter `grep -o 'meow[a-z]* kitty_1' | wc -l >> kitty_info` in the terminal"
           ]
         }
       ]
@@ -1599,9 +1650,12 @@
               "a91d7c71b958730c6f118c078879cf1b2afa6d95"
             ]
           },
-          "content": "echo \\nLines that they appear on: >> kitty_info",
+          "content": "Append the text `Lines that they appear on:` to the `kitty_info.txt` file. Use the `echo` command with the `-e` flag again and put a new line in front of the text.",
           "hints": [
-            "Hint"
+            "Here's an example: `<command> >> <filename>`",
+            "You want the `echo` command with the `-e` flag and the new line character (`\\n`)",
+            "You previously entered `echo -e \"\\nNumber of times meow or meowzer appears:\" >> kitty_info.txt`",
+            "Enter `echo -e \"\\nLines that they appear on:\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -1622,9 +1676,10 @@
               "5338817300f42e6ac7a4e1b482cb9df0aa492d13"
             ]
           },
-          "content": "grep -n 'meow[a-z]*' kitty_ipsum_1",
+          "content": "There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again.",
           "hints": [
-            "Hint"
+            "Here's an example: `grep <flag> '<pattern>' <filename>`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -1645,9 +1700,10 @@
               "e55f1cb3168dcd9064366c06a452ef08508d8f05"
             ]
           },
-          "content": "man grep",
+          "content": "Check the `grep` manual to see if there's a way to get just the line numbers.",
           "hints": [
-            "Hint"
+            "View a man with `man <command>`",
+            "Enter `man grep` in the terminal"
           ]
         }
       ]
@@ -1668,9 +1724,10 @@
               "d98ebad5e9b3624bae7d32b2bd0409d796f5614d"
             ]
           },
-          "content": "cat name.txt",
+          "content": "There doesn't appear to be a way to just get the line numbers. There's `sed` a command for replacing text that might work. First, some practice. Use `cat` to print the `name.txt` file in the terminal. It should still say `freeCodeCamp`.",
           "hints": [
-            "Hint"
+            "Enter `cat name.txt` in the terminal",
+            "The file should only have the text `freeCodeCamp`"
           ]
         }
       ]
@@ -1691,9 +1748,11 @@
               "d6a1469ef2f5a86404ebf977886c2557f6a1df45"
             ]
           },
-          "content": "sed 's/r/2/' name.txt",
+          "content": "`sed` can replace text like this: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`. By default, it won't replace the text in the file. It will just output it to `stdout`. Use it to replace `r` with `2` in the `name.txt` file and the output prints to the terminal.",
           "hints": [
-            "Hint"
+            "Check the example again",
+            "The pattern is `r`, the replacement text is `2`",
+            "Enter `sed 's/r/2/' name.txt` in the terminal"
           ]
         }
       ]
@@ -1714,9 +1773,12 @@
               "fcd6320c0e77afb0020496f6a38b586c042e84e4"
             ]
           },
-          "content": "sed 's/free/f233/' name.txt",
+          "content": "Use it again to replace `free` with `f2ee` in the same way.",
           "hints": [
-            "Hint"
+            "Here's the example: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`",
+            "The pattern is `free`, the replacement text is `f233`",
+            "You previously used `sed 's/r/2/' name.txt`",
+            "Enter `sed 's/free/f233/' name.txt` in the terminal"
           ]
         }
       ]
@@ -1737,9 +1799,12 @@
               "2c4c88eee987609ab3d17952f43d803a84a22f23"
             ]
           },
-          "content": "sed 's/freecodecamp/f233C0d3C@mp/' name.txt",
+          "content": "Do it again, replacing `freecodecamp` with `f233C0d3C@mp`.",
           "hints": [
-            "Hint"
+            "Here's the example: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`",
+            "The pattern is `freecodecamp`, the replacement text is `f233C0d3C@mp`",
+            "You previously used `sed 's/free/f233/' name.txt`",
+            "Enter `sed 's/freecodecamp/f233C0d3C@mp/' name.txt` in the terminal"
           ]
         }
       ]
@@ -1760,9 +1825,12 @@
               "4a8e985c84f802b54087e5ced14e008e50c2284e"
             ]
           },
-          "content": "sed 's/freecodecamp/f233C0d3C@mp/i' name.txt",
+          "content": "Nothing was replaced in that output. You can add regex flags after the last `/` in the `sed` argument. For instance, a `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.",
           "hints": [
-            "Hint"
+            "Here's an example: `sed 's/<pattern>/<replacement>/<regex_flags>' <filename>`",
+            "The pattern is `freecodecamp`, the replacement text is `f233C0d3C@mp` and the regex flag is `i`",
+            "The last command was `sed 's/freecodecamp/f233C0d3C@mp/' name.txt`",
+            "Enter `sed 's/freecodecamp/f233C0d3C@mp/i' name.txt` in the terminal"
           ]
         }
       ]
@@ -1783,9 +1851,11 @@
               "cb8877a902366091cce0d07ea9e10454c6232d61"
             ]
           },
-          "content": "sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt",
+          "content": "As with any command the input can be redirected. Use the same `sed` replacement and file but redirect the input this time.",
           "hints": [
-            "Hint"
+            "The previous command was `sed 's/freecodecamp/f233C0d3C@mp/i' name.txt`",
+            "Here's an example: `<command> < <filename>`",
+            "Enter `sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt` in the terminal"
           ]
         }
       ]
@@ -1806,9 +1876,11 @@
               "8abd96eb3d59e59491fdfdc87b655019663a6a18"
             ]
           },
-          "content": "cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'",
+          "content": "Or, you can use `cat` to output the file contents and pipe it into the `sed` command. Do that with the same file and `sed` replacement.\ncat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'",
           "hints": [
-            "Hint"
+            "The previous command was `sed 's/freecodecamp/f233C0d3C@mp/i' < name.txt`",
+            "Here's an example: `cat <filename> | <command>`",
+            "Enter `cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'` in the terminal"
           ]
         }
       ]
@@ -1829,16 +1901,19 @@
               "1d1488fa9490d56a33cd78837f09bcd824a76863"
             ]
           },
-          "content": "grep -n 'meow[a-z]' kitty_1",
+          "content": "Back to the task at hand. Use `grep` with the flag to show line numbers to find the `meow[a-z]*` pattern in the `kitty_ipsum_1.txt` file again.",
           "hints": [
-            "Hint"
+            "Enter `man grep` to find the flag you need",
+            "It's the `-n` flag",
+            "Here's an example: `grep -n <pattern> <filename>`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
     },
     {
       "id": "700",
-      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]/1/",
+      "title": "grep meow[a-z] kitty_1 -n | sed s/[0-9]/1/",
       "summary": "",
       "content": "",
       "steps": [
@@ -1852,16 +1927,20 @@
               "f30ea161d3c47275dc342800794e6d9615e81c2e"
             ]
           },
-          "content": "grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]/1/'",
+          "content": "You're going to use `sed` to extract the line numbers from that output. Enter the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.",
           "hints": [
-            "Hint"
+            "A `sed` argument looks like this: `'s/<pattern>/<replacement>/'`",
+            "The `sed` argument is `s/[0-9]/1/`",
+            "The last command was `grep -n 'meow[a-z]*' kitty__ipsum_1.txt`",
+            "Here's an example: `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed '<pattern>'`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]/1/'` in the terminal"
           ]
         }
       ]
     },
     {
       "id": "710",
-      "title": "grep meow[a-zA-Z]* kitty_1 -n | sed s/[0-9]+/1/",
+      "title": "grep meow[a-z]* kitty_1 -n | sed s/[0-9]+/1/",
       "summary": "",
       "content": "",
       "steps": [
@@ -1875,9 +1954,11 @@
               "1dde7bd20ac897ee62eb0be406d1e77308d5be7d"
             ]
           },
-          "content": "grep 'meow[a-zA-Z]*' kitty_1 -n | sed 's/[0-9]+/1/'",
+          "content": "That replaced the first line number with `1` on each line. Enter the same command but change the matching pattern to `[0-9]+` to match one or more numbers.",
           "hints": [
-            "Hint"
+            "The previous command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]/1/'`",
+            "Change the `sed` argument to `'s/[0-9]+'/1/`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`"
           ]
         }
       ]
@@ -1898,9 +1979,10 @@
               "824075f17e46ab285781fbe3056b22bb5bb8d9aa"
             ]
           },
-          "content": "man sed",
+          "content": "That didn't replace anything. Check the manual of `sed` quick to see if there's anything to help.",
           "hints": [
-            "Hint"
+            "View a man with `man <command>`",
+            "Enter `man grep` in the terminal"
           ]
         }
       ]
@@ -1921,9 +2003,12 @@
               "33573fb61351075c4a457a6ab6a497f37e391c18"
             ]
           },
-          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/[0-9]+/1/'",
+          "content": "There's a flag to use extended regular expressions with `sed`. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.",
           "hints": [
-            "Hint"
+            "Find the flag you need from the menu and add it to the previous command",
+            "Here's an example: `<command> | sed <flag> '<argument>'`",
+            "It's the `-E` flag",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/[0-9]+/1/'` in the terminal"
           ]
         }
       ]
@@ -1944,9 +2029,10 @@
               "350f4116d5d743aa825ebc926917b5deedb04af1"
             ]
           },
-          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+)/\\1/'",
+          "content": "It worked that time. It replaced all the numbers at the start with a `1`. Next, you will use a capture group in the regex to capture the numbers so you can use them in the replacement area. Enter the same command but use `s/([0-9]+)/\\1/` with `sed` to capture the numbers at the start. It will replace them with themselves for now.",
           "hints": [
-            "Hint"
+            "The previous command was `grep 'meow[a-z]*' kitty_ipsum_1.txt -n | sed -E 's/[0-9]+/1/'`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+)/\\1/'` in the terminal"
           ]
         }
       ]
@@ -1967,9 +2053,10 @@
               "65c81cf25055719135648e2ea370b311224520ea"
             ]
           },
-          "content": "grep -n 'meow[a-z]*' kitty_1 | sed -E 's/([0-9]+).*/\\1/'",
+          "content": "That matched all the numbers and replaced them with the same numbers. All you need to do is match everything else on each line and replace it with only the numbers. Add `.*` at the end of the `sed` matching pattern so it mathes everything, captures the numbers, and replaces everything with the captured numbers.",
           "hints": [
-            "Hint"
+            "The previous command was `grep 'meow[a-z]*' kitty_ipsum_1.txt -n | sed -E 's/([0-9]+)/\\1/'`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\\1/'` in the terminal"
           ]
         }
       ]
@@ -1990,9 +2077,12 @@
               "c585387110f3f6b25611dcac7f5135cf29700cbd"
             ]
           },
-          "content": "grep 'meow[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\\1/' >> kitty_info.txt\nprevious with >> kitty_info",
+          "content": "There's your list of numbers for the `kitty_info.txt` file. Enter the same command and append the list of numbers to it.",
           "hints": [
-            "Hint"
+            "The previous command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\\1/'`",
+            "Here's an example: `<command> >> <filename>`",
+            "Append the output of the previous command with `>> kitty_info.txt`",
+            "Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\\1/' >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -2013,9 +2103,12 @@
               "2380e1655045d4928f0fa8afdcde4dce11a3f2ba"
             ]
           },
-          "content": "grep 'cat[a-z]*' kitty_1 -—color",
+          "content": "Take a look at the file. Hopefully it doesn't look too messy. There's one more group of words to find info on for this file. Use `grep` with the `--color` flag to see all the words that start with `cat` in the same file. Use a similar pattern that you used to find words starting with `meow`",
           "hints": [
-            "Hint"
+            "You use `meow[a-z]*` to see all the words that start with `meow`",
+            "Use `cat[a-z]*` as your pattern",
+            "Here's an example: `grep --color '<pattern>' <filename>`",
+            "Enter `grep --color 'cat[a-z]*' kitty_ipsum_1.txt` in the terminal"
           ]
         }
       ]
@@ -2036,9 +2129,9 @@
               "13e2b8cc51af658e5340e1c8839497c0d508eaaa"
             ]
           },
-          "content": "Echo \"\\nNumber of times cat, cats, or catnip appears:\" >> kitty_info",
+          "content": "Looks like there's three variations of words starting with `cat`. Use `echo` with the `-e` flag to append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Put a new line at the beginning of the text like the other lines.",
           "hints": [
-            "Hint"
+            "Enter `echo -e \"\\nNumber of times cat, cats, or catnip appears:\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
