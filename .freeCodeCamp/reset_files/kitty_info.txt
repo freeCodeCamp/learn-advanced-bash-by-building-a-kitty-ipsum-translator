@@ -41,3 +41,4 @@ Number of words:
 307
 
 Number of characters:
+1678
