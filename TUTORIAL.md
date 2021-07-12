@@ -297,7 +297,7 @@ Give your new script executable permissions with the `chmod` command and the `+x
 
 ### 230.1
 
-This will be a very simple script with only a few command. At the top of file, add a shebang that looks like this: `#!/bin/bash`.
+This will be a very simple script with only a few commands. At the top of file, add a shebang that looks like this: `#!/bin/bash`.
 
 #### HINTS
 
@@ -355,7 +355,7 @@ Run your script and don't input anything until the next lesson.
 
 ### 266.1
 
-The `read` command is waiting for input. Type your name and press enter.
+The `read` command in your script is waiting for input. Type your name and press enter.
 
 #### HINTS
 
@@ -393,7 +393,7 @@ It didn't ask for input this time because you gave it input with the pipe. The t
 
 ### 290.1
 
-Again, it didn't ask for input. This time it only printed your name to the terminal and not the output of `bad_command`. That produced an error, which you redirected to the `stderr.txt` file. You redirect both the `stderr` and `stdout` by adding another redirection at the end like this: `> <filename>`. Enter the same command, redirect the `stderr` to the same place and the `stdout` to `stdout.txt`
+Again, it didn't ask for input. This time it only printed your name to the terminal and not the output of `bad_command`. That produced an error, which you redirected to the `stderr.txt` file. You can redirect both the `stderr` and `stdout` by adding another redirection at the end like this: `> <filename>`. Enter the same command, redirect the `stderr` to the same place again, and the `stdout` to `stdout.txt`.
 
 #### HINTS
 
@@ -406,7 +406,7 @@ Again, it didn't ask for input. This time it only printed your name to the termi
 
 ### 300.1
 
-It didn't ask for input and nothing was printed in the terminal that time. You redirected both outputs to files. Run your script using redirection to set `name.txt` as the input. Don't redirect any of the output.
+It didn't ask for input and nothing was printed in the terminal that time. You redirected both outputs to files. You should take a look at them to see if they have what you expected. Run your script again, use redirection to set `name.txt` as the input. Don't redirect any of the output.
 
 #### HINTS
 
@@ -445,7 +445,7 @@ Nice job! Run it again, redirect the `stderr` to the same place and the `stdout`
 
 ### 330.1
 
-:smile: You should have two `kitty_ipsum` files. Eventually, you will write a small script to translate them into doggy ipsum. For now, you will play with some common commands. The first one is `wc`. It prints some info about a file. It can take a file as an argument like the `cat` command. Use it to see what it shows you about your `kitty_ipsum_1.txt` file.
+:smile: You have two `kitty_ipsum` files. You will write a small script to translate them into doggy ipsum. For now, you will play with some common commands to figure out how. The first one is `wc`. It prints some info about a file. It can take a file as an argument like the `cat` command. Use it to see what it shows you about your `kitty_ipsum_1.txt` file.
 
 #### HINTS
 
@@ -463,6 +463,7 @@ Not quite sure what all those numbers mean. Check the manual of the `wc` command
 - View the manual of a command with `man`
 - Here's an example: `man <command>`
 - Enter `man wc` in the terminal
+- Press enter until you have seen the whole manual
 
 ## 350. wc -l kitty_ipsum_1
 
@@ -479,7 +480,7 @@ Not quite sure what all those numbers mean. Check the manual of the `wc` command
 
 ### 360.1
 
-Check how many words are in the file.
+The file has 27 lines. Check how many words are in the file.
 
 #### HINTS
 
@@ -492,7 +493,7 @@ Check how many words are in the file.
 
 ### 370.1
 
-Lastly, check how many characters are in the file.
+332 words are in the `kitty_ipsum_1.txt` file. Lastly, check how many characters it has.
 
 #### HINTS
 
@@ -505,7 +506,7 @@ Lastly, check how many characters are in the file.
 
 ### 380.1
 
-Use the command without any flags.
+Use the command without any flags to see if the numbers are the same.
 
 #### HINTS
 
@@ -516,8 +517,7 @@ Use the command without any flags.
 
 ### 390.1
 
-That outputs the all the info. Although, it's showing the byte count and not the character count. Some characters must be more than one byte. Use `cat` to pipe the content of the file as the input of the `wc` command.
-Try using `cat` the print the file and pipe the output into the `wc` command.
+That shows the byte count instead of the character count. Some characters must be more than one byte. Use `cat` to pipe the content of the file as the input of the `wc` command to see if the output is the same.
 
 #### HINTS
 
@@ -530,7 +530,7 @@ Try using `cat` the print the file and pipe the output into the `wc` command.
 
 ### 400.1
 
-It looks like the way you give input to a command may affect the output. It only printed the numbers that time and not the filename. Try using redirection to see what the same file outputs with that command.
+It looks like the way you give input to a command may affect the output. It only printed the numbers that time and not the filename. Try using redirection as the input with the same file and command to see what that outputs.
 
 #### HINTS
 
@@ -542,7 +542,7 @@ It looks like the way you give input to a command may affect the output. It only
 
 ### 420.1
 
-You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
+No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
 
 #### HINTS
 
@@ -556,7 +556,7 @@ You are going to create a file that has some meta information about the two kitt
 
 ### 430.1
 
-Use `echo` and the `-e` flag with the new line character (`\n`) to **append** `Number of lines:` to the `kitty_info.txt` file. Add the new line character at the beginning of the text so there's an empty line. Remember that you can append output to a file with `>>`.
+Open the file so you can keep track of what's in it. Use `echo` and the `-e` flag with the new line character (`\n`) to **append** `Number of lines:` to the `kitty_info.txt` file. Add the new line character at the beginning of the text so there's an empty line. Remember that you can append output to a file with `>>`.
 
 #### HINTS
 
@@ -651,12 +651,13 @@ It showed you all the lines that contain `meow` somewhere in them, but it’s a 
 
 - View a man with `man <command>`
 - Enter `man grep` in the terminal
+- Press enter until you have seen the whole manual
 
 ## 510. grep --color meow kitty_ipsum_1
 
 ### 510.1
 
-Use `grep` to search for the `meow` pattern in the same file, but add the `--color` flag to see if it's a little more helpful.
+That's a lot of options. Use `grep` to search for the `meow` pattern in the same file, but add that `--color` flag to see if it's a little more helpful.
 
 #### HINTS
 
@@ -681,7 +682,7 @@ That’s better. Add the flag to show all the line numbers with the command.
 
 ### 530.1
 
-Cool. `grep` can use regular expressions, too. Enter the previous command, but change the pattern to `meow[a-z]*` to see all words that start with `meow`.
+It's showing the line number of each match it found. `grep` can use regular expressions, too. Enter the previous command, but change the pattern to `meow[a-z]*` to see all words that start with `meow`.
 
 #### HINTS
 
@@ -692,7 +693,7 @@ Cool. `grep` can use regular expressions, too. Enter the previous command, but c
 
 ### 540.1
 
-The file contains `meow` and `meowzer`. Use the `echo` command and redirection to append the text `Number of times meow or meowzer appears:`, with a new line in front of it, to the `kitty_info.txt` file.
+Looking at the output, you can see that it matched `meow` and `meowzer`, instead of just `meow`. Use the `echo` command and redirection to append the text `Number of times meow or meowzer appears:`, with a new line in front of it, to the `kitty_info.txt` file.
 
 #### HINTS
 
@@ -709,16 +710,18 @@ So how can you find how many times those two words appear. Use grep to find the 
 
 #### HINTS
 
+- Don't use the `-n` flag to show the line numbers.
 - Enter `grep --color 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal
 
 ## 560. grep -c meow[a-z] kittpy_ipsum_1
 
 ### 560.1
 
-It looks like seven, but how can you get a count from the command line to append to the info file? `grep` has a `-c` flag to give you a count. Enter the last command but use that instead of the `--color` flag.
+It looks like seven, but how can you get a count of that from the command line to append to the info file for the next piece of information? `grep` has a `-c` flag to give you a count. Enter the last command but use that instead of the `--color` flag.
 
 #### HINTS
 
+- The last command was `grep --color 'meow[a-z]*' kitty_ipsum_1.txt`
 - Enter `grep -c 'meow[a-z]*' kittpy_ipsum_1.txt` in the terminal
 
 ## 570. man grep
@@ -731,6 +734,7 @@ That gave you a count of the number lines that the pattern occurred on. Check th
 
 - View a man with `man <command>`
 - Enter `man grep` in the terminal
+- Press enter until you have seen the whole manual
 
 ## 580. grep -o meow[a-z] kitty_1
 
@@ -740,19 +744,21 @@ It doesn't look like that's an option. But there is a `-o` flag that will says i
 
 #### HINTS
 
-- The command was `grep -c `
-- Enter `grep -o 'meow[a-z]*' kitty_ipsum_1.txt`
+- The previous command was `grep -c 'meow[a-z]*' kittpy_ipsum_1.txt`
+- Replace the `-c` with `-o` in the previous command
+- Enter `grep -o 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal
 
 ## 590. grep -o meow[a-z] kitty_1 | wc -l
 
 ### 590.1
 
-That gave you each match on it's own line. You can use the `wc` command again to get a count of the lines to find out how many matches there are. Pipe the output of the last command into the `wc` command and use the `-l` to get a count of the lines.
+That gave you each match on it's own line. You can use the `wc` command again to get a count of the lines to find out how many matches there are. Pipe the output of the last command into the `wc` command and use the flag for showing the line count.
 
 #### HINTS
 
 - The last command was `grep -o 'meow[a-z]*' kitty_ipsum_1.txt`
 - Here's an example: `<command_1> | <command_2>`
+- You want to use the `-l` flag with the `wc` command
 - Enter `grep -o 'meow[a-z]*' kitty_ipsum_1.txt | wc -l` in the terminal
 
 ## 600. grep -o meow[a-z] kitty_1 | wc -l >> kitty_info
@@ -765,7 +771,7 @@ Awesome. There's your count of how many times those words appear. Enter the same
 
 - The last command was `grep -o 'meow[a-z]* kitty_1' | wc -l`
 - Append output to a file with `>> <filename>`
-- Enter `grep -o 'meow[a-z]* kitty_1' | wc -l >> kitty_info` in the terminal
+- Enter `grep -o 'meow[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt` in the terminal
 
 ## 610. echo -e \nLines that they appear on: >> kitty_info
 
@@ -817,7 +823,7 @@ There doesn't appear to be a way to just get the line numbers. There's `sed` a c
 
 ### 640.1
 
-`sed` can replace text like this: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`. By default, it won't replace the text in the file. It will just output it to `stdout`. Use it to replace `r` with `2` in the `name.txt` file and the output prints to the terminal.
+`sed` can replace text like this: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`. By default, it won't replace the text in the file. It will output it to `stdout`. Use it to replace `r` with `2` in the `name.txt` file and the output prints to the terminal.
 
 #### HINTS
 
@@ -829,7 +835,7 @@ There doesn't appear to be a way to just get the line numbers. There's `sed` a c
 
 ### 650.1
 
-Use it again to replace `free` with `f2ee` in the same way.
+Use it again to replace `free` with `f233` in the same way.
 
 #### HINTS
 
@@ -855,7 +861,7 @@ Do it again, replacing `freecodecamp` with `f233C0d3C@mp`.
 
 ### 670.1
 
-Nothing was replaced in that output. You can add regex flags after the last `/` in the `sed` argument. For instance, a `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.
+Nothing was replaced in that output. It didn't find the `freecodecamp` text you tried to replace because the case of a few letters wasn't the same. You can add regex flags after the last `/` in the `sed` argument. A `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.
 
 #### HINTS
 
@@ -868,7 +874,7 @@ Nothing was replaced in that output. You can add regex flags after the last `/` 
 
 ### 675.1
 
-As with any command the input can be redirected. Use the same `sed` replacement and file but redirect the input this time.
+It worked that time since it wasn't required to match the case. As with any command, the input can be redirected. Use the same `sed` replacement and file but redirect the **input** this time.
 
 #### HINTS
 
@@ -880,8 +886,7 @@ As with any command the input can be redirected. Use the same `sed` replacement 
 
 ### 680.1
 
-Or, you can use `cat` to output the file contents and pipe it into the `sed` command. Do that with the same file and `sed` replacement.
-cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'
+The method of input didn't affect the output. Use the `cat` and `pipe` method this time to set the input for the `sed` command, replacing the same text.
 
 #### HINTS
 
@@ -889,12 +894,11 @@ cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'
 - Here's an example: `cat <filename> | <command>`
 - Enter `cat name.txt | sed 's/freecodecamp/f233C0d3C@mp/i'` in the terminal
 
-
 ## 690. grep -n meow[a-z] kitty_1
 
 ### 690.1
 
-Back to the task at hand. Use `grep` with the flag to show line numbers to find the `meow[a-z]*` pattern in the `kitty_ipsum_1.txt` file again.
+Back to the task at hand. You want to add the line numbers asked for in the `kitty_info.txt` file. Use `grep` with the flag to show line numbers to find the `meow[a-z]*` pattern in the `kitty_ipsum_1.txt` file again.
 
 #### HINTS
 
@@ -907,7 +911,7 @@ Back to the task at hand. Use `grep` with the flag to show line numbers to find 
 
 ### 700.1
 
-You're going to use `sed` to extract the line numbers from that output. Enter the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
+You're can use `sed` to extract the line numbers from that output. Enter the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
 
 #### HINTS
 
@@ -921,7 +925,7 @@ You're going to use `sed` to extract the line numbers from that output. Enter th
 
 ### 710.1
 
-That replaced the first line number with `1` on each line. Enter the same command but change the matching pattern to `[0-9]+` to match one or more numbers.
+That matched the first digit it found on each line and replaced it with `1`. Enter the same command but change the matching pattern to `[0-9]+` to match one or more numbers.
 
 #### HINTS
 
@@ -938,16 +942,16 @@ That didn't replace anything. Check the manual of `sed` quick to see if there's 
 #### HINTS
 
 - View a man with `man <command>`
-- Enter `man grep` in the terminal
+- Enter `man sed` in the terminal
+- Press enter until you have seen the whole manual
 
 ## 730. grep meow[a-z]* kitty_1 -n | sed -E s/[0-9]+/1/
 
 ### 730.1
 
-There's a flag to use extended regular expressions with `sed`. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.
+Looks like there's a lot of options with `sed` as well. There's a flag to use extended regular expressions. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.
 
 #### HINTS
-
 
 - Find the flag you need from the menu and add it to the previous command
 - Here's an example: `<command> | sed <flag> '<argument>'`
@@ -969,11 +973,12 @@ It worked that time. It replaced all the numbers at the start with a `1`. Next, 
 
 ### 750.1
 
-That matched all the numbers and replaced them with the same numbers. All you need to do is match everything else on each line and replace it with only the numbers. Add `.*` at the end of the `sed` matching pattern so it mathes everything, captures the numbers, and replaces everything with the captured numbers.
+That matched all the numbers and replaced them with the same numbers. All you need to do is match everything else on each line and replace it with only the numbers. Add `.*` at the end of the `sed` matching pattern so it matches everything, captures the numbers, and replaces everything with the captured numbers.
 
 #### HINTS
 
 - The previous command was `grep 'meow[a-z]*' kitty_ipsum_1.txt -n | sed -E 's/([0-9]+)/\1/'`
+- The new `sed` argument should be `'s/([0-9]+).*/\1/'`
 - Enter `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'` in the terminal
 
 ## 760. previous with >> kitty_info
@@ -1006,229 +1011,351 @@ Take a look at the file. Hopefully it doesn't look too messy. There's one more g
 
 ### 780.1
 
-Looks like there's three variations of words starting with `cat`. Use `echo` with the `-e` flag to append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Put a new line at the beginning of the text like the other lines.
+There's three variations of words starting with `cat`. Use `echo` with the `-e` flag to append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Put a new line at the beginning of the text like the other lines.
 
 #### HINTS
 
-- Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal 
+- You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
+- Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal
 
 ## 790. grep cat[a-z]* kitty_1 -o
 
 ### 790.1
 
-grep 'cat[a-z]*' kitty_1 -o
+You will want to find the number of times those words appear again. First, use `grep` with the correct flag to put all the matches of the `cat[a-z]*` pattern on their own line.
 
 #### HINTS
 
-- Hint
+- Here's an example: `grep <flag> '<pattern>' <filename>`
+- Make sure to use the `kitty_ipsum_1.txt` file
+- You want the `-o` flag
+- Enter `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt` in the terminal
 
 ## 800. grep cat[a-z]* kitty_1 -o | wc -l
 
 ### 800.1
 
-grep 'cat[a-z]*' kitty_1 -o | wc -l
+Enter the same command and pipe the output into the command that outputs the count of those lines.
 
 #### HINTS
 
-- Hint
+- You want to pipe the output of the previous command into the `wc` command
+- The previous command was `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt`
+- Use the correct flag with `wc` to output the line count of the grep output
+- It's the `-l` flag
+- Enter `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt | wc -l`
 
 ## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
 
 ### 810.1
 
-grep 'cat[a-z]*' kitty_1 -o | wc -l >> kitty_info 
+That's a count of how many times `cat`, `cats`, or `catnip` appears in the file. Enter the same command and append the count to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- The previous command was `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt | wc -l`
+- Append output like this: `>> <filename>`
+- Enter `grep 'cat[a-z]*' kitty_1 -o | wc -l >> kitty_info.txt` in the terminal
 
 ## 820. echo -e Lines that they appear on: >> kitty_info
 
 ### 820.1
 
-echo -e "\nLines that they appear on:" >> kitty_info
+Next, use `echo` to add the text `Lines that they appear on:` to the `kitty_info.txt` file again. Place a new line in front of the text like before.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command> >> <filename>`
+- You want the `echo` command with the `-e` flag and the new line character (`\n`)
+- You previously entered `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt`
+- Enter `echo -e "\nLines that they appear on:" >> kitty_info.txt` in the terminal
 
 ## 830. grep cat[a-z]* kitty_1 -n
 
 ### 830.1
 
-grep 'cat[a-z]*' kitty_1 -n
+The process to add the lines to the file will be the same as you did before. Start by using `grep` to match the `cat` words in the file and showing the line numbers with the output.
 
 #### HINTS
 
-- Hint
+- Here's an example: `grep <flag> '<pattern>' <filename>`
+- Make sure to use the `cat[a-z]*` pattern again
+- Use the `-n` flag to show the line numbers
+- Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt` in the terminal
 
 ## 840. grep cat[a-z]* kitty_1 -n | sed -E s/([0-9]+).*/\1/
 
 ### 840.1
 
-grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\1/'
+That shows you the line numbers and text. You will have to use `sed` again to extract only the line numbers. Pipe the output of the last command into `sed` to do that. As a reminder, the `sed` pattern was `'s/([0-9]+).*/\1/'`.
 
 #### HINTS
 
-- Hint
+- The last command was
+- Don't forget the `sed` flag for using extended regular expressions
+- It's the `-E` flag
+- You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'`
+- Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'` in the terminal
 
 ## 850. previous with >> kitty_info
 
 ### 850.1
 
-grep 'cat[a-z]*' kitty_1 -n | sed -E 's/([0-9]+).*/\1/'
-previous with >> kitty_info
+Awesome. Enter the last command and append the line numbers to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- The previous command was `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'`
+- Append to a file by adding `>> <filename>` at the end of a command
+- You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt`
+- Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
 ## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
 
 ### 860.1
 
-echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" > kitty_info
+Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ispsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
 
 #### HINTS
 
-- Hint
+- You want the `echo` command with the `-e` flag and the new line character (`\n`) twice
+- Here's an example: `echo -e "\n\n<text>" >> <filename>`
+- You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
+- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" > kitty_info.txt` in the terminal
 
 ## 870. echo -e \nNumber of lines: >> kitty_info
 
 ### 870.1
 
-echo "\nNumber of lines:" >> kitty_info
+The first piece of info you want to know is the number of lines in the file. Use the terminal to append `Number of lines:` to the file with a new line in front.
 
 #### HINTS
 
-- Hint
+- You want the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
+- Enter `echo "\nNumber of lines:" >> kitty_info.txt` in the terminal
 
 ## 880. cat kitty_2 | wc -l >> kitty_info
 
 ### 880.1
 
-cat kitty_ipsum_2.txt | wc -l >> kitty_info
+Use `cat` with the pipe method to append the info to the `kitty_info.txt` file that it is asking for.
 
 #### HINTS
 
-- Hint
+- Here's and example: `cat <filename> | <command> >> <filename>`
+- You want to `cat kitty_ipsum_2.txt`
+- And pipe the output of that into the `wc` command
+- Which uses the `-l` flag to get the number of lines in the file
+- And appends the number to the file like this: `>> kitty_info.txt`
+- You previously used `cat kitty_ipsum_1.txt | wc -w >> kitty_info.txt`
+- Enter `cat kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
 
 ## 890. echo -e \nNumber of words: >> kitty_info
 
 ### 890.1
 
-echo -e "\nNumber of words:" >> kitty_info
+Nice job! Next, use the terminal to append `Number of words:` to the `kitty_info.txt` file. Put a new line in front of the text again.
 
 #### HINTS
 
-- Hint
+- You want the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo "\nNumber of lines:" >> kitty_info.txt`
+- Enter `echo -e "\nNumber of words:" >> kitty_info`
 
-## 900. cat kitty_ipsum_2.txt | wc -w >> kitty_info
+## 900. wc -w < kitty_ipsum_2.txt >> kitty_info
 
 ### 900.1
 
-cat kitty_ipsum_2.txt | wc -w >> kitty_info
+Append the suggested info the `kitty_info.txt` file. Use redirection instead of the pipe method for the input this time.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command> < <input_filename> >> <output_filename>`
+- You want to use `kitty_ipsum_2.txt` for the input of the `wc` command
+- With the `-w` flag to get the number of words from the input
+- And output the numbers of words to the file `>> kitty_info.txt`
+- You previously used `wc -m < kitty_ipsum_1.txt >> kitty_info.txt`
+- Enter `wc -w < kitty_ipsum_2 >> kitty_info.txt` in the terminal
 
 ## 910. echo -e \nNumber of characters: >> kitty_info
 
 ### 910.1
 
-echo -e "\nNumber of characters:" >> kitty_info
+Next, is the character count. Append `Number of characters:` to the file with a new line in front of the text. Use the method you have been using.
 
 #### HINTS
 
-- Hint
+- You want the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nNumber of words:" >> kitty_info`
+- Enter `echo -e "\nNumber of characters:" >> kitty_info.txt` in the terminal
 
 ## 920. wc -m < kitty_ipsum_2.txt >> kitty_info
 
 ### 920.1
 
-wc -m < kitty_ipsum_2.txt >> kitty_info
+Using the pipe or input redirection method, append the character count of `kitty_ipsum_2.txt` to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- You will want to use the `wc` command with the `-m` flag
+- You can do this!
+- Give it another try
+- Here's an example: `<command> < <input_filename> >> <output_filename>`
+- You previously used `wc -w < kitty_ipsum_2 >> kitty_info.txt`
+- Enter `wc -m < kitty_ipsum_2.txt >> kitty_info.txt` in the terminal
+
+## 925. grep --color meow[a-z]* kitty_2
+
+### 925.1
+
+Excellent. Next, use `grep` to see how many variations of `meow` there are in `kitty_ipsum_2.txt`. Use the same pattern you used before and add the flag to show colors so it's easier to see.
+
+#### HINTS
+
+- Here's an example `grep <flag> '<pattern>' <filename>`
+- The pattern you want is `meow[a-z]*`
+- Be sure to use the `--color` flag
+- Enter `grep --color meow[a-z]* kitty_ipsum_2.txt` in the terminal
 
 ## 930. echo -e \nNumber of times meow or meowzer appears: >> kitty_info
 
 ### 930.1
 
-echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info
+It's the same variations as the other file. Append `Number of times meow or meowzer appears:` to the `kitty_info.txt` file with a new line in front of it like before.
 
 #### HINTS
 
-- Hint
+- You want the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nNumber of characters:" >> kitty_info.txt`
+- Enter `echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info.txt` in the terminal
 
-## 940. do it
+## 940. grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info
 
 ### 940.1
 
-do it
+Use `grep` and `wc` in the terminal to append the suggested number to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- You want to use `grep` to get the matches for `meow[a-z]*`
+- Add the `-o` flag to `grep` to put each match on it's own line
+- Pipe the `grep` results into the `wc` command
+- Add the `-l` flag to the `wc` to count the lines
+- Append the results of that to the file with `>> kitty_info.txt`
+- You previously used `grep -o 'cat[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
+- Enter `grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
 
 ## 950. echo -e \nLines that they appear on: >> kitty_info
 
 ### 950.1
 
-Echo -e "\nLines that they appear on:" >> kitty_info
+:sunglasses: Next, use the terminal to append `Lines that they appear on:` to the `kitty_info.txt` file with a new line in front of the text.
 
 #### HINTS
 
-- Hint
+- Use the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nNumber of times meow or meowzer appears:" >> kitty_info.txt`
+- Enter `echo -e "\nLines that they appear on:" >> kitty_info.txt` in the terminal
 
-## 960. do it
+## 960. grep -n meow[a-z]* kitty_2 | sed -E s/([0-9]+).*/\1/ >> kitty_info
 
 ### 960.1
 
-do it
+Use `grep` and `sed` in the terminal to append the suggested line numbers to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- You want to use `grep` to get the matches for `meow[a-z]*`
+- Add the `-n` flag to `grep` to show the line numbers in front of the matches
+- Pipe the `grep` results into the `sed` command 
+- The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
+- Don't forget the `-E` flag with `sed` to allow extended regular expressions
+- You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
+- Append the results to the file wiht `>> kitty_info.txt` 
+- You previously used `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
+- Enter `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
+
+## 965. grep --color cat[a-z]* kitty_2
+
+### 965.1
+
+:sunglasses: :sunglasses: Use `grep` to see how many variations of `cat` there are in `kitty_ipsum_2.txt`. Use the same pattern you used before and include the flag to show colors so it's easier to see.
+
+#### HINTS
+
+- Here's an example `grep <flag> '<pattern>' <filename>`
+- The pattern you want is `cat[a-z]*`
+- Be sure to use the `--color` flag
+- Enter `grep --color cat[a-z]* kitty_ipsum_2.txt` in the terminal
 
 ## 970. echo -e \nNumber of times cat, cats, or catnip appears: >> kitty_info
 
 ### 970.1
 
-echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info
+Same variations as the other kitty ipsum file. Append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Use the method you have been using.
 
 #### HINTS
 
-- Hint
+- Don't forget the new line in front of the text
+- Use the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
+- Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal
 
 ## 980. do it
 
 ### 980.1
 
-do it 
+Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.txt`
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- You want to use `grep` to get the matches for `meow[a-z]*`
+- Add the `-o` flag to `grep` to put each match on it's own line
+- Pipe the `grep` results into the `wc` command
+- Add the `-l` flag to the `wc` to count the lines
+- Append the results of that to the file with `>> kitty_info.txt`
+- You previously used `grep -o 'cat[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
+- Enter `grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
 
 ## 990. echo -e \nLines that they appear on: >> kitty_info
 
 ### 990.1
 
-Echo -e "\nLines that they appear on:" >> kitty_info
+Last item for the info file. Append `Lines that they appear on:` to it like you did for the others.
 
 #### HINTS
 
-- Hint
+- Don't forget the new line
+- Use the `echo` command with the `-e` flag and the new line character (`\n`)
+- Here's an example: `echo -e "\n<text>" >> <filename>`
+- You previously entered `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt`
+- Enter `echo -e "\nLines that they appear on:" >> kitty_info.txt` in the terminal
 
 ## 1000. do it
 
 ### 1000.1
 
-do it
+Use `grep` and `sed` in the terminal to append the suggested numbers to the `kitty_info.txt` file.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- You want to use `grep` to get the matches for `cat[a-z]*`
+- Add the `-n` flag to `grep` to show the line numbers in front of the matches
+- Pipe the `grep` results into the `sed` command 
+- The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
+- Don't forget the `-E` flag with `sed` to allow extended regular expressions
+- You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
+- Append the results to the file wiht `>> kitty_info.txt` 
+- You previously used `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
+- Enter `grep -n 'cat[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal

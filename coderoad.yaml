@@ -608,6 +608,12 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '925'
+    steps:
+      - id: '925.1'
+        setup:
+          watchers:
+            - ../.bash_history
   - id: '930'
     steps:
       - id: '930.1'
@@ -629,6 +635,12 @@ levels:
   - id: '960'
     steps:
       - id: '960.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '965'
+    steps:
+      - id: '965.1'
         setup:
           watchers:
             - ../.bash_history
