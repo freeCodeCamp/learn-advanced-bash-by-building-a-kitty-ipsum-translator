@@ -47,3 +47,10 @@ Number of times meow or meowzer appears:
 9
 
 Lines that they appear on:
+4
+8
+12
+20
+24
+25
+28
