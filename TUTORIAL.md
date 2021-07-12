@@ -1310,7 +1310,7 @@ Same variations as the other kitty ipsum file. Append `Number of times cat, cats
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
 - Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal
 
-## 980. do it
+## 980. grep -o 'meow[a-z]*' kitty_2 | wc -l >> kitty_info
 
 ### 980.1
 
@@ -1341,7 +1341,7 @@ Last item for the info file. Append `Lines that they appear on:` to it like you 
 - You previously entered `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt`
 - Enter `echo -e "\nLines that they appear on:" >> kitty_info.txt` in the terminal
 
-## 1000. do it
+## 1000. grep -n cat[a-z]* kitty_2 | sed -E >> kitty_info
 
 ### 1000.1
 
