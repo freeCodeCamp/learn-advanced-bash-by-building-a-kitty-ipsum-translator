@@ -191,7 +191,7 @@ Just like you can redirect output, you can redirect `stdin` as well. Here's an e
 
 ### 170.1
 
-Another way to set the `stdin` is by using the pipe (`|`). It will use the output from one command as input for another. Here's an example: `<command_1> | <command_2>`. This will take the `stdout` from `command_1` and use it as the `stdin` for `command_2`. Use this method to **echo** your name and pipe the output into the `read` command which reads your name into the `NAME` variable.
+Now the variable is set to the content of the file, which was the input. Another way to set the `stdin` is by using the pipe (`|`). It will use the output from one command as input for another. Here's an example: `<command_1> | <command_2>`. This will take the `stdout` from `command_1` and use it as the `stdin` for `command_2`. Use this method to **echo** your name and pipe the output into the `read` command which reads your name into the `NAME` variable.
 
 #### HINTS
 
@@ -344,7 +344,7 @@ One more thing. Add `bad_command` at the bottom of the file.
 
 ### 264.1
 
-Run your script and don't input anything until the next lesson.
+Your script takes input from `stdin` and will output to `stdout` and `stderr`. Run your script and don't input anything for now.
 
 #### HINTS
 
@@ -366,7 +366,7 @@ The `read` command in your script is waiting for input. Type your name and press
 
 ### 270.1
 
-Your script needs input, and has two forms of output. Run the script again, but use a pipe to echo your name as the input.
+You input your name, and it output the two result of the two commands. Run the script again, but use a pipe to echo your name as the input.
 
 #### HINTS
 
@@ -393,7 +393,7 @@ It didn't ask for input this time because you gave it input with the pipe. The t
 
 ### 290.1
 
-Again, it didn't ask for input. This time it only printed your name to the terminal and not the output of `bad_command`. That produced an error, which you redirected to the `stderr.txt` file. You can redirect both the `stderr` and `stdout` by adding another redirection at the end like this: `> <filename>`. Enter the same command, redirect the `stderr` to the same place again, and the `stdout` to `stdout.txt`.
+Again, it didn't ask for input. This time it only printed your name to the terminal and not the output of `bad_command`. That produced an error, which you redirected to `stderr.txt`. Take a look at that file. You can redirect both the `stderr` and `stdout` by adding another redirection at the end like this: `> <filename>`. Enter the same command, redirect the `stderr` to the same place again, and the `stdout` to `stdout.txt`.
 
 #### HINTS
 
@@ -441,11 +441,35 @@ Nice job! Run it again, redirect the `stderr` to the same place and the `stdout`
 - Add `> stdout.txt` to the end of the previous command
 - Enter `./script.sh < name.txt 2> stderr.txt > stdout.txt` in the terminal
 
+## 324. cat kitty_ipsum_1.txt
+
+### 324.1
+
+:smile: You have two `kitty_ipsum` files. Find out what's in them by printing the first one in the terminal with `cat`.
+
+#### HINTS
+
+- Here's an example: `cat <filename>`
+- It's the `kitty_ipsum_1.txt` file
+- Enter `cat kitty_ipsum_1.txt` in the terminal
+
+## 326. cat kitty_ipsum_2.txt
+
+### 326.1
+
+It's some kitty ipsum. You may enjoy reading it :smile: Look at the second with `cat` like you did this one.
+
+#### HINTS
+
+- Here's an example: `cat <filename>`
+- It's the `kitty_ipsum_2.txt` file
+- Enter `cat kitty_ipsum_2.txt` in the terminal
+
 ## 330. wc kitty_ipsum_1
 
 ### 330.1
 
-:smile: You have two `kitty_ipsum` files. You will write a small script to translate them into doggy ipsum. For now, you will play with some common commands to figure out how. The first one is `wc`. It prints some info about a file. It can take a file as an argument like the `cat` command. Use it to see what it shows you about your `kitty_ipsum_1.txt` file.
+You will write a small script to translate both of them into doggy ipsum. For now, you will learn some commands to figure out how. The first one is `wc`. It prints some info about a file. It can take a file as an argument like the `cat` command. Use it to see what it shows you about your `kitty_ipsum_1.txt` file.
 
 #### HINTS
 
@@ -595,7 +619,6 @@ Next, you want to put a word count of the file in the info. Use `echo` again to 
 ### 460.1
 
 Use `cat` and the pipe method again to append the number of words in `kitty_ipsum_1.txt` to `kitty_info.txt`.
-cat kitty_ipsum_1.txt | wc -w >> kitty_info
 
 #### HINTS
 
@@ -812,7 +835,7 @@ Check the `grep` manual to see if there's a way to get just the line numbers.
 
 ### 635.1
 
-There doesn't appear to be a way to just get the line numbers. There's `sed` a command for replacing text that might work. First, some practice. Use `cat` to print the `name.txt` file in the terminal. It should still say `freeCodeCamp`.
+There doesn't appear to be a way to just get the line numbers. There's a `sed` command for replacing text that might work. First, some practice. Use `cat` to print the `name.txt` file in the terminal. It should still say `freeCodeCamp`.
 
 #### HINTS
 
@@ -835,7 +858,7 @@ There doesn't appear to be a way to just get the line numbers. There's `sed` a c
 
 ### 650.1
 
-Use it again to replace `free` with `f233` in the same way.
+You can see that it replaced the `r` with a `2` in `freeCodeCamp`. Use it again to replace `free` with `f233` in the same way.
 
 #### HINTS
 
@@ -848,7 +871,7 @@ Use it again to replace `free` with `f233` in the same way.
 
 ### 660.1
 
-Do it again, replacing `freecodecamp` with `f233C0d3C@mp`. 
+Try it again, replacing `freecodecamp` with `f233C0d3C@mp`.
 
 #### HINTS
 
@@ -861,7 +884,7 @@ Do it again, replacing `freecodecamp` with `f233C0d3C@mp`.
 
 ### 670.1
 
-Nothing was replaced in that output. It didn't find the `freecodecamp` text you tried to replace because the case of a few letters wasn't the same. You can add regex flags after the last `/` in the `sed` argument. A `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.
+Nothing was replaced that time. It didn't find the `freecodecamp` text you tried to replace because the case of a few letters didn't match. You can add regex flags after the last `/` in the `sed` argument. A `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.
 
 #### HINTS
 
@@ -911,7 +934,7 @@ Back to the task at hand. You want to add the line numbers asked for in the `kit
 
 ### 700.1
 
-You're can use `sed` to extract the line numbers from that output. Enter the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
+You can use `sed` to each line in that output with just the line numbers. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
 
 #### HINTS
 
@@ -998,7 +1021,7 @@ There's your list of numbers for the `kitty_info.txt` file. Enter the same comma
 
 ### 770.1
 
-Take a look at the file. Hopefully it doesn't look too messy. There's one more group of words to find info on for this file. Use `grep` with the `--color` flag to see all the words that start with `cat` in the same file. Use a similar pattern that you used to find words starting with `meow`
+Take a look at the file. Hopefully it doesn't look too messy. You can reset a lesson at any time if it doesn't look right, or if you accidentally change something in one of the other files. There's one more group of words to find info on for this file. Use `grep` with the `--color` flag to see all the words that start with `cat` in the same file. Use a similar pattern that you used to find words starting with `meow`.
 
 #### HINTS
 
@@ -1091,7 +1114,7 @@ That shows you the line numbers and text. You will have to use `sed` again to ex
 
 #### HINTS
 
-- The last command was
+- The last command was `grep -n 'cat[a-z]*' kitty_ipsum_1.txt`
 - Don't forget the `sed` flag for using extended regular expressions
 - It's the `-E` flag
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/'`
@@ -1243,8 +1266,10 @@ Use `grep` and `wc` in the terminal to append the suggested number to the `kitty
 #### HINTS
 
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `meow[a-z]*`
-- Add the `-o` flag to `grep` to put each match on it's own line
+- Add the flag to put the matched words on their own line
+- It's the `-o` flag
 - Pipe the `grep` results into the `wc` command
 - Add the `-l` flag to the `wc` to count the lines
 - Append the results of that to the file with `>> kitty_info.txt`
@@ -1273,6 +1298,7 @@ Use `grep` and `sed` in the terminal to append the suggested line numbers to the
 #### HINTS
 
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
 - Pipe the `grep` results into the `sed` command 
@@ -1319,6 +1345,7 @@ Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.
 #### HINTS
 
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the `-o` flag to `grep` to put each match on it's own line
 - Pipe the `grep` results into the `wc` command
@@ -1331,7 +1358,7 @@ Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.
 
 ### 990.1
 
-Last item for the info file. Append `Lines that they appear on:` to it like you did for the others.
+:sunglasses: :sunglasses: :sunglasses: One more. Append `Lines that they appear on:` to it like you did for the others.
 
 #### HINTS
 
@@ -1350,6 +1377,7 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 #### HINTS
 
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
+- Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
 - Pipe the `grep` results into the `sed` command 
