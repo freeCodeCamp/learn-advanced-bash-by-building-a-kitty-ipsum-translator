@@ -1,4 +1,4 @@
-version: '0.0.2'
+version: '0.0.3'
 config:
   setup:
     commands:
@@ -12,7 +12,7 @@ config:
     directory: .freeCodeCamp
   repo:
     uri: https://github.com/moT01/.learn-advanced-bash-by-building
-    branch: v0.0.2
+    branch: v0.0.3
   reset:
     commands:
       - './.freeCodeCamp/reset.sh'
