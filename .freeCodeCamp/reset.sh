@@ -6,3 +6,4 @@ sudo cp /workspace/project/.freeCodeCamp/reset_files/name.txt /workspace/project
 sudo cp /workspace/project/.freeCodeCamp/reset_files/script.sh /workspace/project
 sudo cp /workspace/project/.freeCodeCamp/reset_files/kitty_info.txt /workspace/project
 sudo cp /workspace/project/.freeCodeCamp/reset_files/translate.sh /workspace/project
+sudo cp /workspace/project/.freeCodeCamp/reset_files/doggy_ipsum_1.txt /workspace/project
