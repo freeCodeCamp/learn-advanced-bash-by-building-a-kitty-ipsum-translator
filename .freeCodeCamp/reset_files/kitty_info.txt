@@ -59,3 +59,10 @@ Number of times cat, cats, or catnip appears:
 8
 
 Lines that they appear on:
+10
+14
+19
+20
+25
+26
+28
