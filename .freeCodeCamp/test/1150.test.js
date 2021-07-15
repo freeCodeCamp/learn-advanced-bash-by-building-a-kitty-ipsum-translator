@@ -1,4 +1,4 @@
-const assert = require('assert');
+/*const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
@@ -9,4 +9,4 @@ describe('You', () => {
 
     assert(correctFlag && filteredCommand[0] === './translate.sh' && (filteredCommand[1] === 'kitty_ipsum_1.txt' || filteredCommand[1] === './kitty_ipsum_1.txt') && filteredCommand[2].op === '|' && filteredCommand[3] === 'grep' && (filteredCommand[4] === 'dog[a-z]*|woof[a-z]*' || filteredCommand[4] === 'woof[a-z]*|dog[a-z]*' || filteredCommand[4].pattern === 'dog[a-z]*|woof[a-z]*' || filteredCommand[4].pattern === 'woof[a-z]*|dog[a-z]*'));
   });
-});
+});*/
