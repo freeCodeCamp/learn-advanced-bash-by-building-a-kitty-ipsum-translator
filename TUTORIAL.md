@@ -457,7 +457,7 @@ Nice job! Run it again, redirect the `stderr` to the same place and the `stdout`
 
 ### 326.1
 
-It's some kitty ipsum. You may enjoy reading it :smile: Look at the second with `cat` like you did this one.
+It's some kitty ipsum. You may enjoy reading it :smile: Look at the second one with `cat` like you did this one.
 
 #### HINTS
 
@@ -592,7 +592,7 @@ Open the file so you can keep track of what's in it. Use `echo` and the `-e` fla
 
 ### 440.1
 
-You should be able to find out how many lines are in the `kitty_ipsum_1.txt` file and add that number to the `kitty_info.txt` file. Use the `cat` command to pipe the content of `kitty_ipsum_1.txt` as input for the `wc` command. Use the flag for getting the number of lines from that input and **append** the number to the `kitty_info.txt` file.
+You should be able to find out how many lines are in the `kitty_ipsum_1.txt` file and add that number to the `kitty_info.txt` file. Use the `cat` command to pipe the content of `kitty_ipsum_1.txt` as input for the `wc` command. Use the flag for getting the number of lines from that input and **append** the number to the `kitty_info.txt` file. **Tip:** enter the command without appending to see if it's working first.
 
 #### HINTS
 
@@ -788,7 +788,7 @@ That gave you each match on it's own line. You can use the `wc` command again to
 
 ### 600.1
 
-Awesome. There's your count of how many times those words appear. Enter the same command but append the number to the `kitty_info.txt` file.
+Awesome. `wc` counted the lines in the output of the `grep`. That should be the count for how many times those words appear. Enter the same command but append the number to the `kitty_info.txt` file.
 
 #### HINTS
 
@@ -972,7 +972,7 @@ That didn't replace anything. Check the manual of `sed` quick to see if there's 
 
 ### 730.1
 
-Looks like there's a lot of options with `sed` as well. There's a flag to use extended regular expressions. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.
+Looks like there's a lot of options with `sed` as well. There's a flag to use extended regular expressions. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The previous command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.
 
 #### HINTS
 
@@ -1167,7 +1167,8 @@ Use `cat` with the pipe method to append the info to the `kitty_info.txt` file t
 
 #### HINTS
 
-- Here's and example: `cat <filename> | <command> >> <filename>`
+- Enter the commands one at a time to see the output first
+- Here's an example: `cat <filename> | <command> >> <filename>`
 - You want to `cat kitty_ipsum_2.txt`
 - And pipe the output of that into the `wc` command
 - Which uses the `-l` flag to get the number of lines in the file
@@ -1196,6 +1197,7 @@ Append the suggested info the `kitty_info.txt` file. Use redirection instead of 
 
 #### HINTS
 
+- Enter the commands one at a time to see the output first
 - Here's an example: `<command> < <input_filename> >> <output_filename>`
 - You want to use `kitty_ipsum_2.txt` for the input of the `wc` command
 - With the `-w` flag to get the number of words from the input
@@ -1224,9 +1226,8 @@ Using the pipe or input redirection method, append the character count of `kitty
 
 #### HINTS
 
+- Enter the commands one at a time to see the output first
 - You will want to use the `wc` command with the `-m` flag
-- You can do this!
-- Give it another try
 - Here's an example: `<command> < <input_filename> >> <output_filename>`
 - You previously used `wc -w < kitty_ipsum_2 >> kitty_info.txt`
 - Enter `wc -m < kitty_ipsum_2.txt >> kitty_info.txt` in the terminal
@@ -1265,8 +1266,8 @@ Use `grep` and `wc` in the terminal to append the suggested number to the `kitty
 
 #### HINTS
 
-- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - Enter the commands one at a time to see the output first
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the flag to put the matched words on their own line
 - It's the `-o` flag
@@ -1344,8 +1345,8 @@ Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.
 
 #### HINTS
 
-- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - Enter the commands one at a time to see the output first
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the `-o` flag to `grep` to put each match on it's own line
 - Pipe the `grep` results into the `wc` command
@@ -1376,8 +1377,8 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 
 #### HINTS
 
-- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - Enter the commands one at a time to see the output first
+- Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
 - Pipe the `grep` results into the `sed` command 
