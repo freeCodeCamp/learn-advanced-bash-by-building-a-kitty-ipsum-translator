@@ -1,4 +1,4 @@
-/*const assert = require('assert');
+const assert = require('assert');
 const { getLastCommand } = require('./utils');
 
 describe('You', () => {
@@ -7,6 +7,6 @@ describe('You', () => {
     const correctFlag = (lastCommand.indexOf('--color') > 3 || lastCommand.indexOf('--colour') > 3);
     const filteredCommand = lastCommand.filter(part => part !== '--color' && part !== '--colour');
 
-    assert(correctFlag && filteredCommand[0] === './translate.sh' && (filteredCommand[1] === 'kitty_ipsum_1.txt' || filteredCommand[1] === './kitty_ipsum_1.txt') && filteredCommand[2].op === '|' && filteredCommand[3] === 'grep' && (filteredCommand[4] === 'dogchow' || filteredCommand[4].pattern === 'dogchow'));
+    assert(correctFlag && filteredCommand[0] === './translate.sh' && (filteredCommand[1] === 'kitty_ipsum_1.txt' || filteredCommand[1] === './kitty_ipsum_1.txt') && filteredCommand[2].op === '|' && filteredCommand[3] === 'grep' && (filteredCommand[4] === 'catnip' || filteredCommand[4].pattern === 'catnip'));
   });
-});*/
+});
