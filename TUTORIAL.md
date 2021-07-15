@@ -1387,3 +1387,303 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 - Append the results to the file wiht `>> kitty_info.txt` 
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
+
+## 1010. touch translate.sh
+
+### 1010.1
+
+touch translate.sh
+
+#### HINTS
+
+- Hint
+
+## 1020. chmod +x ./translate.sh
+
+### 1020.1
+
+chmod +x ./translate.sh
+
+#### HINTS
+
+- Hint
+
+## 1030. Add shebang
+
+### 1030.1
+
+Add shebang
+
+#### HINTS
+
+- Hint
+
+## 1040. Add cat $1
+
+### 1040.1
+
+Add cat $1
+
+#### HINTS
+
+- Hint
+
+## 1050. ./translate.sh kitty_1
+
+### 1050.1
+
+`./translate.sh kitty_ipsum_1.txt`
+
+#### HINTS
+
+- Hint
+
+## 1060. ./translate.sh < kitty_1
+
+### 1060.1
+
+`./translate.sh < kitty_ipsum_1.txt`
+
+#### HINTS
+
+- Hint
+
+## 1070. cat kitty_1 | ./translate.sh
+
+### 1070.1
+
+cat kitty_ipsum_1.txt | ./translate.sh
+
+#### HINTS
+
+- Hint
+
+## 1080. Add | sed s/catnip/dogchow/
+
+### 1080.1
+
+`Add | sed 's/catnip/dogchow/'`
+
+#### HINTS
+
+- Hint
+
+## 1090. ./translate kitty_1
+
+### 1090.1
+
+`./translate kitty_ipsum_1.txt`
+
+#### HINTS
+
+- Hint
+
+## 1100. ./translate kitty_1 | grep --color dogchow
+
+### 1100.1
+
+`./translate kitty_ipsum_1.txt | grep —color 'dogchow'`
+
+#### HINTS
+
+- Hint
+
+## 1110. ./translate kitty_1 | grep --color catnip
+
+### 1110.1
+
+`./translate kitty_ipsum_1.txt | grep --color 'catnip'`
+
+#### HINTS
+
+- Hint
+
+## 1120. Add s/cat/dog/g
+
+### 1120.1
+
+Add ; 's/cat/dog/g'
+
+#### HINTS
+
+- Hint
+
+## 1130. ./translate.sh kitty_1 | grep --color dog[a-z]
+
+### 1130.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1140. Add s/meow/woof/
+
+### 1140.1
+
+Add 's/meow/woof/'
+
+#### HINTS
+
+- Hint
+
+## 1150. ./translate.sh kitty_1 | grep --color dog[a-z]woof[a-z]
+
+### 1150.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1160. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
+
+### 1160.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1170. Add g regex flag
+
+### 1170.1
+
+Add g regex flag
+
+#### HINTS
+
+- Hint
+
+## 1180. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
+
+### 1180.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1190. Add -E s/meow|meowzer/woof/
+
+### 1190.1
+
+Add -E s/meow|meowzer/woof/
+
+#### HINTS
+
+- Hint
+
+## 1200. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
+
+### 1200.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1210. ./translate.sh kitty_1 | grep --color -E meow[a-z]cat[a-z]
+
+### 1210.1
+
+`./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1220. ./translate.sh kitty_2 | grep --color -E meow[a-z]cat[a-z]
+
+### 1220.1
+
+`./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
+
+#### HINTS
+
+- Hint
+
+## 1230. ./translate.sh kitty_1 > doggy_1
+
+### 1230.1
+
+./translate.sh kitty_ipsum_1.txt > doggy_ipsum_1.txt
+
+#### HINTS
+
+- Hint
+
+## 1240. cat doggy_1
+
+### 1240.1
+
+cat doggy_ipsum_1.txt
+
+#### HINTS
+
+- Hint
+
+## 1250. diff kitty_1 doggy_1
+
+### 1250.1
+
+diff kitty_ipsum_1 doggy_ipsum_1
+
+#### HINTS
+
+- Hint
+
+## 1260. man diff
+
+### 1260.1
+
+man diff
+
+#### HINTS
+
+- Hint
+
+## 1270. diff --color kitty_1 doggy_1
+
+### 1270.1
+
+`diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt`
+
+#### HINTS
+
+- Hint
+
+## 1280. ./translate.sh kitty_2 > doggy_2
+
+### 1280.1
+
+./translate.sh kitty_ipsum_2.txt > doggy_ipsum_2.txt
+
+#### HINTS
+
+- Hint
+
+## 1290. cat doggy_2
+
+### 1290.1
+
+cat doggy_ipsum_2.txt
+
+#### HINTS
+
+- Hint
+
+## 1300. diff --color kitty_2 doggy_2
+
+### 1300.1
+
+`diff --color kitty_ipsum_2.txt doggy_ipsum_2.txt`
+
+#### HINTS
+
+- Hint

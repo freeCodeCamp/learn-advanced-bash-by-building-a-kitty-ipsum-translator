@@ -680,3 +680,183 @@ levels:
         setup:
           watchers:
             - ../.bash_history
+  - id: '1010'
+    steps:
+      - id: '1010.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1020'
+    steps:
+      - id: '1020.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1030'
+    steps:
+      - id: '1030.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1040'
+    steps:
+      - id: '1040.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1050'
+    steps:
+      - id: '1050.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1060'
+    steps:
+      - id: '1060.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1070'
+    steps:
+      - id: '1070.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1080'
+    steps:
+      - id: '1080.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1090'
+    steps:
+      - id: '1090.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1100'
+    steps:
+      - id: '1100.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1110'
+    steps:
+      - id: '1110.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1120'
+    steps:
+      - id: '1120.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1130'
+    steps:
+      - id: '1130.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1140'
+    steps:
+      - id: '1140.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1150'
+    steps:
+      - id: '1150.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1160'
+    steps:
+      - id: '1160.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1170'
+    steps:
+      - id: '1170.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1180'
+    steps:
+      - id: '1180.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1190'
+    steps:
+      - id: '1190.1'
+        setup:
+          watchers:
+            - ./translate.sh
+  - id: '1200'
+    steps:
+      - id: '1200.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1210'
+    steps:
+      - id: '1210.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1220'
+    steps:
+      - id: '1220.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1230'
+    steps:
+      - id: '1230.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1240'
+    steps:
+      - id: '1240.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1250'
+    steps:
+      - id: '1250.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1260'
+    steps:
+      - id: '1260.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1270'
+    steps:
+      - id: '1270.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1280'
+    steps:
+      - id: '1280.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1290'
+    steps:
+      - id: '1290.1'
+        setup:
+          watchers:
+            - ../.bash_history
+  - id: '1300'
+    steps:
+      - id: '1300.1'
+        setup:
+          watchers:
+            - ../.bash_history
