@@ -6,3 +6,4 @@ cp ./.freeCodeCamp/reset_files/name.txt .
 cp ./.freeCodeCamp/reset_files/script.sh .
 cp ./.freeCodeCamp/reset_files/kitty_info.txt .
 cp ./.freeCodeCamp/reset_files/translate.sh .
+cp ./.freeCodeCamp/reset_files/doggy_ipsum_1.txt .
