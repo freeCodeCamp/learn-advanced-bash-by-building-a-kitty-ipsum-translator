@@ -1531,7 +1531,7 @@ It's showing three places `catnip` was replaced with `dogchow`. To make sure you
 
 ### 1120.1
 
-It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace different pattern using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.
+It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace many patterns using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in the quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.
 
 #### HINTS
 
@@ -1661,17 +1661,18 @@ cat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'
 
 ### 1200.1
 
-Now it should replace either those two words with `woof`. Change again with that command you entered before that searches for `dog` or `woof` words.
+Now it should replace either of those two words with `woof`. Check it again with that command you entered before that searches for `dog` or `woof` words.
 
 #### HINTS
 
+- You can use the up arrow in the terminal to find previously entered commands
 - Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'` in the terminal
 
 ## 1210. ./translate.sh kitty_1 | grep --color -E meow[a-z]cat[a-z]
 
 ### 1210.1
 
-To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.
+It replaced `meowzer` that time. To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.
 
 #### HINTS
 
@@ -1683,8 +1684,7 @@ To be sure it replaced all the words in the file, enter the same command but che
 
 ### 1220.1
 
-Check the second kitty ipsum file for the same pattern to make sure all the same words are being replaced.
-`./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
+No results means it didn't find any matches for `cat` or `meow` words after being translated. Check the second kitty ipsum file for the same pattern to make sure it's replacing all those words.
 
 #### HINTS
 
@@ -1730,7 +1730,7 @@ It looks good :thumbsup: `diff` is a command to view the difference between two 
 
 ### 1260.1
 
-It looks a little cryptic. Check the manual of `diff` to see if there's any way to make it better.
+It may look a little cryptic, but it's showing the lines that don't match in the two files. Check the manual of `diff` to see if there's any way to make it prettier.
 
 #### HINTS
 
