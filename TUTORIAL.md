@@ -1,4 +1,4 @@
-# Learn Advanced Bash by Building
+# Learn Advanced Bash by Building a Kitty Ipsum Translator
 
 > Welcome to the Advanced Bash lessons!
 
