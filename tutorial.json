@@ -3148,7 +3148,7 @@
               "ffac0b07c9f4ac6d02952d96d8cb1b3f3dc3400d"
             ]
           },
-          "content": "It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace different pattern using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.",
+          "content": "It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace many patterns using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in the quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.",
           "hints": [
             "The code looks like this: `s/cat/dog/`",
             "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed 's/catnip/dogchow; s/cat/dog/'\n```"
@@ -3375,8 +3375,9 @@
               "a839f1090862074a07f65b073b7d672c7ba90bf7"
             ]
           },
-          "content": "Now it should replace either those two words with `woof`. Change again with that command you entered before that searches for `dog` or `woof` words.",
+          "content": "Now it should replace either of those two words with `woof`. Check it again with that command you entered before that searches for `dog` or `woof` words.",
           "hints": [
+            "You can use the up arrow in the terminal to find previously entered commands",
             "Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'` in the terminal"
           ]
         }
@@ -3398,7 +3399,7 @@
               "918c8c41fe35136f20810669d449a7fc12259d66"
             ]
           },
-          "content": "To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.",
+          "content": "It replaced `meowzer` that time. To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.",
           "hints": [
             "The last command was `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`",
             "Replace the matching pattern with `meow[a-z]*|cat[a-z]*`",
@@ -3423,7 +3424,7 @@
               "0254ac830837373b7913ff2d16707913e251bdec"
             ]
           },
-          "content": "Check the second kitty ipsum file for the same pattern to make sure all the same words are being replaced.\n`./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`",
+          "content": "No results means it didn't find any matches for `cat` or `meow` words after being translated. Check the second kitty ipsum file for the same pattern to make sure it's replacing all those words.",
           "hints": [
             "You can find previously entered commands using the arrow on the keyboard while the terminal is focused",
             "The last command was `./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`",
@@ -3521,7 +3522,7 @@
               "c4ff0a80ec9d3e0b92280af80b7ee56c6cf1fa76"
             ]
           },
-          "content": "It looks a little cryptic. Check the manual of `diff` to see if there's any way to make it better.",
+          "content": "It may look a little cryptic, but it's showing the lines that don't match in the two files. Check the manual of `diff` to see if there's any way to make it prettier.",
           "hints": [
             "View the manual of a command with `man`",
             "Here's an example: `man <command>`",
