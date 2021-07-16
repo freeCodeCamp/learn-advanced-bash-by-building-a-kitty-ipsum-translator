@@ -278,7 +278,7 @@ You should be starting to get the hang of how `stdin`, `stdout`, and `stderr` wo
 
 #### HINTS
 
-- Here's and example: `touch <filename>`
+- Here's an example: `touch <filename>`
 - Enter `touch script.sh` in the terminal
 - Make sure you are in the `project` folder first
 
@@ -290,7 +290,7 @@ Give your new script executable permissions with the `chmod` command and the `+x
 
 #### HINTS
 
-- Here's and example: `chmod +x <filename>`
+- Here's an example: `chmod +x <filename>`
 - Enter `chmod +x script.sh` in the terminal
 
 ## 230. Add shebang
@@ -366,7 +366,7 @@ The `read` command in your script is waiting for input. Type your name and press
 
 ### 270.1
 
-You input your name, and it output the two result of the two commands. Run the script again, but use a pipe to echo your name as the input.
+You input your name, and your script output the result of the two commands. Run the script again, but use a pipe to echo your name as the input.
 
 #### HINTS
 
@@ -1393,298 +1393,396 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 
 ### 1010.1
 
-touch translate.sh
+:sunglasses: :sunglasses: :sunglasses: :sunglasses: The `kitty_info` file is done and it has some information about the two ipsum files. Next, you will create a small script to translate both them into doggy ipsum. It will be as simple as replacing all the cat references with similar words for dogs. In the terminal, use `touch` to create `translate.sh`.
 
 #### HINTS
 
-- Hint
+- Here's an example: `touch <filename>`
+- Enter `touch translate.sh` in the terminal
+- Make sure you are in the `project` folder first
 
 ## 1020. chmod +x ./translate.sh
 
 ### 1020.1
 
-chmod +x ./translate.sh
+Give your new script executable permissions so you can run it in the terminal.
 
 #### HINTS
 
-- Hint
+- Here's an example: `chmod +x <filename>`
+- Enter `chmod +x translate.sh` in the terminal
 
 ## 1030. Add shebang
 
 ### 1030.1
 
-Add shebang
+Add a shebang to the script that uses `bash` like you did for the other script you made.
 
 #### HINTS
 
-- Hint
+- The shebang for bash is `#!/bin/bash`
+- Add the suggestion at the top of the `translate.sh` file
+- Add `#!/bin/bash` at the top of the `translate.sh` file
 
 ## 1040. Add cat $1
 
 ### 1040.1
 
-Add cat $1
+The script will take a file as input that can be passed as an argument or read from `stdin`. Below the shebang, use `cat` to print the content of the first argument passed to the script.
 
 #### HINTS
 
-- Hint
+- Here's an example: `cat <first_argument>`
+- You can access an arguement with `$<argument_number>`
+- Access the arguement with `$1`
+- Add `cat $1` below the shebang in your `translate.sh` file
 
 ## 1050. ./translate.sh kitty_1
 
 ### 1050.1
 
-`./translate.sh kitty_ipsum_1.txt`
+Run the script and use the first kitty ipsum file as an argument to see if it's working.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command_to_run> <argument>`
+- Enter `./translate.sh kitty_ipsum_1.txt` in the terminal
 
 ## 1060. ./translate.sh < kitty_1
 
 ### 1060.1
 
-`./translate.sh < kitty_ipsum_1.txt`
+Try the same command using redirection to print the file.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command> < <filename>`
+- Redirect the `kitty_ipsum_1.txt` file as input for your script
+- Enter `./translate.sh < kitty_ipsum_1.txt` in the terminal
 
 ## 1070. cat kitty_1 | ./translate.sh
 
 ### 1070.1
 
-cat kitty_ipsum_1.txt | ./translate.sh
+Looks like that is working. Try the `cat` and pipe method.
 
 #### HINTS
 
-- Hint
+- Here's and example `cat <filename> | <command>`
+- Use `cat` to set the content of `kitty_ipsum_1.txt` as input for your script
+- Enter `cat kitty_ipsum_1.txt | ./translate.sh` in the terminal
 
 ## 1080. Add | sed s/catnip/dogchow/
 
 ### 1080.1
 
-`Add | sed 's/catnip/dogchow/'`
+Using any of those three methods as input is working. Time to start replacing some of the text with doggy ipsum. In your script file, pipe the input into a `sed` that replaces `catnip` with `dogchow`.
 
 #### HINTS
 
-- Hint
+- Here's an example: `cat $1 | sed 's/<pattern>/<replacement>/'`
+- The `sed` argument should be `s/catnip/dogchow/`
+- The `translate.sh` file should look like this:
+```sh
+#!/bin/bash
+
+cat $1 | sed 's/catnip/dogchow'
+```
 
 ## 1090. ./translate kitty_1
 
 ### 1090.1
 
-`./translate kitty_ipsum_1.txt`
+Run the script passing the first kitty ipsum file as a argument to see if it's working.
 
 #### HINTS
 
-- Hint
+- Here's an example: `<command> <argument>`
+- Use the `kitty_ipsum_1.txt` file as the argument
+- Enter `./translate.sh kitty_ipsum_1.txt` in the terminal
 
 ## 1100. ./translate kitty_1 | grep --color dogchow
 
 ### 1100.1
 
-`./translate kitty_ipsum_1.txt | grep —color 'dogchow'`
+If you look, you can find `dogchow` in there so it's probably working. To make sure pipe the results of that into a `grep` command that searches for `dogchow`. Output the results in color.
 
 #### HINTS
 
-- Hint
+- The previous command was `./translate.sh kitty_ipsum_1.txt`
+- Pipe the results of the previous command into `grep` so it searches for `dogchow`
+- Don't forget the `--color` flag to show the results in color
+- Here's an example: `./translate kitty_ipsum_1.txt | grep <flag> '<pattern>'`
+- Enter `./translate kitty_ipsum_1.txt | grep --color 'dogchow'` in the terminal
 
 ## 1110. ./translate kitty_1 | grep --color catnip
 
 ### 1110.1
 
-`./translate kitty_ipsum_1.txt | grep --color 'catnip'`
+It's showing three places `catnip` was replaced with `dogchow`. To make sure you got them all, enter the previous command and search for `catnip` instead.
 
 #### HINTS
 
-- Hint
+- The previous command was `./translate kitty_ipsum_1.txt | grep --color 'dogchow'`
+- Replace `dogchow` with `catnip` in the previous command
+- Enter `./translate kitty_ipsum_1.txt | grep --color 'catnip'` in the terminal
 
-## 1120. Add s/cat/dog/g
+## 1120. Add s/cat/dog/
 
 ### 1120.1
 
-Add ; 's/cat/dog/g'
+It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace different pattern using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.
 
 #### HINTS
 
-- Hint
+- The code looks like this: `s/cat/dog/`
+- The `translate.sh` file should look like this:
+```sh
+#!/bin/bash
+
+cat $1 | sed 's/catnip/dogchow; s/cat/dog/'
+```
 
 ## 1130. ./translate.sh kitty_1 | grep --color dog[a-z]
 
 ### 1130.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*'`
+Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script the translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.
 
 #### HINTS
 
-- Hint
+- You previously entered `./translate kitty_ipsum_1.txt | grep --color 'catnip'`
+- The `grep` pattern you want is `dog[a-z]*`
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*'` in the terminal
+
+## 1135. ./translate.sh kitty_1 | grep --color cat[a-z]
+
+### 1135.1
+
+As expected, it replaced instances of `cat` with `dog`. Enter the same command, but search for anything starting with `cat` to make sure it replaced them all.
+
+#### HINTS
+
+- The previous command was `./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*'`
+- Replace `dog[a-z]*` with `cat[a-z]*` in the previous command
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color 'cat[a-z]*'` in the terminal
 
 ## 1140. Add s/meow/woof/
 
 ### 1140.1
 
-Add 's/meow/woof/'
+It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `moew` words with `woof`.
 
 #### HINTS
 
-- Hint
+- You can add another pattern to replace like before. Add a semi-colon and another pattern in the quotes of the `sed`
+- Here's an example: `sed 's///; s///; s///'`
+- The third pattern should be `s/meow/woof/`
+- The `translate.sh` file should look like this:
+```sh
+#!/bin/bash
+
+cat $1 | sed -E 's/catnip/dogchow/; s/cat/dog/; s/meow/woof/'
+```
 
 ## 1150. ./translate.sh kitty_1 | grep --color dog[a-z]woof[a-z]
 
 ### 1150.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'`
+Using your script, translate the first ipsum file again. Check the results with `grep` for words that start with `dog` or `woof`. Here's an example of the search pattern you want: `grep '<dog_words>|<woof_words>'`. To view "dog words", you would use `dog[a-z]*`. Be sure to view the result in color.
 
 #### HINTS
 
-- Hint
+- You previously entered `./translate.sh kitty_ipsum_1.txt | grep --color 'cat[a-z]*'`
+- You want to find "dog" words with `dog[a-z]*` and "woof" words with `woof[a-z]*`
+- The search pattern you should use is `'dog[a-z]*|woof[a-z]*'`
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'` in the terminal
 
 ## 1160. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
 
 ### 1160.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+That didn't work. Enter the same command, but add the flag to use extended regular expressions to the `grep` search so it recognizes the `|`.
 
 #### HINTS
 
-- Hint
+- The last command was `./translate.sh kitty_ipsum_1.txt | grep --color 'dog[a-z]*|woof[a-z]*'`
+- Find the flag you want in the `grep` manual
+- View the manual with `man grep`
+- It's the `-E` flag
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'` in the terminal
 
 ## 1170. Add g regex flag
 
 ### 1170.1
 
-Add g regex flag
+If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instand of `meow` it found on that line. Add the "global" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.
 
 #### HINTS
 
-- Hint
+- Here's an example of one pattern: `s/<pattern>/<replacement>/<regex_flags>`
+- It's the `g` flag
+- Your `translate.sh` file should look like this:
+```sh
+#!/bin/bash
+
+cat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow/woof/g'
+```
 
 ## 1180. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
 
 ### 1180.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+Enter the same command to translate the first ipsum file and see the matches of all words starting with `dog` or `woof` to see if that worked.
 
 #### HINTS
 
-- Hint
+- You can find previously entered commands using the arrow on the keyboard while the terminal is focused
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'` in the terminal
 
 ## 1190. Add -E s/meow|meowzer/woof/
 
 ### 1190.1
 
-Add -E s/meow|meowzer/woof/
+It worked, but `woofzer` doesn't sound quite right. Change your `sed` pattern that matched `meow` to match `meow|meowzer`. Add the flag to use extended regular expressions to the `sed` command so it recognizes the `|`.
 
 #### HINTS
 
-- Hint
+- The last `sed` pattern in you scrip should be `s/meow|meowzer/woof/`
+- And you should add the `-E` flag to the `sed` command
+- Your `translate.sh` file should look like this:
+```sh
+#!/bin/bash
+
+cat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'
+```
 
 ## 1200. ./translate.sh kitty_1 | grep --color -E dog[a-z]woof[a-z]
 
 ### 1200.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+Now it should replace either those two words with `woof`. Change again with that command you entered before that searches for `dog` or `woof` words.
 
 #### HINTS
 
-- Hint
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'` in the terminal
 
 ## 1210. ./translate.sh kitty_1 | grep --color -E meow[a-z]cat[a-z]
 
 ### 1210.1
 
-`./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
+To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.
 
 #### HINTS
 
-- Hint
+- The last command was `./translate.sh kitty_ipsum_1.txt | grep --color -E 'dog[a-z]*|woof[a-z]*'`
+- Replace the matching pattern with `meow[a-z]*|cat[a-z]*`
+- Enter `./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'` in the terminal
 
 ## 1220. ./translate.sh kitty_2 | grep --color -E meow[a-z]cat[a-z]
 
 ### 1220.1
 
+Check the second kitty ipsum file for the same pattern to make sure all the same words are being replaced.
 `./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
 
 #### HINTS
 
-- Hint
+- You can find previously entered commands using the arrow on the keyboard while the terminal is focused
+- The last command was `./translate.sh kitty_ipsum_1.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'`
+- Change the last command to use the `kitty_ipsum_2.txt` file
+- Enter `./translate.sh kitty_ipsum_2.txt | grep --color -E 'meow[a-z]*|cat[a-z]*'` in the terminal
 
 ## 1230. ./translate.sh kitty_1 > doggy_1
 
 ### 1230.1
 
-./translate.sh kitty_ipsum_1.txt > doggy_ipsum_1.txt
+Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file and put the output into a new `doggy_ipsum_1.txt` file.
 
 #### HINTS
 
-- Hint
+- Redirect the `stdout` of translating `kitty_ipsum_1.txt` to `doggy_ipsum_1.txt`
+- Here's an example: `<translate_command> <input_filename> > <output_filename>`
+- Enter `./translate.sh kitty_ipsum_1.txt > doggy_ipsum_1.txt` in the terminal
 
 ## 1240. cat doggy_1
 
 ### 1240.1
 
-cat doggy_ipsum_1.txt
+Use `cat` to print the new file to the terminal.
 
 #### HINTS
 
-- Hint
+- Here's an example: `cat <filename>`
+- Enter `cat doggy_ipsum_1.txt` in the terminal
 
 ## 1250. diff kitty_1 doggy_1
 
 ### 1250.1
 
-diff kitty_ipsum_1 doggy_ipsum_1
+It looks good :thumbsup: `diff` is a command to view the difference between two files. You can use it like this: `diff <file_1> <file_2>`. Use it to view the difference between the `kitty_ipsum_1` and `doggy_ipsum_1` files.
 
 #### HINTS
 
-- Hint
+- Enter `diff kitty_ipsum_1.txt doggy_ipsum_1.txt` in the terminal
 
 ## 1260. man diff
 
 ### 1260.1
 
-man diff
+It looks a little cryptic. Check the manual of `diff` to see if there's any way to make it better.
 
 #### HINTS
 
-- Hint
+- View the manual of a command with `man`
+- Here's an example: `man <command>`
+- Enter `man diff` in the terminal
+- Press enter until you have seen the whole manual
 
 ## 1270. diff --color kitty_1 doggy_1
 
 ### 1270.1
 
-`diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt`
+Use the flag to show the diff of the same two files in color.
 
 #### HINTS
 
-- Hint
+- You previously entered `diff kitty_ipsum_1.txt doggy_ipsum_1.txt`
+- The flag you want is `--color`
+- Enter `diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt` in the terminal
 
 ## 1280. ./translate.sh kitty_2 > doggy_2
 
 ### 1280.1
 
-./translate.sh kitty_ipsum_2.txt > doggy_ipsum_2.txt
+That's better. The red lines are lines that aren't in the second file, and the green lines are what they were replaced with. The line numbers that were changed are above each section. Translate your second kitty ipsum file and redirect the output into `doggy_ipsum_2.txt`.
 
 #### HINTS
 
-- Hint
+- You previously entered `./translate.sh kitty_ipsum_1.txt > doggy_ipsum_1.txt`
+- Enter `./translate.sh kitty_ipsum_2.txt > doggy_ipsum_2.txt` in the terminal
 
 ## 1290. cat doggy_2
 
 ### 1290.1
 
-cat doggy_ipsum_2.txt
+View the content of your new file with `cat`
 
 #### HINTS
 
-- Hint
+- Here's an example: `cat <filename>`
+- Enter `cat doggy_ipsum_2.txt` in the terminal
 
 ## 1300. diff --color kitty_2 doggy_2
 
 ### 1300.1
 
-`diff --color kitty_ipsum_2.txt doggy_ipsum_2.txt`
+Lastly, view the `diff` of the two files in color again.
 
 #### HINTS
 
-- Hint
+- Here's the example again: `diff <file_1> <file_2>`
+- Don't forget the flag to show the colors
+- It's the `--color` flag
+- You previosly entered `diff --color kitty_ipsum_1.txt doggy_ipsum_1.txt`
+- Enter `diff --color kitty_ipsum_2.txt doggy_ipsum_2.txt` in the terminal
