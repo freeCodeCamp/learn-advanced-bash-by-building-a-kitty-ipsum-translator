@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.1.0",
   "summary": {
     "title": "Learn Advanced Bash by Building a Kitty Ipsum Translator",
     "description": "> Welcome to the Advanced Bash lessons!"
@@ -24,7 +24,7 @@
     },
     "repo": {
       "uri": "https://github.com/moT01/.learn-advanced-bash-by-building-a-kitty-ipsum-translator",
-      "branch": "v0.0.5"
+      "branch": "v0.1.0"
     },
     "reset": {
       "commands": [
