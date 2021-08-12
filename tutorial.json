@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": {
     "title": "Learn Advanced Bash by Building a Kitty Ipsum Translator",
     "description": "> Welcome to the Advanced Bash lessons!"
@@ -12,7 +12,7 @@
         "cd .freeCodeCamp && npm install"
       ],
       "commits": [
-        "3d839a9a67d72aad876e0abeb5c0a45d355deb17"
+        "d10efe265ce93d4b3ef67f377135773e3eb4244d"
       ]
     },
     "testRunner": {
@@ -24,7 +24,7 @@
     },
     "repo": {
       "uri": "https://github.com/moT01/.learn-advanced-bash-by-building-a-kitty-ipsum-translator",
-      "branch": "v0.1.0"
+      "branch": "v0.1.1"
     },
     "reset": {
       "commands": [
@@ -52,7 +52,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0b7df90269cfc38fc62a4e61f3ca76e9157662bc"
+              "da678939b3e410cef7a99d9d5afa7cf19e1307f2"
             ]
           },
           "content": "**The first thing you need to do is start the terminal.** Do that by clicking the \"hamburger\" menu at the top left of the screen, going to the \"terminal\" section, and clicking \"new terminal\". Once you open a new one, type `echo hello bash` into the terminal and press enter.",
@@ -76,7 +76,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4a9f0030957f6133f69a2e500fbb9d7d480596fb"
+              "d88860bba983fbc6c074b1ea5cdc545ccc6ecb48"
             ]
           },
           "content": "The command you just entered printed to the terminal. You can `redirect` that output to a file using `>`. Here’s an example: `<command> > <filename>`. Enter the same command but redirect the output into `stdout.txt`.",
@@ -100,7 +100,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "630459c8c55ffa3c1cbbca32014a4d064fa89307"
+              "1ebc8c889b4b5538550f5cec6ac19aca5b1ad35e"
             ]
           },
           "content": "A `stdout.txt` file was create. You should take a look at it. Instead of printing `hello bash` to the terminal, it **redirected** the output to the file. A single `>` will create or overwrite the file. Use the same command with `>>` to append to the file.",
@@ -126,7 +126,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b9f6896a41f2868f78e380eea37ecf64e2802ec0"
+              "1d689233c10930b8ac377f2b5526a2f998ca9363"
             ]
           },
           "content": "Take a look at the file again. The output of `echo hello bash` was added to it.Use the command with one `>` again to overwrite the file.",
@@ -152,7 +152,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9f7f42510ff8cace898fdf57465fa2295268f2df"
+              "e99bde8be1e9c2385c161b21b6106b452bf663f3"
             ]
           },
           "content": "Take a look at the file. It was overwritten with the output of the command. Enter `> stout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.",
@@ -175,7 +175,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0b971659c8b990989ddbdd6b796ab14280b1c473"
+              "5f8016c4109d2ecf0c50f68587601a7b78fba715"
             ]
           },
           "content": "Next, enter `bad_command` in the terminal to see what happens. You will get an error.",
@@ -198,7 +198,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d9c7c616fd420dfe79b482e155564681f16d115f"
+              "bc9d031f033f429eb77c12392cfc194204931c71"
             ]
           },
           "content": "Enter the same command, but try to redirect the output to `stderr.txt` using `>`.",
@@ -223,7 +223,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d744f9c0eedeeb757c7506587d952c54d3ffc62d"
+              "b471ac836f23fbbcc269bb9cf6d1a623e095e773"
             ]
           },
           "content": "There’s two types of output, `stdout` (standard out) for when a command is successful, and `stderr` (standard error) for when it’s not. Both of these will print to the terminal by default. `bad_command` was not a valid command, so it printed to `stderr`. You can redirect `stderr` with `2>`. Enter the same command but redirect `stderr` to `stderr.txt`",
@@ -248,7 +248,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1f9e3d94f9eea342ae9535070e2b80d82bc066da"
+              "b7b53ba6dfae8da921791d9e08e86022bf34e7f5"
             ]
           },
           "content": "Take a look at the `stderr.txt` file. The error was redirected to the file and nothing printed in the terminal. You used `2>` to redirect `stderr`. Similarily, you can use `1>` to redirect `stdout`. Enter `echo hello bash` again and use it to redirect `stdout` to the `stdout.txt` file.",
@@ -273,7 +273,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "1fea927c14cda962dee7c7a343a6fba52e8b6764"
+              "18e16ea0368fa02deae1d965735b6122e1fcb281"
             ]
           },
           "content": "`stdout` and `stderr` are for output. `stdin` (standard in) is the third thing commands can use and is for getting input. The default is the keyboard. Enter `read NAME` in the terminal to see a command that uses `stdin`.",
@@ -296,7 +296,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9b0b759b7db0afdd08f0cae41b2b164000985e25"
+              "26e2d16e986612cd137dfca291133e5ec2856851"
             ]
           },
           "content": "The `read` command is looking at `stdin` for where to get input, which is pointing to the keyboard. Type your name and press enter.",
@@ -320,7 +320,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "81c373ddde53a4378390d2e51f9ef1c2eb9ce508"
+              "b77a2bd6fc4f6a5675631f1ec74db051ed5cb756"
             ]
           },
           "content": "Use `echo` to print the variable you just created.",
@@ -345,7 +345,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8a9bf8cf3f9a6af8bc3ba1c6b3ec77b7b60b266e"
+              "925e349eb5643bc6540561d637ff0f9e0e7e15a4"
             ]
           },
           "content": "Use `echo` to print the `NAME` variable again, but redirect the `stdout` to `stdout.txt` so it overwrites the file.",
@@ -370,7 +370,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d7eadb308a09d988f4049f3c1900d5ed21276214"
+              "86acc901e73965b828c0f27406131dce258ecc6a"
             ]
           },
           "content": "Use `echo` and *redirection* to put the text `freeCodeCamp` in a `name.txt` file for some more testing. Remember that it will create the file if it doesn't exist.",
@@ -396,7 +396,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6549a46d64d2e45e62317f741b28d8879323dd25"
+              "09c59fe8f4c896ec9d93c6429ffc3d6a2d49d53d"
             ]
           },
           "content": "Just like you can redirect output, you can redirect `stdin` as well. Here's an example: `<command> < <filename_for_stdin>`. Use the `read` command to assign the `NAME` variable to the contents of `name.txt` by redirecting the `stdin`.",
@@ -420,7 +420,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "732d3e53dba46e39bb2d569f45c34f257d2a17f8"
+              "07cdf0edb4225bef73f8171ca9454f955f7f0830"
             ]
           },
           "content": "`stdin` was pointing to the `name.txt` file this time. Use `echo` to print the `NAME` variable again.",
@@ -445,7 +445,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a5ccdfd3aecb00326a8330a5651077a1c81089bf"
+              "8e745a14e4544db8989a1f7f5f36ec514035b445"
             ]
           },
           "content": "Now the variable is set to the content of the file, which was the input. Another way to set the `stdin` is by using the pipe (`|`). It will use the output from one command as input for another. Here's an example: `<command_1> | <command_2>`. This will take the `stdout` from `command_1` and use it as the `stdin` for `command_2`. Use this method to **echo** your name and pipe the output into the `read` command which reads your name into the `NAME` variable.",
@@ -469,7 +469,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "06f58f6e335eea6415f095e069bf4a143524b945"
+              "0d2e904e85d0f7e3080c11b3bac6bdd7e2c89bd7"
             ]
           },
           "content": "Use echo to print the variable again.",
@@ -494,7 +494,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "236b8178f958ff34f2ee514fd203b51688a3de79"
+              "435928ecc805268df6e3d7564e823635b24d65c9"
             ]
           },
           "content": "It worked, but it doesn't look like it. When you used the pipe (`|`) to set the input for `read`, it ran the command in a subshell or subprocess. Basically, another terminal instance within the one you see. The variable was set in there and didn't affect the one you had previously set. `cat` is another command that takes input. Enter it in the terminal.",
@@ -517,7 +517,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "678a732b1025e54ff1b4dd56c5ec9c09692d37b0"
+              "58a7179dd3a3123a07ef20f686cb7cb5609adff2"
             ]
           },
           "content": "`cat` will print the contents of a file or input to `stdout`. You didn't specify any input for the command. Feel free to type something and press enter. When you are done, press `control+c` to finish the command.",
@@ -541,7 +541,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9692a3e1a9f7722c3738d743a31a390d55ee6c7d"
+              "13a5256781b17a0a1ce131a388541100f290932b"
             ]
           },
           "content": "`cat` can take a filename as an argument. Use it again with your `name.txt` file as an arguement to print the contents of the file.",
@@ -566,7 +566,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e57c2f958ab3f5d84638f81c14a3bf1919019ec2"
+              "91e01f7f1206d8720d6f0969594266e23e2468bc"
             ]
           },
           "content": "Enter the same command but use redirection to set the `stdin` to `name.txt`",
@@ -592,7 +592,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b8bbf5e728b9a45c0f697baca6c5fbbc6df2c9fd"
+              "7db1c22a1f703a0fd1fa24378e1dd880baabf82b"
             ]
           },
           "content": "Use `echo` to print your name and pipe the output into the `cat` command.",
@@ -619,7 +619,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7a4aaf0fa99b796f6db2278b3b9c3e54014ac2d9"
+              "3b82f585026f49c3ebff43ee813e0a8c76f1460f"
             ]
           },
           "content": "You should be starting to get the hang of how `stdin`, `stdout`, and `stderr` work but let's try another example with your own command. Use `touch` to create a file named `script.sh`.",
@@ -644,7 +644,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fe82358a1936d57c9b472664f80cb04bfdd9ed9d"
+              "9a1ba53b4d61c1b5102b2e0093f137af4edca4f9"
             ]
           },
           "content": "Give your new script executable permissions with the `chmod` command and the `+x` flag.",
@@ -668,7 +668,7 @@
               "./script.sh"
             ],
             "commits": [
-              "97284271c1c2451e20338ccd7d3f325eb4a8b3c3"
+              "0241e2254ab94334f7d6b62e7544f6d4c885c68e"
             ]
           },
           "content": "This will be a very simple script with only a few commands. At the top of file, add a shebang that looks like this: `#!/bin/bash`.",
@@ -692,7 +692,7 @@
               "./script.sh"
             ],
             "commits": [
-              "157dd7f50c74ee573ff2b209fcd6b9a88475f27f"
+              "1a6c7e089103971efd364ac1c56f651360722490"
             ]
           },
           "content": "Below the shebang, add a `read` command that reads input into a `NAME` variable.",
@@ -716,7 +716,7 @@
               "./script.sh"
             ],
             "commits": [
-              "f5684013c6b8e10c7dcd8c4208a405032179769d"
+              "b30c46f31dcb0bce6e0832ebd9cecaee5e189227"
             ]
           },
           "content": "Below that, use `echo` to print `Hello <name>` using the variable.",
@@ -743,7 +743,7 @@
               "./script.sh"
             ],
             "commits": [
-              "5570b528b07e114c7f7163bd45fec70e6dbdb246"
+              "e1f32e1588bb8a8d2da9ea016fef2979fb9f9fa4"
             ]
           },
           "content": "One more thing. Add `bad_command` at the bottom of the file.",
@@ -767,7 +767,7 @@
               "./.freeCodeCamp/test/.next_command"
             ],
             "commits": [
-              "b37f83ca13e47faa5cfa3914a2789d7a0840125b"
+              "5669f6527c8a4d7875f413a64de828bb952094b6"
             ]
           },
           "content": "Your script takes input from `stdin` and will output to `stdout` and `stderr`. Run your script and don't input anything for now.",
@@ -791,7 +791,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c498acb669be488b96e73fc9dcd5dfac715d718a"
+              "efc69d4f55a73de20b88a44314806de7118a1549"
             ]
           },
           "content": "The `read` command in your script is waiting for input. Type your name and press enter.",
@@ -815,7 +815,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0356e75aabe7c9cb5c77573c9b3b1e16e4720d45"
+              "8e9003ff8c8400d38d6de6cc852435bc9c1c0bab"
             ]
           },
           "content": "You input your name, and your script output the result of the two commands. Run the script again, but use a pipe to echo your name as the input.",
@@ -842,7 +842,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "701c98eb0b457f109d3500bda48fd2f372e60081"
+              "59b05670eeb1bfa557bce6ebb8309df728dbd6e0"
             ]
           },
           "content": "It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect and `stderr` output the `stderr.txt`",
@@ -868,7 +868,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5f5179acfcd4c18b12bb17c952d473ea4e2d2289"
+              "0360acb1b7d8a180c5e74ee036ecdb8803a5bbc5"
             ]
           },
           "content": "Again, it didn't ask for input. This time it only printed your name to the terminal and not the output of `bad_command`. That produced an error, which you redirected to `stderr.txt`. Take a look at that file. You can redirect both the `stderr` and `stdout` by adding another redirection at the end like this: `> <filename>`. Enter the same command, redirect the `stderr` to the same place again, and the `stdout` to `stdout.txt`.",
@@ -894,7 +894,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "285a078a00cc026516f3f3f5eb2641d9a61d9656"
+              "65fe80e49b3cd6acd6f8f18354d32a8e12992446"
             ]
           },
           "content": "It didn't ask for input and nothing was printed in the terminal that time. You redirected both outputs to files. You should take a look at them to see if they have what you expected. Run your script again, use redirection to set `name.txt` as the input. Don't redirect any of the output.",
@@ -919,7 +919,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "430ccffdb05645c7a59a071f7dd38c566bec7ecf"
+              "b9bca1266aecc26f128dc2ec4f77e4ca68d2885c"
             ]
           },
           "content": "Excellent. Run the same command, but redirect the `stderr` to `stderr.txt`.",
@@ -945,7 +945,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1356471e532f72afca54465ae3f51000104c291c"
+              "9d1a516bd9760302985f44aacfbb40c792460399"
             ]
           },
           "content": "Nice job! Run it again, redirect the `stderr` to the same place and the `stdout` to `stdout.txt`",
@@ -972,7 +972,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c3796a9ca76990a40a91d8d40016b008e2550742"
+              "36e5481160961c69cdd16334f38a5cf39ab3cd19"
             ]
           },
           "content": ":smile: You have two `kitty_ipsum` files. Find out what's in them by printing the first one in the terminal with `cat`.",
@@ -997,7 +997,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "341f4bb9347733117d3a7ba021d3941e3362586e"
+              "43b328b3b2ec359a105449d57b349d9eec779998"
             ]
           },
           "content": "It's some kitty ipsum. You may enjoy reading it :smile: Look at the second one with `cat` like you did this one.",
@@ -1022,7 +1022,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "54f6778d2a8684e13ef55e3a9427c53e2b168f76"
+              "85ea5ca91f1e308e117cafb87643752d9aa8d3d4"
             ]
           },
           "content": "You will write a small script to translate both of them into doggy ipsum. For now, you will learn some commands to figure out how. The first one is `wc`. It prints some info about a file. It can take a file as an argument like the `cat` command. Use it to see what it shows you about your `kitty_ipsum_1.txt` file.",
@@ -1046,7 +1046,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3bf7d9168a751f8bf7137dbdba096252a1791b25"
+              "4191734cd51993ec8ed566e15003cb12453e194f"
             ]
           },
           "content": "Not quite sure what all those numbers mean. Check the manual of the `wc` command to see if you can find out more.",
@@ -1072,7 +1072,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7fadcf0fde4bd33eb7416b54e870ee621bf7ee81"
+              "11d48074290ca8c25eb319fa79431ba462270580"
             ]
           },
           "content": "`wc` stands for `word count`. It showed you how many lines were in the file, how many words, and how many bytes. Use the `-l` flag to only output how many lines are in the file. Don't do any redirecting of input or output.",
@@ -1096,7 +1096,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "df17ea725d7c542e3267c537cd9c2e001ac4f3d3"
+              "b457b7ab4b13d1bf57ffefb1baea1249bc12dbd2"
             ]
           },
           "content": "The file has 27 lines. Check how many words are in the file.",
@@ -1122,7 +1122,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6472ce500d82187251d283ec40feb6b45e0368c3"
+              "a1ef7d53e0d34bec5aadf88a6c5574d651affa49"
             ]
           },
           "content": "332 words are in the `kitty_ipsum_1.txt` file. Lastly, check how many characters it has.",
@@ -1148,7 +1148,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "91dd3192bb542141e7d9361904f638e29f047e5e"
+              "fa62be3b0d5eaa1a519bab721e3d9078448a6fb5"
             ]
           },
           "content": "Use the command without any flags to see if the numbers are the same.",
@@ -1172,7 +1172,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "85f34f88d97a56ec690663016375605a4f6c8a38"
+              "5317f78d08e1771b80c37c569be4497b386891b9"
             ]
           },
           "content": "That shows the byte count instead of the character count. Some characters must be more than one byte. Use `cat` to pipe the content of the file as the input of the `wc` command to see if the output is the same.",
@@ -1198,7 +1198,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7042653ff2467588c32e93cc4044425e96b409f6"
+              "555c2d8a635927aba0247ae3270d3e2b02c04859"
             ]
           },
           "content": "It looks like the way you give input to a command may affect the output. It only printed the numbers that time and not the filename. Try using redirection as the input with the same file and command to see what that outputs.",
@@ -1223,7 +1223,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "36815dd5e4c5441ff18b5680bc7d310c9b6d2479"
+              "3126c58c9191c641341edc058973fb7d2fee8c09"
             ]
           },
           "content": "No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.",
@@ -1250,7 +1250,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1a4357f53d8e439c66ff13c44b682566ac0a7fc5"
+              "dbfda4d9398d75543c5ecefa3afcf354d37c98f6"
             ]
           },
           "content": "Open the file so you can keep track of what's in it. Use `echo` and the `-e` flag with the new line character (`\\n`) to **append** `Number of lines:` to the `kitty_info.txt` file. Add the new line character at the beginning of the text so there's an empty line. Remember that you can append output to a file with `>>`.",
@@ -1275,7 +1275,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a80c53538716cd36294e475160525127e8a6bc1f"
+              "67b012aadb5570354f198105ffba2e597ea72d40"
             ]
           },
           "content": "You should be able to find out how many lines are in the `kitty_ipsum_1.txt` file and add that number to the `kitty_info.txt` file. Use the `cat` command to pipe the content of `kitty_ipsum_1.txt` as input for the `wc` command. Use the flag for getting the number of lines from that input and **append** the number to the `kitty_info.txt` file. **Tip:** enter the command without appending to see if it's working first.",
@@ -1301,7 +1301,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e1cd510eb34d5eb396745ecba02712b41e4a3aa2"
+              "37e0c15f8dfc7386bcd3b0b7044ac2f9a2680535"
             ]
           },
           "content": "Next, you want to put a word count of the file in the info. Use `echo` again to append `Number of words:` to `kitty_info.txt`. Put a new line in front of the text like you did for the first one.",
@@ -1327,7 +1327,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "2aff68095383c4b3c413a2d155f11a92b0c33388"
+              "7e38dbaa4429c1e235409518939cbad93a445adf"
             ]
           },
           "content": "Use `cat` and the pipe method again to append the number of words in `kitty_ipsum_1.txt` to `kitty_info.txt`.",
@@ -1353,7 +1353,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "53b1d70868ed621f9020f7590b250493365e3ebe"
+              "558d7075f81b3065bf623e8b99bbb2d256a26f31"
             ]
           },
           "content": "Next, you want to add the number of characters. Use the `echo` command with redirection to append `Number of characters:`, with a new line in front of it, to `kitty_info.txt` like you did with the other sentences.",
@@ -1379,7 +1379,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8f44c139150c001e27a21661962b12cdc4f7a378"
+              "9538ba4bd712788e1c1cb25ab92ca1fc942d54d0"
             ]
           },
           "content": "Append the number of characters in `kitty_ipsum_1.txt` to `kitty_info.txt`. Use the redirection method as the input for the `wc` command this time instead of the piping method.",
@@ -1406,7 +1406,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b181ff7634a81ff1abb08dec1ed6cb34de01969a"
+              "b4da2e141d2bc74e6c2102434b2a0a1f93a60cf5"
             ]
           },
           "content": "`grep` is a command for searching for patterns in text. You can use it like this: `grep '<pattern>' <filename>`. Use it to search for the pattern `meow` in the `kitty_ipsum_1.txt` file.",
@@ -1429,7 +1429,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5f329cf5d5e6f96826bf12ec8b2ca8c9c1f1c68b"
+              "f15404a2ac09f710c38a581fcadcb0b8fb38b3cc"
             ]
           },
           "content": "It showed you all the lines that contain `meow` somewhere in them, but it’s a little messy. View the manual of `grep` to see if you can find anything to help.",
@@ -1454,7 +1454,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "81ae2d5bc15bb5391605b81e45689e4c4d90b0aa"
+              "dc6824d7b05aa3e0bfc460c6911ba3789531641e"
             ]
           },
           "content": "That's a lot of options. Use `grep` to search for the `meow` pattern in the same file, but add that `--color` flag to see if it's a little more helpful.",
@@ -1479,7 +1479,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c8b8c88aa0c85acbcb3fcf701268914003e274df"
+              "1f25c08b01f07584b5cf6bd86cf7f009323cfad8"
             ]
           },
           "content": "That’s better. Add the flag to show all the line numbers with the command.",
@@ -1505,7 +1505,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c7c4acf3f286b865caf4219a50da1a14d196ab03"
+              "0abdca04d3d66abf4e7f3030b1b2b0f7c8710c97"
             ]
           },
           "content": "It's showing the line number of each match it found. `grep` can use regular expressions, too. Enter the previous command, but change the pattern to `meow[a-z]*` to see all words that start with `meow`.",
@@ -1529,7 +1529,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a511b17e4ec92e46c47054824d8df256db006a28"
+              "0b1f2cdd52fd9f18209ba80c0e86dc520faaaee9"
             ]
           },
           "content": "Looking at the output, you can see that it matched `meow` and `meowzer`, instead of just `meow`. Use the `echo` command and redirection to append the text `Number of times meow or meowzer appears:`, with a new line in front of it, to the `kitty_info.txt` file.",
@@ -1555,7 +1555,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "db826e58ee0eedcb6841ef6ffd942187d485ec2e"
+              "e26445be418a7ca281b7c46cd92ab65d81eb1fa1"
             ]
           },
           "content": "So how can you find how many times those two words appear. Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.",
@@ -1579,7 +1579,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5cccd80f20c5294225d88f783cb3f37b040ef1b6"
+              "78a6404e78b11ba879de415cde78ad555222f8b5"
             ]
           },
           "content": "It looks like seven, but how can you get a count of that from the command line to append to the info file for the next piece of information? `grep` has a `-c` flag to give you a count. Enter the last command but use that instead of the `--color` flag.",
@@ -1603,7 +1603,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e84a1d226835d0a2be44f29fb3375ba93cf5c0d3"
+              "8ecfcd22a6a9d27983e077ec4b27031384c1949e"
             ]
           },
           "content": "That gave you a count of the number lines that the pattern occurred on. Check the manual of grep to see if there's a way to find a count of all the words matched.",
@@ -1628,7 +1628,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "01ed68959a353707ccdb22dc4456f9c506e57369"
+              "d4fcbabb81dfad4ca59ca1548f2aa010fa9912c0"
             ]
           },
           "content": "It doesn't look like that's an option. But there is a `-o` flag that will says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.",
@@ -1653,7 +1653,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0f31510905d9f22687933ef694e4d2e6ce59c995"
+              "66de83ffaf976f23d38313bbf55329b3be202223"
             ]
           },
           "content": "That gave you each match on it's own line. You can use the `wc` command again to get a count of the lines to find out how many matches there are. Pipe the output of the last command into the `wc` command and use the flag for showing the line count.",
@@ -1679,7 +1679,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5747ab4183aa8dbea7d90c1a413d5f4188bca3b1"
+              "18c957cc9392f62164d3df50487eb4e41ab2fa63"
             ]
           },
           "content": "Awesome. `wc` counted the lines in the output of the `grep`. That should be the count for how many times those words appear. Enter the same command but append the number to the `kitty_info.txt` file.",
@@ -1704,7 +1704,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "80fc8fc82c46ad62fb17c7924ba34fc323935618"
+              "e8cc574dfbeaebd3ff1343ec0a89c1c397f8a7a7"
             ]
           },
           "content": "Append the text `Lines that they appear on:` to the `kitty_info.txt` file. Use the `echo` command with the `-e` flag again and put a new line in front of the text.",
@@ -1730,7 +1730,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ef79d01f81fd62367186981211bc04b3f6b1499a"
+              "d702801160ce51bce49f737be9dc92c14868edaa"
             ]
           },
           "content": "There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again.",
@@ -1754,7 +1754,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0d3466e0ce2d5bd2cbea6bb98dcacf41a867d76d"
+              "6a3a1c11acaa6da5c3f5a7a7a4ae30656e9dbce5"
             ]
           },
           "content": "Check the `grep` manual to see if there's a way to get just the line numbers.",
@@ -1778,7 +1778,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "14a459708ca70daf5071e440ca2cffc47b98988d"
+              "f4cb56440abd60786a57e931c9986a1db07970f9"
             ]
           },
           "content": "There doesn't appear to be a way to just get the line numbers. There's a `sed` command for replacing text that might work. First, some practice. Use `cat` to print the `name.txt` file in the terminal. It should still say `freeCodeCamp`.",
@@ -1802,7 +1802,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7ea4751bd89bfe651a6cd0fade2803406f9f0121"
+              "ef062128cab8539b449c439f193b21a683f6ddb1"
             ]
           },
           "content": "`sed` can replace text like this: `sed 's/<pattern_to_replace>/<text_to_replace_it_with>/' <filename>`. By default, it won't replace the text in the file. It will output it to `stdout`. Use it to replace `r` with `2` in the `name.txt` file and the output prints to the terminal.",
@@ -1827,7 +1827,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4ab755f4b721c505f897a24dcc3691f3c0c86840"
+              "b669ca5ec0f3828b31bf79245b7574692f283d5a"
             ]
           },
           "content": "You can see that it replaced the `r` with a `2` in `freeCodeCamp`. Use it again to replace `free` with `f233` in the same way.",
@@ -1853,7 +1853,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a4035ec91dba5d7fcf6f215d34d0bb86d6723add"
+              "54e71c8143a77d66d6bde1d95e4afae6545c7883"
             ]
           },
           "content": "Try it again, replacing `freecodecamp` with `f233C0d3C@mp`.",
@@ -1879,7 +1879,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f8a341830a2b37a7512bd4ee074469315e20e5ab"
+              "6684422282e97fac0c201502b17151dc03787b7b"
             ]
           },
           "content": "Nothing was replaced that time. It didn't find the `freecodecamp` text you tried to replace because the case of a few letters didn't match. You can add regex flags after the last `/` in the `sed` argument. A `g`, for `global`, would replace all instances of a matched pattern, or an `i` to ignore the case of the pattern. Enter the same command but add the correct regex flag to ignore the case.",
@@ -1905,7 +1905,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b003e3d5326d1e5fa98b9805ef95d3d10344c995"
+              "97626dc7a80e5aef53677ae8acbad28edb66b814"
             ]
           },
           "content": "It worked that time since it wasn't required to match the case. As with any command, the input can be redirected. Use the same `sed` replacement and file but redirect the **input** this time.",
@@ -1930,7 +1930,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "96487029bbc489f825893465ba56e46b133124cb"
+              "e69db8a5f274146d2e718ce87486fdbbd83bc7ac"
             ]
           },
           "content": "The method of input didn't affect the output. Use the `cat` and `pipe` method this time to set the input for the `sed` command, replacing the same text.",
@@ -1955,7 +1955,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b8f27db50a522f07a342f2bb54b0cea0c33cc4a5"
+              "c3bc6284bc849875007d61d7b3c3596d20f970bb"
             ]
           },
           "content": "Back to the task at hand. You want to add the line numbers asked for in the `kitty_info.txt` file. Use `grep` with the flag to show line numbers to find the `meow[a-z]*` pattern in the `kitty_ipsum_1.txt` file again.",
@@ -1981,7 +1981,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b48a761c6fbe38bd68a64ad0506a76dacc100d5b"
+              "aebdfe46bbe7b6f67a2f2f97c0790b849c4d4eaa"
             ]
           },
           "content": "You can use `sed` to each line in that output with just the line numbers. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.",
@@ -2008,7 +2008,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e2a3e1c9eff3f997d127af05ed3e5710a43b4917"
+              "482cb2ca841cae02f3a2de964c31d17ed4ce05c0"
             ]
           },
           "content": "That matched the first digit it found on each line and replaced it with `1`. Enter the same command but change the matching pattern to `[0-9]+` to match one or more numbers.",
@@ -2033,7 +2033,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "12d1659765c2a08d25fce14491f39922020dc71f"
+              "61a249c4a8faf9c1b1ca8fb42c19d13aa4d4f991"
             ]
           },
           "content": "That didn't replace anything. Check the manual of `sed` quick to see if there's anything to help.",
@@ -2058,7 +2058,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b5061ab2b33326f65a5f31539630afe91672345b"
+              "442a8aefaa33fa48b2011d652cb81b8394f17278"
             ]
           },
           "content": "Looks like there's a lot of options with `sed` as well. There's a flag to use extended regular expressions. Add it to that previous command that didn't work so it recognizes the `+` in your pattern. The previous command was `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed 's/[0-9]+/1/'`.",
@@ -2084,7 +2084,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "532c16174fd5c733f2c7d9f8309d1a0c478daa69"
+              "c3eac50040db7bbcb69bdb648f1705dea3e1ec33"
             ]
           },
           "content": "It worked that time. It replaced all the numbers at the start with a `1`. Next, you will use a capture group in the regex to capture the numbers so you can use them in the replacement area. Enter the same command but use `s/([0-9]+)/\\1/` with `sed` to capture the numbers at the start. It will replace them with themselves for now.",
@@ -2108,7 +2108,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "8f6c7d0e0f3ef7f78c134969317a1d72792101be"
+              "2dc3df391769bbcd8cc759856f44a76ca791c392"
             ]
           },
           "content": "That matched all the numbers and replaced them with the same numbers. All you need to do is match everything else on each line and replace it with only the numbers. Add `.*` at the end of the `sed` matching pattern so it matches everything, captures the numbers, and replaces everything with the captured numbers.",
@@ -2133,7 +2133,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b531d3c3e3d94fe71ba8c507d872a4380f3d5539"
+              "c2e2f6bf775e6185e6262c5dbe4b3cbc72a09154"
             ]
           },
           "content": "There's your list of numbers for the `kitty_info.txt` file. Enter the same command and append the list of numbers to it.",
@@ -2159,7 +2159,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "49dff1dfcdfcbf541d86ff98db9afeed6a25ee42"
+              "e9fc4e3ed24e296fa63d73a725b09f5c9e96f55c"
             ]
           },
           "content": "Take a look at the file. Hopefully it doesn't look too messy. You can reset a lesson at any time if it doesn't look right, or if you accidentally change something in one of the other files. There's one more group of words to find info on for this file. Use `grep` with the `--color` flag to see all the words that start with `cat` in the same file. Use a similar pattern that you used to find words starting with `meow`.",
@@ -2185,7 +2185,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b8a32cd70ab4b4be6dd36d1a3816156f40d6900c"
+              "cfbfd4f983689d29e70ccfa757528f2511f5a0d4"
             ]
           },
           "content": "There's three variations of words starting with `cat`. Use `echo` with the `-e` flag to append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Put a new line at the beginning of the text like the other lines.",
@@ -2209,7 +2209,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "30dd3785c005d0fac3bf19beb1c03a898eed16ce"
+              "46a3117af756e72c75deef597cac0aca965bd3a4"
             ]
           },
           "content": "You will want to find the number of times those words appear again. First, use `grep` with the correct flag to put all the matches of the `cat[a-z]*` pattern on their own line.",
@@ -2235,7 +2235,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7c6583c70a216bca6bd370e5d4d5b1ba9e66172b"
+              "f3319fce6dcf0afb5c788f408608c7726eceebef"
             ]
           },
           "content": "Enter the same command and pipe the output into the command that outputs the count of those lines.",
@@ -2262,7 +2262,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0c9d9bf76c7cf147a5b414e589f62cdeb6ee4863"
+              "f6d6932b725c61a7ede3c9535de2312fa0d2eb15"
             ]
           },
           "content": "That's a count of how many times `cat`, `cats`, or `catnip` appears in the file. Enter the same command and append the count to the `kitty_info.txt` file.",
@@ -2287,7 +2287,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "6f064a0d3e650e0c8715acec20c0b3e87f28f678"
+              "05a3c6c46141cd39b0fbfcdbdff2aeb0a6c27eb8"
             ]
           },
           "content": "Next, use `echo` to add the text `Lines that they appear on:` to the `kitty_info.txt` file again. Place a new line in front of the text like before.",
@@ -2313,7 +2313,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "822fe80ee70a5085e62bb450763e77fa3588b196"
+              "496d9d97f715490640cb3d19d8c1216e43b2d8db"
             ]
           },
           "content": "The process to add the lines to the file will be the same as you did before. Start by using `grep` to match the `cat` words in the file and showing the line numbers with the output.",
@@ -2339,7 +2339,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7a81202efec8802e265839a5a22df16a2964fe1a"
+              "05c5763a3a2f660d7d8928916cd30ead0940289d"
             ]
           },
           "content": "That shows you the line numbers and text. You will have to use `sed` again to extract only the line numbers. Pipe the output of the last command into `sed` to do that. As a reminder, the `sed` pattern was `'s/([0-9]+).*/\\1/'`.",
@@ -2366,7 +2366,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7f459ae083ccbf7907a97465f1ac5269a86937b6"
+              "087d84d1796881d017f14470902fbd519b2b2a27"
             ]
           },
           "content": "Awesome. Enter the last command and append the line numbers to the `kitty_info.txt` file.",
@@ -2392,7 +2392,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b616b3b51e280bdcc5a8c9e96ce10251436b8a1e"
+              "9d7f282c9313dca283a49bf1129316fa47898a40"
             ]
           },
           "content": "Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ispsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.",
@@ -2418,7 +2418,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "f08a6310c1ef8eebd7ccf3e80ffd108ee974aa0a"
+              "8299c90391627d56f983d5f215e1588e63b52ace"
             ]
           },
           "content": "The first piece of info you want to know is the number of lines in the file. Use the terminal to append `Number of lines:` to the file with a new line in front.",
@@ -2444,7 +2444,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "a35fcad10cfb41e6a56b1ca3bee504da0e6c7ae2"
+              "36170fdfc06d347829527e6a03797e8c4c1505aa"
             ]
           },
           "content": "Use `cat` with the pipe method to append the info to the `kitty_info.txt` file that it is asking for.",
@@ -2474,7 +2474,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "33b3d405f6ebd108bd728e098396d8be6020bd41"
+              "eec08b5ee7395f7320a01e4f0f85a09b225b09d6"
             ]
           },
           "content": "Nice job! Next, use the terminal to append `Number of words:` to the `kitty_info.txt` file. Put a new line in front of the text again.",
@@ -2500,7 +2500,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d35ee1941327d03c1ca9e7721718eab43d01ca24"
+              "32f7bea4dc1a5e47df296e15aafff7a2c4b09c78"
             ]
           },
           "content": "Append the suggested info the `kitty_info.txt` file. Use redirection instead of the pipe method for the input this time.",
@@ -2529,7 +2529,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1db34e77d4b4654481786cfc67ea20dde967c8c9"
+              "4c67053e50a68200a8d0b9811e06cfcaae1bb0d5"
             ]
           },
           "content": "Next, is the character count. Append `Number of characters:` to the file with a new line in front of the text. Use the method you have been using.",
@@ -2555,7 +2555,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d3d0483abfdefc9159f589e3a04cb263b3c7892d"
+              "3b991ffd313ca8ae4574cf3dd844fdffc0bf5eff"
             ]
           },
           "content": "Using the pipe or input redirection method, append the character count of `kitty_ipsum_2.txt` to the `kitty_info.txt` file.",
@@ -2582,7 +2582,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e5c33165c35646cb26265e38122c7a64e5fc9567"
+              "017c2aa2219df465c57e1b8d1d8fc0e464872036"
             ]
           },
           "content": "Excellent. Next, use `grep` to see how many variations of `meow` there are in `kitty_ipsum_2.txt`. Use the same pattern you used before and add the flag to show colors so it's easier to see.",
@@ -2608,7 +2608,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "99b5e713c61e5fcb5cadf3a16203a6b926987b3b"
+              "05f14a61afef1b9c06150f1aeb6dbbf6fc863637"
             ]
           },
           "content": "It's the same variations as the other file. Append `Number of times meow or meowzer appears:` to the `kitty_info.txt` file with a new line in front of it like before.",
@@ -2634,7 +2634,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4ba704cd29728195b1a77bd8f94d2183db7e88cd"
+              "e05487e89079380b8961596a6cf29a02cd360cea"
             ]
           },
           "content": "Use `grep` and `wc` in the terminal to append the suggested number to the `kitty_info.txt` file.",
@@ -2666,7 +2666,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "3bc7c29537846de1e5e6a4d359ea479ae8b3bdda"
+              "ad992f9d4e74194f4602de67976d969005ce6f26"
             ]
           },
           "content": ":sunglasses: Next, use the terminal to append `Lines that they appear on:` to the `kitty_info.txt` file with a new line in front of the text.",
@@ -2692,7 +2692,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b872d9c6b602b0f1e78f4006f543f72113a6fd83"
+              "8675024fcbdd73695f2246ab55081418717ee788"
             ]
           },
           "content": "Use `grep` and `sed` in the terminal to append the suggested line numbers to the `kitty_info.txt` file.",
@@ -2725,7 +2725,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "68bb21eab62e167aec875e093f962244bef9df56"
+              "e42a16ff33f41be957da8d4b76e0deac267d6497"
             ]
           },
           "content": ":sunglasses: :sunglasses: Use `grep` to see how many variations of `cat` there are in `kitty_ipsum_2.txt`. Use the same pattern you used before and include the flag to show colors so it's easier to see.",
@@ -2751,7 +2751,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d4c8ea038f90bc3d4f051e7afef439c1daf8b587"
+              "c5b972d406dbf4dbf8e478d2aa8b90e1c7b73513"
             ]
           },
           "content": "Same variations as the other kitty ipsum file. Append `Number of times cat, cats, or catnip appears:` to the `kitty_info.txt` file. Use the method you have been using.",
@@ -2778,7 +2778,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7fbaa2bbe39edd340d3b3b225403c25eaad8b337"
+              "7da81c852e46ab5c38fe89c65c7ec1b55488c96e"
             ]
           },
           "content": "Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.txt`",
@@ -2809,7 +2809,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "c69cb876e05daaa02667880186b644b9a4581122"
+              "a3d1b62919e914f6924e369530ad4af2621520b1"
             ]
           },
           "content": ":sunglasses: :sunglasses: :sunglasses: One more. Append `Lines that they appear on:` to it like you did for the others.",
@@ -2836,7 +2836,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "678ddb489a8f76a902e54b2b1698e676eb3531cc"
+              "2a256de6c9d78ee112876b59ce1d3cefaee55087"
             ]
           },
           "content": "Use `grep` and `sed` in the terminal to append the suggested numbers to the `kitty_info.txt` file.",
@@ -2869,7 +2869,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "1a003e70facf5a7c6fe5ec0440646b8fbd969a15"
+              "741dd084b96911efc38fc6e1591024236de6f863"
             ]
           },
           "content": ":sunglasses: :sunglasses: :sunglasses: :sunglasses: The `kitty_info` file is done and it has some information about the two ipsum files. Next, you will create a small script to translate both them into doggy ipsum. It will be as simple as replacing all the cat references with similar words for dogs. In the terminal, use `touch` to create `translate.sh`.",
@@ -2894,7 +2894,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "5dd976adad723c74a93516ef0051b5269f8b30e4"
+              "314977164be732741e79584e087406cdd52374ab"
             ]
           },
           "content": "Give your new script executable permissions so you can run it in the terminal.",
@@ -2918,7 +2918,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "d83a74f431b4fa0c9d5c7697cf8738b556423581"
+              "f8744c1c94ca0465dcbebc90ce04bc50dcf1bc36"
             ]
           },
           "content": "Add a shebang to the script that uses `bash` like you did for the other script you made.",
@@ -2943,7 +2943,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "add06c565f772eaec525ee2f499b0ce02825678a"
+              "96bc80ed1a3388f853df6b30d1046ba1550e59e5"
             ]
           },
           "content": "The script will take a file as input that can be passed as an argument or read from `stdin`. Below the shebang, use `cat` to print the content of the first argument passed to the script.",
@@ -2969,7 +2969,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "77069654795eb5ac4ddeb775bbb605fece397358"
+              "767548d463afc0d8ae214ca741c578e78c399c53"
             ]
           },
           "content": "Run the script and use the first kitty ipsum file as an argument to see if it's working.",
@@ -2993,7 +2993,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "108f08a9ad99c52df30f972cc0ad3b754730fe97"
+              "54e69e2d5a29aa4f518198aa662165955c4d4fe0"
             ]
           },
           "content": "Try the same command using redirection to print the file.",
@@ -3018,7 +3018,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "b9ca9fe581f3b42cd2707cc346d383aa7981a1f8"
+              "eb78336d929e64f9a2c2715af9afea9221f8f6bd"
             ]
           },
           "content": "Looks like that is working. Try the `cat` and pipe method.",
@@ -3043,7 +3043,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "d65c03b2eff3cff7a7ffd52b282066bcfa5bd044"
+              "3a7c037fa6b25f7229e9229ae66d4d1a43b50590"
             ]
           },
           "content": "Using any of those three methods as input is working. Time to start replacing some of the text with doggy ipsum. In your script file, pipe the input into a `sed` that replaces `catnip` with `dogchow`.",
@@ -3068,7 +3068,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0196c1dce1cf05a0ab71ff14d855b91dab8a7f39"
+              "6a146fa22b3d05648b6198caacc5c75142eee4f6"
             ]
           },
           "content": "Run the script passing the first kitty ipsum file as a argument to see if it's working.",
@@ -3093,7 +3093,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "671731d60a8dd61ffd5a986d575960d21581d82c"
+              "4a28ff733166ef67287e40030b1a1a5876ee5d1f"
             ]
           },
           "content": "If you look, you can find `dogchow` in there so it's probably working. To make sure pipe the results of that into a `grep` command that searches for `dogchow`. Output the results in color.",
@@ -3120,7 +3120,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "0f118fcbe93bb08169d01f7c1da980c00c95e7e9"
+              "ab9c899b4c324b868998a9683627631623d66877"
             ]
           },
           "content": "It's showing three places `catnip` was replaced with `dogchow`. To make sure you got them all, enter the previous command and search for `catnip` instead.",
@@ -3145,7 +3145,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "e8ea1f7e6bd08a797c797b7ff0190bf109def5f5"
+              "fb6080ac937f634fc4d31ffee60f3ec2f945ceea"
             ]
           },
           "content": "It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace many patterns using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in the quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.",
@@ -3169,7 +3169,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "391ba4ae5995f2aa7b6c5fa7329f4047d5e5ad9d"
+              "7df0ab84ff782621e1753224b53506e6b8f0a697"
             ]
           },
           "content": "Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script the translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.",
@@ -3194,7 +3194,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9176851c11d2ac97d2a546b616f6a95333bb4111"
+              "db08979dc60a2a4894c20bed3a42e2b1ecec1137"
             ]
           },
           "content": "As expected, it replaced instances of `cat` with `dog`. Enter the same command, but search for anything starting with `cat` to make sure it replaced them all.",
@@ -3219,7 +3219,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "6fe017307ededb5f99fdd95a1b39a936c0fef30e"
+              "afcd62b651fd3fe13202e5f30d664427c24feafb"
             ]
           },
           "content": "It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `moew` words with `woof`.",
@@ -3245,7 +3245,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "d56aca11e0375c62b6003fb7db2c764d303c0ea7"
+              "e7fbc8546bb910ff51cb14faf232e3f1f7dcf20f"
             ]
           },
           "content": "Using your script, translate the first ipsum file again. Check the results with `grep` for words that start with `dog` or `woof`. Here's an example of the search pattern you want: `grep '<dog_words>|<woof_words>'`. To view \"dog words\", you would use `dog[a-z]*`. Be sure to view the result in color.",
@@ -3271,7 +3271,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "55549c7ff3f8245b85f181535e3993d33b80d913"
+              "a408123f1aef70a3005fb65e1041b38027bd1850"
             ]
           },
           "content": "That didn't work. Enter the same command, but add the flag to use extended regular expressions to the `grep` search so it recognizes the `|`.",
@@ -3298,7 +3298,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "373a76853f2ecbcc4e085c19ad577fa2509e1820"
+              "db7bee586788b038c1cc5083c6a454bc179818dd"
             ]
           },
           "content": "If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instand of `meow` it found on that line. Add the \"global\" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.",
@@ -3323,7 +3323,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "9078ca2072acd679bac1ce951a3150a144013d39"
+              "0d67a75de937c66bc4882edcf2ff0321a725e8c8"
             ]
           },
           "content": "Enter the same command to translate the first ipsum file and see the matches of all words starting with `dog` or `woof` to see if that worked.",
@@ -3347,7 +3347,7 @@
               "./translate.sh"
             ],
             "commits": [
-              "2fbd89c76e962cf7d3074c96352a5ec16500c7cc"
+              "2fd87c2753380227fba88d73c97d34e098aec661"
             ]
           },
           "content": "It worked, but `woofzer` doesn't sound quite right. Change your `sed` pattern that matched `meow` to match `meow|meowzer`. Add the flag to use extended regular expressions to the `sed` command so it recognizes the `|`.",
@@ -3372,7 +3372,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "e25535024b92e6807c0477cb03f20951086d8e82"
+              "3eac8f2c7cfa433565302f48f6f46983c9a0e0f2"
             ]
           },
           "content": "Now it should replace either of those two words with `woof`. Check it again with that command you entered before that searches for `dog` or `woof` words.",
@@ -3396,7 +3396,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "7f169c33583bb8f061f7befa93cc4430288889ae"
+              "e17bd3eb51edd4143c2c560d32bc425a4ba07e01"
             ]
           },
           "content": "It replaced `meowzer` that time. To be sure it replaced all the words in the file, enter the same command but check for `meow` or `cat` words in the same way.",
@@ -3421,7 +3421,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bdb231758c12086876a26749ca50f91be0767484"
+              "9c781b10914fcdcafbcbf92dd10e05c4f59ae874"
             ]
           },
           "content": "No results means it didn't find any matches for `cat` or `meow` words after being translated. Check the second kitty ipsum file for the same pattern to make sure it's replacing all those words.",
@@ -3447,7 +3447,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "5e64f150147ce8cedf3c08502743aaccbe45bbaf"
+              "3c1e5f4b283cff24627dc298a90430c42cf202e9"
             ]
           },
           "content": "Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file and put the output into a new `doggy_ipsum_1.txt` file.",
@@ -3472,7 +3472,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "97b9732f91839e38a089d4ae04a79491abb0d9c2"
+              "67ceb804cc647074a66b2a89845d4fea26bb9bc2"
             ]
           },
           "content": "Use `cat` to print the new file to the terminal.",
@@ -3496,7 +3496,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "4a3bef64c2a84d61f8b0009a8e4bcce51696f1d1"
+              "5d1e3e84a8b491c373dd78a45d1cf73b1ed25a96"
             ]
           },
           "content": "It looks good :thumbsup: `diff` is a command to view the difference between two files. You can use it like this: `diff <file_1> <file_2>`. Use it to view the difference between the `kitty_ipsum_1` and `doggy_ipsum_1` files.",
@@ -3519,7 +3519,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "43cf53a61e75b4f02e58d7f15160fabd4643c26f"
+              "604b286e74071e60fbefe77c63ff89b293350a48"
             ]
           },
           "content": "It may look a little cryptic, but it's showing the lines that don't match in the two files. Check the manual of `diff` to see if there's any way to make it prettier.",
@@ -3545,7 +3545,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "bfddcb81c2e7e55ad34bd5bf1c9a674eea180c20"
+              "bfb99b30719c91067de2bff3d9633dc7445bd223"
             ]
           },
           "content": "Use the flag to show the diff of the same two files in color.",
@@ -3570,7 +3570,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "fdef56a0ab93f1adc6faaaf2da0c4ffab90555dc"
+              "02217ee4ebe6c180f72caab173a27a6d626e0472"
             ]
           },
           "content": "That's better. The red lines are lines that aren't in the second file, and the green lines are what they were replaced with. The line numbers that were changed are above each section. Translate your second kitty ipsum file and redirect the output into `doggy_ipsum_2.txt`.",
@@ -3594,7 +3594,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "058a4313b1f75c234c2b3a96ce121a2954847c95"
+              "4714c4d8c78b523f5ba5b44d5a61995488a68bf4"
             ]
           },
           "content": "View the content of your new file with `cat`",
@@ -3618,7 +3618,7 @@
               "../.bash_history"
             ],
             "commits": [
-              "ca752cdb2c3e0ba61ddd9fc7141825fde32f3d9f"
+              "3dba1ef4b200d4e89d05a12a556e89746e2f04d3"
             ]
           },
           "content": "Lastly, view the `diff` of the two files in color again.",
