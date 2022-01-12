@@ -1571,7 +1571,7 @@ As expected, it replaced instances of `cat` with `dog`. Enter the same command, 
 
 ### 1140.1
 
-It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `moew` words with `woof`.
+It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `meow` words with `woof`.
 
 #### HINTS
 
@@ -1616,7 +1616,7 @@ That didn't work. Enter the same command, but add the flag to use extended regul
 
 ### 1170.1
 
-If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instand of `meow` it found on that line. Add the "global" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.
+If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instance of `meow` it found on that line. Add the "global" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.
 
 #### HINTS
 
