@@ -3233,7 +3233,7 @@
               "8b45a7bdb29f7027cdfbd1a0e9780ee2b2a3a6a5"
             ]
           },
-          "content": "It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `moew` words with `woof`.",
+          "content": "It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `meow` words with `woof`.",
           "hints": [
             "You can add another pattern to replace like before. Add a semi-colon and another pattern in the quotes of the `sed`",
             "Here's an example: `sed 's///; s///; s///'`",
@@ -3312,7 +3312,7 @@
               "be999efa13e9305f3b399a7698f10693781cbf86"
             ]
           },
-          "content": "If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instand of `meow` it found on that line. Add the \"global\" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.",
+          "content": "If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instance of `meow` it found on that line. Add the \"global\" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.",
           "hints": [
             "Here's an example of one pattern: `s/<pattern>/<replacement>/<regex_flags>`",
             "It's the `g` flag",
