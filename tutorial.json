@@ -2392,7 +2392,7 @@
     },
     {
       "id": "860",
-      "title": "echo -e \\n\\n~~ kitty_ispsum_2.txt info ~~ > kitty_info",
+      "title": "echo -e \\n\\n~~ kitty_ispsum_2.txt info ~~ >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -2411,7 +2411,7 @@
             "You want the `echo` command with the `-e` flag and the new line character (`\\n`) twice",
             "Here's an example: `echo -e \"\\n\\n<text>\" >> <filename>`",
             "You previously entered `echo -e \"\\nLines that they appear on:\" >> kitty_info.txt`",
-            "Enter `echo -e \"\\n\\n~~ kitty_ispsum_2.txt info ~~\" > kitty_info.txt` in the terminal"
+            "Enter `echo -e \"\\n\\n~~ kitty_ispsum_2.txt info ~~\" >> kitty_info.txt` in the terminal"
           ]
         }
       ]
@@ -3061,7 +3061,7 @@
           "hints": [
             "Here's an example: `cat $1 | sed 's/<pattern>/<replacement>/'`",
             "The `sed` argument should be `s/catnip/dogchow/`",
-            "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed 's/catnip/dogchow'\n```"
+            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed 's/catnip/dogchow'\r\n```"
           ]
         }
       ]
@@ -3162,7 +3162,7 @@
           "content": "It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace many patterns using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in the quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.",
           "hints": [
             "The code looks like this: `s/cat/dog/`",
-            "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed 's/catnip/dogchow; s/cat/dog/'\n```"
+            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed 's/catnip/dogchow; s/cat/dog/'\r\n```"
           ]
         }
       ]
@@ -3238,7 +3238,7 @@
             "You can add another pattern to replace like before. Add a semi-colon and another pattern in the quotes of the `sed`",
             "Here's an example: `sed 's///; s///; s///'`",
             "The third pattern should be `s/meow/woof/`",
-            "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/; s/cat/dog/; s/meow/woof/'\n```"
+            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/; s/cat/dog/; s/meow/woof/'\r\n```"
           ]
         }
       ]
@@ -3316,7 +3316,7 @@
           "hints": [
             "Here's an example of one pattern: `s/<pattern>/<replacement>/<regex_flags>`",
             "It's the `g` flag",
-            "Your `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow/woof/g'\n```"
+            "Your `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow/woof/g'\r\n```"
           ]
         }
       ]
@@ -3365,7 +3365,7 @@
           "hints": [
             "The last `sed` pattern in you scrip should be `s/meow|meowzer/woof/`",
             "And you should add the `-E` flag to the `sed` command",
-            "Your `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'\n```"
+            "Your `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'\r\n```"
           ]
         }
       ]
