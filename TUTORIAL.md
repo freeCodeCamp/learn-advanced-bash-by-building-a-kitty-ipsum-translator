@@ -566,7 +566,7 @@ It looks like the way you give input to a command may affect the output. It only
 
 ### 420.1
 
-No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
+No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ipsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
 
 #### HINTS
 
