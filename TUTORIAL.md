@@ -380,7 +380,7 @@ You input your name, and your script output the result of the two commands. Run 
 
 ### 280.1
 
-It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect and `stderr` output the `stderr.txt`
+It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect `stderr` output to the `stderr.txt`
 
 #### HINTS
 
