@@ -1144,7 +1144,7 @@ Hopefully your info file is looking good. Next, you want to do the same thing fo
 - You want the `echo` command with the `-e` flag and the new line character (`\n`) twice
 - Here's an example: `echo -e "\n\n<text>" >> <filename>`
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
-- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" > kitty_info.txt` in the terminal
+- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" >> kitty_info.txt` in the terminal
 
 ## 870. echo -e \nNumber of lines: >> kitty_info
 
