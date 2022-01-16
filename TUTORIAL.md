@@ -1133,11 +1133,11 @@ Awesome. Enter the last command and append the line numbers to the `kitty_info.t
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt`
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
-## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
+## 860. echo -e \n\n~~ kitty_ipsum_2.txt info ~~ > kitty_info
 
 ### 860.1
 
-Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ispsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
+Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ipsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
 
 #### HINTS
 
