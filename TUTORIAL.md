@@ -1540,7 +1540,7 @@ It didn't output anything, so it must be replacing all the instances of `catnip`
 ```sh
 #!/bin/bash
 
-cat $1 | sed 's/catnip/dogchow; s/cat/dog/'
+cat $1 | sed 's/catnip/dogchow/; s/cat/dog/'
 ```
 
 ## 1130. ./translate.sh kitty_1 | grep --color dog[a-z]
