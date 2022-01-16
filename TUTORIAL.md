@@ -1337,7 +1337,7 @@ Same variations as the other kitty ipsum file. Append `Number of times cat, cats
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
 - Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal
 
-## 980. grep -o 'meow[a-z]*' kitty_2 | wc -l >> kitty_info
+## 980. grep -o 'cat[a-z]*' kitty_2 | wc -l >> kitty_info
 
 ### 980.1
 
@@ -1347,13 +1347,13 @@ Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.
 
 - Enter the commands one at a time to see the output first
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
-- You want to use `grep` to get the matches for `meow[a-z]*`
+- You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-o` flag to `grep` to put each match on it's own line
 - Pipe the `grep` results into the `wc` command
 - Add the `-l` flag to the `wc` to count the lines
 - Append the results of that to the file with `>> kitty_info.txt`
-- You previously used `grep -o 'cat[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
-- Enter `grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
+- You previously used `grep -o 'meow[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
+- Enter `grep -o 'cat[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
 
 ## 990. echo -e \nLines that they appear on: >> kitty_info
 
