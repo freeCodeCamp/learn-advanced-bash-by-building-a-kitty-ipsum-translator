@@ -1133,7 +1133,7 @@ Awesome. Enter the last command and append the line numbers to the `kitty_info.t
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt`
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
-## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ > kitty_info
+## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ >> kitty_info
 
 ### 860.1
 
@@ -1144,7 +1144,7 @@ Hopefully your info file is looking good. Next, you want to do the same thing fo
 - You want the `echo` command with the `-e` flag and the new line character (`\n`) twice
 - Here's an example: `echo -e "\n\n<text>" >> <filename>`
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
-- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" > kitty_info.txt` in the terminal
+- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" >> kitty_info.txt` in the terminal
 
 ## 870. echo -e \nNumber of lines: >> kitty_info
 
@@ -1571,7 +1571,7 @@ As expected, it replaced instances of `cat` with `dog`. Enter the same command, 
 
 ### 1140.1
 
-It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `moew` words with `woof`.
+It didn't find any so it must be replacing them all. You added two patterns as part of the `sed` in your script. Add a third that replaces all `meow` words with `woof`.
 
 #### HINTS
 
@@ -1616,7 +1616,7 @@ That didn't work. Enter the same command, but add the flag to use extended regul
 
 ### 1170.1
 
-If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instand of `meow` it found on that line. Add the "global" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.
+If you look closely, you can see that the `meow` part of `meowzer` on that one line didn't get replaced with `woof`. `grep` only matched the first instance of `meow` it found on that line. Add the "global" regex flag to all three patterns of the `sed` command in your script so it will replace all instances of any of the words.
 
 #### HINTS
 
