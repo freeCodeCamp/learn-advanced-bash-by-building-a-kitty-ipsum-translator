@@ -1,3 +1,4 @@
+id: 'freeCodeCamp/learn-advanced-bash-by-building-a-kitty-ipsum-translator:v1.0.0'
 version: '1.0.1'
 config:
   setup:
