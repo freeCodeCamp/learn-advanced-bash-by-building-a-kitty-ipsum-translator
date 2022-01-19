@@ -3238,7 +3238,7 @@
             "You can add another pattern to replace like before. Add a semi-colon and another pattern in the quotes of the `sed`",
             "Here's an example: `sed 's///; s///; s///'`",
             "The third pattern should be `s/meow/woof/`",
-            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/; s/cat/dog/; s/meow/woof/'\r\n```"
+            "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/; s/cat/dog/; s/meow/woof/'\n```"
           ]
         }
       ]
