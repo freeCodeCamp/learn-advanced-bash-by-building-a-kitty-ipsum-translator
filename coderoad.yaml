@@ -14,6 +14,10 @@ config:
   repo:
     uri: https://github.com/freeCodeCamp/learn-advanced-bash-by-building-a-kitty-ipsum-translator
     branch: v1.0.1
+  continue:
+    commands:
+      - './.freeCodeCamp/setup.sh'
+      - './.freeCodeCamp/reset.sh'
   reset:
     commands:
       - './.freeCodeCamp/setup.sh'
