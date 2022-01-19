@@ -3162,7 +3162,7 @@
           "content": "It didn't output anything, so it must be replacing all the instances of `catnip`. You can replace many patterns using `sed` like this: `sed 's/<pattern_1>/<replacement_1>/; s/<pattern_2>/<replacement_2>/'`. Note that you need the semi-colon between the two replacement patterns and they both need to be wrapped in the quotes. In your script, add another pattern to the `sed` command that replaces `cat` with `dog`.",
           "hints": [
             "The code looks like this: `s/cat/dog/`",
-            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed 's/catnip/dogchow; s/cat/dog/'\r\n```"
+            "The `translate.sh` file should look like this:\n```sh\r\n#!/bin/bash\n\ncat $1 | sed 's/catnip/dogchow; s/cat/dog/'\n```"
           ]
         }
       ]
