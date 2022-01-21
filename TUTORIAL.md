@@ -1486,7 +1486,7 @@ Using any of those three methods as input is working. Time to start replacing so
 ```sh
 #!/bin/bash
 
-cat $1 | sed 's/catnip/dogchow'
+cat $1 | sed 's/catnip/dogchow/'
 ```
 
 ## 1090. ./translate kitty_1
