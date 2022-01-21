@@ -1230,7 +1230,7 @@
     },
     {
       "id": "420",
-      "title": "echo ~~ kitty_ispsum_1.txt info ~~ > kitty_info",
+      "title": "echo ~~ kitty_ipsum_1.txt info ~~ > kitty_info",
       "summary": "",
       "content": "",
       "steps": [
@@ -2399,7 +2399,7 @@
     },
     {
       "id": "860",
-      "title": "echo -e \\n\\n~~ kitty_ispsum_2.txt info ~~ >> kitty_info",
+      "title": "echo -e \\n\\n~~ kitty_ipsum_2.txt info ~~ >> kitty_info",
       "summary": "",
       "content": "",
       "steps": [
