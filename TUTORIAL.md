@@ -562,7 +562,7 @@ It looks like the way you give input to a command may affect the output. It only
 - Here's an example: `<command> < <filename>`
 - Enter `wc < kitty_ipsum_1.txt` in the terminal
 
-## 420. echo ~~ kitty_ispsum_1.txt info ~~ > kitty_info
+## 420. echo ~~ kitty_ipsum_1.txt info ~~ > kitty_info
 
 ### 420.1
 
