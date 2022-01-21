@@ -380,7 +380,7 @@ You input your name, and your script output the result of the two commands. Run 
 
 ### 280.1
 
-It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect and `stderr` output the `stderr.txt`
+It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect `stderr` output to the `stderr.txt`
 
 #### HINTS
 
@@ -813,7 +813,7 @@ Append the text `Lines that they appear on:` to the `kitty_info.txt` file. Use t
 
 ### 620.1
 
-There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again. 
+There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again.
 
 #### HINTS
 
@@ -1068,7 +1068,7 @@ Enter the same command and pipe the output into the command that outputs the cou
 - It's the `-l` flag
 - Enter `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt | wc -l`
 
-## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
+## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info
 
 ### 810.1
 
@@ -1302,11 +1302,11 @@ Use `grep` and `sed` in the terminal to append the suggested line numbers to the
 - Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
-- Pipe the `grep` results into the `sed` command 
+- Pipe the `grep` results into the `sed` command
 - The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
 - Don't forget the `-E` flag with `sed` to allow extended regular expressions
 - You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
-- Append the results to the file wiht `>> kitty_info.txt` 
+- Append the results to the file wiht `>> kitty_info.txt`
 - You previously used `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 - Enter `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
@@ -1381,11 +1381,11 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
-- Pipe the `grep` results into the `sed` command 
+- Pipe the `grep` results into the `sed` command
 - The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
 - Don't forget the `-E` flag with `sed` to allow extended regular expressions
 - You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
-- Append the results to the file wiht `>> kitty_info.txt` 
+- Append the results to the file wiht `>> kitty_info.txt`
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
