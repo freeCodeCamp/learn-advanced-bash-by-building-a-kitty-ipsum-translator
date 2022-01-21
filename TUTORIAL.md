@@ -1137,14 +1137,14 @@ Awesome. Enter the last command and append the line numbers to the `kitty_info.t
 
 ### 860.1
 
-Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ispsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
+Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ipsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
 
 #### HINTS
 
 - You want the `echo` command with the `-e` flag and the new line character (`\n`) twice
 - Here's an example: `echo -e "\n\n<text>" >> <filename>`
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
-- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" >> kitty_info.txt` in the terminal
+- Enter `echo -e "\n\n~~ kitty_ipsum_2.txt info ~~" >> kitty_info.txt` in the terminal
 
 ## 870. echo -e \nNumber of lines: >> kitty_info
 
