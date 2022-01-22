@@ -380,7 +380,7 @@ You input your name, and your script output the result of the two commands. Run 
 
 ### 280.1
 
-It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect and `stderr` output the `stderr.txt`
+It didn't ask for input this time because you gave it input with the pipe. The two types of output were printed in the terminal. Run the same command but redirect `stderr` output to the `stderr.txt`
 
 #### HINTS
 
@@ -562,11 +562,11 @@ It looks like the way you give input to a command may affect the output. It only
 - Here's an example: `<command> < <filename>`
 - Enter `wc < kitty_ipsum_1.txt` in the terminal
 
-## 420. echo ~~ kitty_ispsum_1.txt info ~~ > kitty_info
+## 420. echo ~~ kitty_ipsum_1.txt info ~~ > kitty_info
 
 ### 420.1
 
-No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ispsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
+No filename again with fewer spaces that time. You may have to play with certain commands to get the output you are looking for. You are going to create a file that has some meta information about the two kitty ipsum files in it. Use `echo` and redirection to print `~~ kitty_ipsum_1.txt info ~~` to a file named `kitty_info.txt`. Make sure to place the text in quotes.
 
 #### HINTS
 
@@ -813,7 +813,7 @@ Append the text `Lines that they appear on:` to the `kitty_info.txt` file. Use t
 
 ### 620.1
 
-There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again. 
+There was a `-n` flag with `grep` to get line numbers. Use it to check the `kitty_ipsum_1.txt` file for the `meow[a-z]*` pattern again.
 
 #### HINTS
 
@@ -1068,7 +1068,7 @@ Enter the same command and pipe the output into the command that outputs the cou
 - It's the `-l` flag
 - Enter `grep -o'cat[a-z]*' kitty_1_ipsum_1.txt | wc -l`
 
-## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info 
+## 810. grep cat[a-z]* kitty_1 -o | wc -l >> kitty_info
 
 ### 810.1
 
@@ -1133,18 +1133,18 @@ Awesome. Enter the last command and append the line numbers to the `kitty_info.t
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt`
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
-## 860. echo -e \n\n~~ kitty_ispsum_2.txt info ~~ >> kitty_info
+## 860. echo -e \n\n~~ kitty_ipsum_2.txt info ~~ >> kitty_info
 
 ### 860.1
 
-Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ispsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
+Hopefully your info file is looking good. Next, you want to do the same thing for the `kitty_ipsum_2.txt` file. Using `echo` in the terminal, append `~~ kitty_ipsum_2.txt info ~~` to the `kitty_info.txt` file. Put **two** new lines in front of the text this time.
 
 #### HINTS
 
 - You want the `echo` command with the `-e` flag and the new line character (`\n`) twice
 - Here's an example: `echo -e "\n\n<text>" >> <filename>`
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
-- Enter `echo -e "\n\n~~ kitty_ispsum_2.txt info ~~" >> kitty_info.txt` in the terminal
+- Enter `echo -e "\n\n~~ kitty_ipsum_2.txt info ~~" >> kitty_info.txt` in the terminal
 
 ## 870. echo -e \nNumber of lines: >> kitty_info
 
@@ -1302,11 +1302,11 @@ Use `grep` and `sed` in the terminal to append the suggested line numbers to the
 - Enter the commands one at a time to see the output first
 - You want to use `grep` to get the matches for `meow[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
-- Pipe the `grep` results into the `sed` command 
+- Pipe the `grep` results into the `sed` command
 - The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
 - Don't forget the `-E` flag with `sed` to allow extended regular expressions
 - You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
-- Append the results to the file wiht `>> kitty_info.txt` 
+- Append the results to the file wiht `>> kitty_info.txt`
 - You previously used `grep -n 'cat[a-z]*' kitty_ipsum_1.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 - Enter `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
@@ -1337,7 +1337,7 @@ Same variations as the other kitty ipsum file. Append `Number of times cat, cats
 - You previously entered `echo -e "\nLines that they appear on:" >> kitty_info.txt`
 - Enter `echo -e "\nNumber of times cat, cats, or catnip appears:" >> kitty_info.txt` in the terminal
 
-## 980. grep -o 'meow[a-z]*' kitty_2 | wc -l >> kitty_info
+## 980. grep -o 'cat[a-z]*' kitty_2 | wc -l >> kitty_info
 
 ### 980.1
 
@@ -1347,13 +1347,13 @@ Use `grep` and `wc` in the terminal to append the suggested info to `kitty_info.
 
 - Enter the commands one at a time to see the output first
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
-- You want to use `grep` to get the matches for `meow[a-z]*`
+- You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-o` flag to `grep` to put each match on it's own line
 - Pipe the `grep` results into the `wc` command
 - Add the `-l` flag to the `wc` to count the lines
 - Append the results of that to the file with `>> kitty_info.txt`
-- You previously used `grep -o 'cat[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
-- Enter `grep -o 'meow[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
+- You previously used `grep -o 'meow[a-z]* kitty_ipsum_1.txt' | wc -l >> kitty_info.txt`
+- Enter `grep -o 'cat[a-z]*' kitty_ipsum_2.txt | wc -l >> kitty_info.txt` in the terminal
 
 ## 990. echo -e \nLines that they appear on: >> kitty_info
 
@@ -1381,11 +1381,11 @@ Use `grep` and `sed` in the terminal to append the suggested numbers to the `kit
 - Here's an example: `<command_1> | <command_2> >> kitty_info.txt`
 - You want to use `grep` to get the matches for `cat[a-z]*`
 - Add the `-n` flag to `grep` to show the line numbers in front of the matches
-- Pipe the `grep` results into the `sed` command 
+- Pipe the `grep` results into the `sed` command
 - The `sed` command should replace `([0-9]+).*'` with `\1` to get the line numbers
 - Don't forget the `-E` flag with `sed` to allow extended regular expressions
 - You `sed` arguments should be `-E 's/([0-9]+).*/\1/'`
-- Append the results to the file wiht `>> kitty_info.txt` 
+- Append the results to the file wiht `>> kitty_info.txt`
 - You previously used `grep -n 'meow[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 - Enter `grep -n 'cat[a-z]*' kitty_ipsum_2.txt | sed -E 's/([0-9]+).*/\1/' >> kitty_info.txt` in the terminal
 
@@ -1486,7 +1486,7 @@ Using any of those three methods as input is working. Time to start replacing so
 ```sh
 #!/bin/bash
 
-cat $1 | sed 's/catnip/dogchow'
+cat $1 | sed 's/catnip/dogchow/'
 ```
 
 ## 1090. ./translate kitty_1
@@ -1540,7 +1540,7 @@ It didn't output anything, so it must be replacing all the instances of `catnip`
 ```sh
 #!/bin/bash
 
-cat $1 | sed 's/catnip/dogchow; s/cat/dog/'
+cat $1 | sed 's/catnip/dogchow/; s/cat/dog/'
 ```
 
 ## 1130. ./translate.sh kitty_1 | grep --color dog[a-z]
