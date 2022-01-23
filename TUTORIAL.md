@@ -54,7 +54,7 @@ Take a look at the file again. The output of `echo hello bash` was added to it.U
 
 ### 50.1
 
-Take a look at the file. It was overwritten with the output of the command. Enter `> stout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.
+Take a look at the file. It was overwritten with the output of the command. Enter `> stdout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.
 
 #### HINTS
 
