@@ -173,7 +173,7 @@
               "96456fdcac20f42bf59100c90e06fde4500900f0"
             ]
           },
-          "content": "Take a look at the file. It was overwritten with the output of the command. Enter `> stout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.",
+          "content": "Take a look at the file. It was overwritten with the output of the command. Enter `> stdout.txt` in the terminal to redirect nothing into the file. Effectively, emptying it.",
           "hints": [
             "Enter `> stdout.txt` in the terminal"
           ]
