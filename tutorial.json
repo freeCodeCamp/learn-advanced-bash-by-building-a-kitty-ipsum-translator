@@ -3323,7 +3323,7 @@
           "hints": [
             "Here's an example of one pattern: `s/<pattern>/<replacement>/<regex_flags>`",
             "It's the `g` flag",
-            "Your `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow/woof/g'\r\n```"
+            "Your `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow/woof/g'\n```"
           ]
         }
       ]
