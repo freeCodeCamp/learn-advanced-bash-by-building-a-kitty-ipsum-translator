@@ -3068,7 +3068,7 @@
           "hints": [
             "Here's an example: `cat $1 | sed 's/<pattern>/<replacement>/'`",
             "The `sed` argument should be `s/catnip/dogchow/`",
-            "The `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed 's/catnip/dogchow/'\r\n```"
+            "The `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed 's/catnip/dogchow/'\n```"
           ]
         }
       ]
