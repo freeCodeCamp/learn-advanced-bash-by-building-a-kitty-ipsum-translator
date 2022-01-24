@@ -3372,7 +3372,7 @@
           "hints": [
             "The last `sed` pattern in you scrip should be `s/meow|meowzer/woof/`",
             "And you should add the `-E` flag to the `sed` command",
-            "Your `translate.sh` file should look like this:\r\n```sh\r\n#!/bin/bash\r\n\r\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'\r\n```"
+            "Your `translate.sh` file should look like this:\n```sh\n#!/bin/bash\n\ncat $1 | sed -E 's/catnip/dogchow/g; s/cat/dog/g; s/meow|meowzer/woof/g'\n```"
           ]
         }
       ]
