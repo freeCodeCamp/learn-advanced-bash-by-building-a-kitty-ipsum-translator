@@ -121,7 +121,7 @@
               "f08d620e869d3e776a7066cb336dbc94017aa714"
             ]
           },
-          "content": "A `stdout.txt` file was create. You should take a look at it. Instead of printing `hello bash` to the terminal, it **redirected** the output to the file. A single `>` will create or overwrite the file. Use the same command with `>>` to append to the file.",
+          "content": "A `stdout.txt` file was created. You should take a look at it. Instead of printing `hello bash` to the terminal, it **redirected** the output to the file. A single `>` will create or overwrite the file. Use the same command with `>>` to append to the file.",
           "hints": [
             "Here's an example: `<command> >> <filename>`",
             "You want to append the output of `echo hello bash` to `stdout.txt`",
