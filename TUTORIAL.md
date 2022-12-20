@@ -729,7 +729,7 @@ Looking at the output, you can see that it matched `meow` and `meowzer`, instead
 
 ### 550.1
 
-So how can you find how many times those two words appear. Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.
+So how can you find how many times those two words appear? Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.
 
 #### HINTS
 

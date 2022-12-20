@@ -1576,7 +1576,7 @@
               "315109087835a52d20530c7cfdea54f9df61e3f0"
             ]
           },
-          "content": "So how can you find how many times those two words appear. Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.",
+          "content": "So how can you find how many times those two words appear? Use grep to find the `meow[a-z]*` pattern in the file again to see how many times they appear. Add the `--color` flag to the command.",
           "hints": [
             "Don't use the `-n` flag to show the line numbers.",
             "Enter `grep --color 'meow[a-z]*' kitty_ipsum_1.txt` in the terminal"
