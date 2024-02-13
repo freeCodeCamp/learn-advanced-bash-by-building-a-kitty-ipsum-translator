@@ -41,7 +41,7 @@ A `stdout.txt` file was created. You should take a look at it. Instead of printi
 
 ### 40.1
 
-Take a look at the file again. The output of `echo hello bash` was added to it.Use the command with one `>` again to overwrite the file.
+Take a look at the file again. The output of `echo hello bash` was added to it. Use the command with one `>` again to overwrite the file.
 
 #### HINTS
 

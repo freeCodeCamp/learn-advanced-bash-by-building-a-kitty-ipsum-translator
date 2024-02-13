@@ -21,3 +21,7 @@ Whenever a new version is created, add the new branch name and the changes here
 - There was an issue with the last commit not loading after using the reset button in a tutorial. I added a final commit at end that seems to have resolved it.
 - Add `exit` flag to mocha so tests can't hang
 - Fix typos and syntax in many hints
+
+## [v2.0.0]
+
+- Add Gitpod config
