@@ -934,7 +934,7 @@ Back to the task at hand. You want to add the line numbers asked for in the `kit
 
 ### 700.1
 
-You can use `sed` to each line in that output with just the line numbers. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
+You can use `sed` to change each line number in that output. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.
 
 #### HINTS
 
