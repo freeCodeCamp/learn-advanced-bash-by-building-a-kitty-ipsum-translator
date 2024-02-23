@@ -252,7 +252,7 @@ Enter the same command but use redirection to set the `stdin` to `name.txt`
 #### HINTS
 
 - Use `<` to redirect input
-- Here's an example `<commnad> < <filename>`
+- Here's an example `<command> < <filename>`
 - It was the `cat` command with the `name.txt` file
 - Enter `cat < name.txt` in the terminal
 
