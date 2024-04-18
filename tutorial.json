@@ -2002,7 +2002,7 @@
               "823d4cbd452763f737bb8dcd17237774af1feca0"
             ]
           },
-          "content": "You can use `sed` to each line in that output with just the line numbers. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.",
+          "content": "You can use `sed` to change each line number in that output. Start by entering the last command and pipe the output into `sed` that replaces `[0-9]` with `1`.",
           "hints": [
             "A `sed` argument looks like this: `'s/<pattern>/<replacement>/'`",
             "The `sed` argument is `s/[0-9]/1/`",
