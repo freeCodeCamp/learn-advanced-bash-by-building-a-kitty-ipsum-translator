@@ -1649,7 +1649,7 @@
               "ffbde256e9085a41cdfee7608208b63003d87ecf"
             ]
           },
-          "content": "It doesn't look like that's an option. But there is a `-o` flag that will says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.",
+          "content": "It doesn't look like that's an option. But there is a `-o` flag that says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.",
           "hints": [
             "The previous command was `grep -c 'meow[a-z]*' kitty_ipsum_1.txt`",
             "Replace the `-c` with `-o` in the previous command",
@@ -3190,7 +3190,7 @@
               "00c2c4ef547d0bfabf7c78be6c7c607e64428897"
             ]
           },
-          "content": "Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script the translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.",
+          "content": "Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script to translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.",
           "hints": [
             "You previously entered `./translate.sh kitty_ipsum_1.txt | grep --color 'catnip'`",
             "The `grep` pattern you want is `dog[a-z]*`",
