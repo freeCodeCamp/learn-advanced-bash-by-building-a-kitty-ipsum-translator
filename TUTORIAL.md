@@ -763,7 +763,7 @@ That gave you a count of the number lines that the pattern occurred on. Check th
 
 ### 580.1
 
-It doesn't look like that's an option. But there is a `-o` flag that will says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.
+It doesn't look like that's an option. But there is a `-o` flag that says it will put the matches on their own lines. Try that one with that command instead of the `-c` flag.
 
 #### HINTS
 
@@ -1547,7 +1547,7 @@ cat $1 | sed 's/catnip/dogchow/; s/cat/dog/'
 
 ### 1130.1
 
-Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script the translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.
+Now, it should replace `catnip` with `dogchow` and `cat` with `dog`. Use the script to translate the first ipsum file again. Search the results with `grep` for any words that start with `dog`. Part of that search pattern should be `[a-z]*`. Make sure to show the results in color.
 
 #### HINTS
 
