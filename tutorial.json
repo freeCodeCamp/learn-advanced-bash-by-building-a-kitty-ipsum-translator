@@ -3468,7 +3468,7 @@
               "d4c714774e778a8ac10ab6a222f3c8a2cee44f54"
             ]
           },
-          "content": "Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file and put the output into a new `doggy_ipsum_1.txt` file.",
+          "content": "Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file, using the filename as an argument, and put the output into a new `doggy_ipsum_1.txt` file.",
           "hints": [
             "Redirect the `stdout` of translating `kitty_ipsum_1.txt` to `doggy_ipsum_1.txt`",
             "Here's an example: `<translate_command> <input_filename> > <output_filename>`",
