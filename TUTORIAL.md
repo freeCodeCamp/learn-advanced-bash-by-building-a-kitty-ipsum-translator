@@ -1697,7 +1697,7 @@ No results means it didn't find any matches for `cat` or `meow` words after bein
 
 ### 1230.1
 
-Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file and put the output into a new `doggy_ipsum_1.txt` file.
+Okay, your script is finished. Translate the `kitty_ipsum_1.txt` file, using the filename as an argument, and put the output into a new `doggy_ipsum_1.txt` file.
 
 #### HINTS
 
